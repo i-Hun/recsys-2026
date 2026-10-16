@@ -1,0 +1,1896 @@
+{
+ "library": {
+  "type": "user",
+  "id": 2770884,
+  "web": "https://www.zotero.org/ihun",
+  "publicRead": true
+ },
+ "corpus": 269,
+ "linked": 269,
+ "items": [
+  {
+   "slug": "control-function-position-bias-ltr",
+   "itemKey": "F9AUAIHA",
+   "url": "https://www.zotero.org/ihun/items/F9AUAIHA",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "redundancy-reduction-controllable-seqrec",
+   "itemKey": "KRRAEIMZ",
+   "url": "https://www.zotero.org/ihun/items/KRRAEIMZ",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "adaptive-retraining-rl",
+   "itemKey": "6IAIBF8G",
+   "url": "https://www.zotero.org/ihun/items/6IAIBF8G",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "cross-stage-decoupling-semantic-collaborative-genrec",
+   "itemKey": "Z9G5F5J4",
+   "url": "https://www.zotero.org/ihun/items/Z9G5F5J4",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "asmoe-automated-selection-moe-seqrec",
+   "itemKey": "6X6RW58U",
+   "url": "https://www.zotero.org/ihun/items/6X6RW58U",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "bonsai-decoding-trie-optimization",
+   "itemKey": "CFBWBPTB",
+   "url": "https://www.zotero.org/ihun/items/CFBWBPTB",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "bilpr-teacher-student-learning-path",
+   "itemKey": "JFHX6X84",
+   "url": "https://www.zotero.org/ihun/items/JFHX6X84",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "bipcl-bilateral-intent-perturbation",
+   "itemKey": "6V2FXZTH",
+   "url": "https://www.zotero.org/ihun/items/6V2FXZTH",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "llm-prit-profile-instance-transfer",
+   "itemKey": "NM9FGS4D",
+   "url": "https://www.zotero.org/ihun/items/NM9FGS4D",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "conga-long-history-sequential-recommendation",
+   "itemKey": "CIVUJH8T",
+   "url": "https://www.zotero.org/ihun/items/CIVUJH8T",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "dcdr-target-guided-calibration",
+   "itemKey": "RGHAHFNU",
+   "url": "https://www.zotero.org/ihun/items/RGHAHFNU",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "coarse-to-fine-long-term-interest-genrec",
+   "itemKey": "KQ57SCS8",
+   "url": "https://www.zotero.org/ihun/items/KQ57SCS8",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "consensus-vs-dissent-group-llm",
+   "itemKey": "R3JEI634",
+   "url": "https://www.zotero.org/ihun/items/R3JEI634",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "dart-adaptive-tweedie-objective",
+   "itemKey": "M8MKW6BD",
+   "url": "https://www.zotero.org/ihun/items/M8MKW6BD",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "dp-rec",
+   "itemKey": "B48ZW5E9",
+   "url": "https://www.zotero.org/ihun/items/B48ZW5E9",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "dpgflow-flow-matching-cross-domain-seqrec",
+   "itemKey": "DFD8R3UH",
+   "url": "https://www.zotero.org/ihun/items/DFD8R3UH",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "dpgr",
+   "itemKey": "QE33R4UP",
+   "url": "https://www.zotero.org/ihun/items/QE33R4UP",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "decoupled-slate-privacy-stability",
+   "itemKey": "KV3IHB3R",
+   "url": "https://www.zotero.org/ihun/items/KV3IHB3R",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "news-engineers-personalization-explainability",
+   "itemKey": "HTFD33MC",
+   "url": "https://www.zotero.org/ihun/items/HTFD33MC",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "salm-selective-augmentation",
+   "itemKey": "3Q7GKAT7",
+   "url": "https://www.zotero.org/ihun/items/3Q7GKAT7",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "gencdsr-hybrid-tokenization",
+   "itemKey": "RN36N7CM",
+   "url": "https://www.zotero.org/ihun/items/RN36N7CM",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "residual-dominance",
+   "itemKey": "3TSS8EXZ",
+   "url": "https://www.zotero.org/ihun/items/3TSS8EXZ",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "fasc-aspect-sentiment-evaluation",
+   "itemKey": "MCVDCEU2",
+   "url": "https://www.zotero.org/ihun/items/MCVDCEU2",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "ficorec-fine-grained-dual-aggregation",
+   "itemKey": "66BIPS7C",
+   "url": "https://www.zotero.org/ihun/items/66BIPS7C",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "constraint-to-control-expected-fairness",
+   "itemKey": "D3ZVW9VN",
+   "url": "https://www.zotero.org/ihun/items/D3ZVW9VN",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "gsprec",
+   "itemKey": "DRHE7XQT",
+   "url": "https://www.zotero.org/ihun/items/DRHE7XQT",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "gtp-group-aware-token-pruning-popularity",
+   "itemKey": "A3SEA888",
+   "url": "https://www.zotero.org/ihun/items/A3SEA888",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "gateboxgcn",
+   "itemKey": "GPH89WVX",
+   "url": "https://www.zotero.org/ihun/items/GPH89WVX",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "gpbm-ranking-ope",
+   "itemKey": "Z6QKTINT",
+   "url": "https://www.zotero.org/ihun/items/Z6QKTINT",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "udsig-sparse-image-generation",
+   "itemKey": "XX8SCIEV",
+   "url": "https://www.zotero.org/ihun/items/XX8SCIEV",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "space-constraint-aware-virtual-users",
+   "itemKey": "MK3MJTGG",
+   "url": "https://www.zotero.org/ihun/items/MK3MJTGG",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "hsr-hamiltonian-spectral-sequential-rec",
+   "itemKey": "7UQ8SR5U",
+   "url": "https://www.zotero.org/ihun/items/7UQ8SR5U",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "cofirec-coarse-to-fine-tokenization",
+   "itemKey": "UDPX69GQ",
+   "url": "https://www.zotero.org/ihun/items/UDPX69GQ",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "genrxr",
+   "itemKey": "KS5JAZQQ",
+   "url": "https://www.zotero.org/ihun/items/KS5JAZQQ",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "rdsr-information-aware-compression",
+   "itemKey": "J69WN4MU",
+   "url": "https://www.zotero.org/ihun/items/J69WN4MU",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "inverse-theory-of-mind",
+   "itemKey": "KFTWVAG8",
+   "url": "https://www.zotero.org/ihun/items/KFTWVAG8",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "sparse-multimodal-cold-item-embeddings",
+   "itemKey": "2SF7GG4J",
+   "url": "https://www.zotero.org/ihun/items/2SF7GG4J",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "mode-reciprocal-matching",
+   "itemKey": "VXICD397",
+   "url": "https://www.zotero.org/ihun/items/VXICD397",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "maskpoison-intent-guided-diffusion",
+   "itemKey": "G4ZKDTZN",
+   "url": "https://www.zotero.org/ihun/items/G4ZKDTZN",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "icl-recommendation-membership-inference",
+   "itemKey": "TFW47XF7",
+   "url": "https://www.zotero.org/ihun/items/TFW47XF7",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "adaptive-sid-construction-branches",
+   "itemKey": "HWVXVJSB",
+   "url": "https://www.zotero.org/ihun/items/HWVXVJSB",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "reranking-space-adapted-queries",
+   "itemKey": "KSFFCHHX",
+   "url": "https://www.zotero.org/ihun/items/KSFFCHHX",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "convergent-validity",
+   "itemKey": "3ZCZA47A",
+   "url": "https://www.zotero.org/ihun/items/3ZCZA47A",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "probabilistic-residual-learning",
+   "itemKey": "99FJE6WB",
+   "url": "https://www.zotero.org/ihun/items/99FJE6WB",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "tsd-sr-topology-aware-spectral-denoising-sisr",
+   "itemKey": "NIRKTIBG",
+   "url": "https://www.zotero.org/ihun/items/NIRKTIBG",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "recrec-latent-interests-recursive-reasoning",
+   "itemKey": "U5V5X4TW",
+   "url": "https://www.zotero.org/ihun/items/U5V5X4TW",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "affect-balanced-news-reframing",
+   "itemKey": "S4ESDV6V",
+   "url": "https://www.zotero.org/ihun/items/S4ESDV6V",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "sage-sequence-adaptive-gradient-evolution",
+   "itemKey": "5W4X85HF",
+   "url": "https://www.zotero.org/ihun/items/5W4X85HF",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "spear-selection-aware-rewriting-retrieval",
+   "itemKey": "UGANAMMX",
+   "url": "https://www.zotero.org/ihun/items/UGANAMMX",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "safety-aware-next-poi-llm",
+   "itemKey": "PSVD6FNT",
+   "url": "https://www.zotero.org/ihun/items/PSVD6FNT",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "simulating-diverse-user-behavioral-stereotypes",
+   "itemKey": "IMNNPTSC",
+   "url": "https://www.zotero.org/ihun/items/IMNNPTSC",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "ssprec-stability-plasticity",
+   "itemKey": "BRNNBTPQ",
+   "url": "https://www.zotero.org/ihun/items/BRNNBTPQ",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "tagrec-tailness-gate",
+   "itemKey": "U3SKT263",
+   "url": "https://www.zotero.org/ihun/items/U3SKT263",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "trace-counterfactual-sequential",
+   "itemKey": "8NRF7Z2D",
+   "url": "https://www.zotero.org/ihun/items/8NRF7Z2D",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "tsmoo-constrained-thompson-experimentation",
+   "itemKey": "PTTM33JQ",
+   "url": "https://www.zotero.org/ihun/items/PTTM33JQ",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "star-continuous-time",
+   "itemKey": "5XWKXAP7",
+   "url": "https://www.zotero.org/ihun/items/5XWKXAP7",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "llm-explanation-evaluation-utility",
+   "itemKey": "9QAIRWQ2",
+   "url": "https://www.zotero.org/ihun/items/9QAIRWQ2",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "egrec-latent-interest-discovery",
+   "itemKey": "F8IKE9DP",
+   "url": "https://www.zotero.org/ihun/items/F8IKE9DP",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "topotok-topology-aware-tokenization",
+   "itemKey": "AKJBM7WK",
+   "url": "https://www.zotero.org/ihun/items/AKJBM7WK",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "welfare-oriented-activity-travel",
+   "itemKey": "C3ZW7KRF",
+   "url": "https://www.zotero.org/ihun/items/C3ZW7KRF",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "unirec-chain-of-attribute-genrec",
+   "itemKey": "MJUX9RB4",
+   "url": "https://www.zotero.org/ihun/items/MJUX9RB4",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "contrastive-explanations-when-needed",
+   "itemKey": "NHASHVXC",
+   "url": "https://www.zotero.org/ihun/items/NHASHVXC",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "bounded-attention-explanation-structure",
+   "itemKey": "438KJ6IK",
+   "url": "https://www.zotero.org/ihun/items/438KJ6IK",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "deltagate-gap-driven-dimensional-gating",
+   "itemKey": "6P2QDWZQ",
+   "url": "https://www.zotero.org/ihun/items/6P2QDWZQ",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "ct-mta-dual-debiasing",
+   "itemKey": "QDQV3QR3",
+   "url": "https://www.zotero.org/ihun/items/QDQV3QR3",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "sentiment-semantics-kg-explainable-recommendation",
+   "itemKey": "ZCJT3FJM",
+   "url": "https://www.zotero.org/ihun/items/ZCJT3FJM",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "time-and-order-rope",
+   "itemKey": "VEVXQ6UD",
+   "url": "https://www.zotero.org/ihun/items/VEVXQ6UD",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "bookforyou-narrative-tropes",
+   "itemKey": "5MQJX59J",
+   "url": "https://www.zotero.org/ihun/items/5MQJX59J",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "fairsae-provider-retrieval",
+   "itemKey": "DIPKKB7F",
+   "url": "https://www.zotero.org/ihun/items/DIPKKB7F",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "query-aware-multimodal-routing-crs",
+   "itemKey": "AAZ4JWRK",
+   "url": "https://www.zotero.org/ihun/items/AAZ4JWRK",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "comparability-stakeholder-welfare",
+   "itemKey": "M7N9FBMX",
+   "url": "https://www.zotero.org/ihun/items/M7N9FBMX",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "covns-noise-robust-optimization",
+   "itemKey": "UGNCTHJE",
+   "url": "https://www.zotero.org/ihun/items/UGNCTHJE",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "soda-distribution-level-contrastive",
+   "itemKey": "Z3TQGJRV",
+   "url": "https://www.zotero.org/ihun/items/Z3TQGJRV",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "dcd-xrec",
+   "itemKey": "6VPS3TPQ",
+   "url": "https://www.zotero.org/ihun/items/6VPS3TPQ",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "twiner-explainable-course-sequential-graph",
+   "itemKey": "XU8KSRUH",
+   "url": "https://www.zotero.org/ihun/items/XU8KSRUH",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "gradsup",
+   "itemKey": "8PAI58WF",
+   "url": "https://www.zotero.org/ihun/items/8PAI58WF",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "hierarchical-gtv",
+   "itemKey": "U94AWHQM",
+   "url": "https://www.zotero.org/ihun/items/U94AWHQM",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "impression-share-prediction-ranking",
+   "itemKey": "ZC8KN35F",
+   "url": "https://www.zotero.org/ihun/items/ZC8KN35F",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "interaction-modality-trust",
+   "itemKey": "HJF8KBSR",
+   "url": "https://www.zotero.org/ihun/items/HJF8KBSR",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "llm-judge-conversational-music",
+   "itemKey": "NUEMTK2C",
+   "url": "https://www.zotero.org/ihun/items/NUEMTK2C",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "prta-personalized-recommendation-tools",
+   "itemKey": "DAKV5XFE",
+   "url": "https://www.zotero.org/ihun/items/DAKV5XFE",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "position-bias-listwise-llm-reranking",
+   "itemKey": "PBBCDF8C",
+   "url": "https://www.zotero.org/ihun/items/PBBCDF8C",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "pricorec-feature-constrained-cloud-device",
+   "itemKey": "8X52VSRN",
+   "url": "https://www.zotero.org/ihun/items/8X52VSRN",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "uprec-llm-user-profile-session-social-rec",
+   "itemKey": "HXQF4ATA",
+   "url": "https://www.zotero.org/ihun/items/HXQF4ATA",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "scaling-l3ae-industrial-catalogs",
+   "itemKey": "UGBKFMFC",
+   "url": "https://www.zotero.org/ihun/items/UGBKFMFC",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "structure-preserving-projection-modality-bias",
+   "itemKey": "H3MNS3IN",
+   "url": "https://www.zotero.org/ihun/items/H3MNS3IN",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "support-gap",
+   "itemKey": "PGJJ2492",
+   "url": "https://www.zotero.org/ihun/items/PGJJ2492",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "surface-matching",
+   "itemKey": "IEHPWTWK",
+   "url": "https://www.zotero.org/ihun/items/IEHPWTWK",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "hyperbrec-hyperbolic-dct-attention",
+   "itemKey": "JVH7TR8U",
+   "url": "https://www.zotero.org/ihun/items/JVH7TR8U",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "uncertainty-gated-context-poi",
+   "itemKey": "8AB7IRZN",
+   "url": "https://www.zotero.org/ihun/items/8AB7IRZN",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "ensrec-id-text-complementarity",
+   "itemKey": "GK4ZX2M4",
+   "url": "https://www.zotero.org/ihun/items/GK4ZX2M4",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "fixed-candidate-model-selection",
+   "itemKey": "Q6S57PT3",
+   "url": "https://www.zotero.org/ihun/items/Q6S57PT3",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "autonomous-agents",
+   "itemKey": "7MQPJN4B",
+   "url": "https://www.zotero.org/ihun/items/7MQPJN4B",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "backward-inward-personalization-safety",
+   "itemKey": "H2ECB7JF",
+   "url": "https://www.zotero.org/ihun/items/H2ECB7JF",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "user-governed-preference-memory",
+   "itemKey": "R2SEMVUV",
+   "url": "https://www.zotero.org/ihun/items/R2SEMVUV",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "codebook-sid-five-fractures",
+   "itemKey": "24Q9BTAE",
+   "url": "https://www.zotero.org/ihun/items/24Q9BTAE",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "eachmovie-archaeology",
+   "itemKey": "7BDKVF5R",
+   "url": "https://www.zotero.org/ihun/items/7BDKVF5R",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "forward-outward-conversational-understanding",
+   "itemKey": "RIFCKBAV",
+   "url": "https://www.zotero.org/ihun/items/RIFCKBAV",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "knowledge-integration-two-decades",
+   "itemKey": "WK3THS96",
+   "url": "https://www.zotero.org/ihun/items/WK3THS96",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "user-item-edges-exposure-allocation",
+   "itemKey": "IZIF8HPM",
+   "url": "https://www.zotero.org/ihun/items/IZIF8HPM",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "children-recsys-twenty-years",
+   "itemKey": "QDHZG2MI",
+   "url": "https://www.zotero.org/ihun/items/QDHZG2MI",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "underrated-catalyst-critiquing",
+   "itemKey": "K4X6I33U",
+   "url": "https://www.zotero.org/ihun/items/K4X6I33U",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "human-centered-recommender-providers",
+   "itemKey": "882K9N3I",
+   "url": "https://www.zotero.org/ihun/items/882K9N3I",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "user-controlled-intent-layers",
+   "itemKey": "ZRRHC9QJ",
+   "url": "https://www.zotero.org/ihun/items/ZRRHC9QJ",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "recommending-to-agentic-web",
+   "itemKey": "DZJR62HK",
+   "url": "https://www.zotero.org/ihun/items/DZJR62HK",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "agentcf-connectivity-security",
+   "itemKey": "UC5KSWH3",
+   "url": "https://www.zotero.org/ihun/items/UC5KSWH3",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "tie-breaking-illusion",
+   "itemKey": "FHS44NZS",
+   "url": "https://www.zotero.org/ihun/items/FHS44NZS",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "ehr-drug-reproducibility-external-validity",
+   "itemKey": "37BNTIZU",
+   "url": "https://www.zotero.org/ihun/items/37BNTIZU",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "cross-interaction-leakage-egr",
+   "itemKey": "RRUJ5FKI",
+   "url": "https://www.zotero.org/ihun/items/RRUJ5FKI",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "binge-watch-m3l",
+   "itemKey": "A7MWXVI8",
+   "url": "https://www.zotero.org/ihun/items/A7MWXVI8",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "hoploy",
+   "itemKey": "BNHJBTX6",
+   "url": "https://www.zotero.org/ihun/items/BNHJBTX6",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "jth-temporal-job-recommendation",
+   "itemKey": "HTX7IKVU",
+   "url": "https://www.zotero.org/ihun/items/HTX7IKVU",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "scikit-rec-agent-unified-library",
+   "itemKey": "H4AXG68D",
+   "url": "https://www.zotero.org/ihun/items/H4AXG68D",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "tau-rec",
+   "itemKey": "JNS9DWEA",
+   "url": "https://www.zotero.org/ihun/items/JNS9DWEA",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "watchlens-video-experiment-platform",
+   "itemKey": "8TNMC8SN",
+   "url": "https://www.zotero.org/ihun/items/8TNMC8SN",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "workrb-work-domain-benchmark",
+   "itemKey": "ZNNQGSPK",
+   "url": "https://www.zotero.org/ihun/items/ZNNQGSPK",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "value-aligned-modeling-robust-experimentation",
+   "itemKey": "B9R9GQ9V",
+   "url": "https://www.zotero.org/ihun/items/B9R9GQ9V",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "steps-self-triggered-push",
+   "itemKey": "4CK74I6B",
+   "url": "https://www.zotero.org/ihun/items/4CK74I6B",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "mamgr-adaptive-multiobjective-reranking",
+   "itemKey": "ZHS4BHBA",
+   "url": "https://www.zotero.org/ihun/items/ZHS4BHBA",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "vlm-relevance-web-scale",
+   "itemKey": "AQXTMNU3",
+   "url": "https://www.zotero.org/ihun/items/AQXTMNU3",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "cascade-reward-preranking",
+   "itemKey": "VRNUXQA3",
+   "url": "https://www.zotero.org/ihun/items/VRNUXQA3",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "coreatt-core-task-attention",
+   "itemKey": "MPFHNCTH",
+   "url": "https://www.zotero.org/ihun/items/MPFHNCTH",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "spotify-bootstrapping-conversational-agents",
+   "itemKey": "KPMCREJQ",
+   "url": "https://www.zotero.org/ihun/items/KPMCREJQ",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "youtube-music-breaking-the-loop-interventions",
+   "itemKey": "ANR4UHPX",
+   "url": "https://www.zotero.org/ihun/items/ANR4UHPX",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "user-foundation-model-open-web",
+   "itemKey": "56B9DREH",
+   "url": "https://www.zotero.org/ihun/items/56B9DREH",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "capts",
+   "itemKey": "IIACEHZD",
+   "url": "https://www.zotero.org/ihun/items/IIACEHZD",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "conalign-conditional-debiasing",
+   "itemKey": "F9DXD34J",
+   "url": "https://www.zotero.org/ihun/items/F9DXD34J",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "dart-drift-aware-ranking",
+   "itemKey": "ZUKBP3AU",
+   "url": "https://www.zotero.org/ihun/items/ZUKBP3AU",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "dranker-disney-homepage",
+   "itemKey": "2U9JC87S",
+   "url": "https://www.zotero.org/ihun/items/2U9JC87S",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "egr-embedding-native-generative-retrieval",
+   "itemKey": "GS3RXX3Z",
+   "url": "https://www.zotero.org/ihun/items/GS3RXX3Z",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "embedding-subspace-partitioning-multi-objective-retrieval",
+   "itemKey": "DJFIG33C",
+   "url": "https://www.zotero.org/ihun/items/DJFIG33C",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "pinterest-onsite-offsite-transra",
+   "itemKey": "TJHRJFAZ",
+   "url": "https://www.zotero.org/ihun/items/TJHRJFAZ",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "fluid-lucid-id-free-livestream",
+   "itemKey": "8C9EHRDT",
+   "url": "https://www.zotero.org/ihun/items/8C9EHRDT",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "retargetrec-dpoir-slot-allocation",
+   "itemKey": "I6D5P3CG",
+   "url": "https://www.zotero.org/ihun/items/I6D5P3CG",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "bootstrap-iips-offpolicy-evaluation",
+   "itemKey": "UNVWP8T9",
+   "url": "https://www.zotero.org/ihun/items/UNVWP8T9",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "stnb-page-module-interactions",
+   "itemKey": "RJI4GEMH",
+   "url": "https://www.zotero.org/ihun/items/RJI4GEMH",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "gplan-spatiotemporal-intent-sequences",
+   "itemKey": "ZWB9K5EX",
+   "url": "https://www.zotero.org/ihun/items/ZWB9K5EX",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "grip-profile-completion",
+   "itemKey": "DA5P3W4R",
+   "url": "https://www.zotero.org/ihun/items/DA5P3W4R",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "genpage-netflix",
+   "itemKey": "8GPXV8GC",
+   "url": "https://www.zotero.org/ihun/items/8GPXV8GC",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "gwhere-amap-generative-next-poi",
+   "itemKey": "SAVPPBGA",
+   "url": "https://www.zotero.org/ihun/items/SAVPPBGA",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "hipa-net-intent-projection-cvr-calibration",
+   "itemKey": "AFN8B79S",
+   "url": "https://www.zotero.org/ihun/items/AFN8B79S",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "heterogeneous-ranking-ha-moe-lens",
+   "itemKey": "BE3CDQES",
+   "url": "https://www.zotero.org/ihun/items/BE3CDQES",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "mercari-hybrid-multimodal-reranking",
+   "itemKey": "K3UVEQKH",
+   "url": "https://www.zotero.org/ihun/items/K3UVEQKH",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "hypothesis-driven-shelf-generation",
+   "itemKey": "BCR94FTB",
+   "url": "https://www.zotero.org/ihun/items/BCR94FTB",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "idproxy-mllm-cold-start-ctr",
+   "itemKey": "SNWHA7EE",
+   "url": "https://www.zotero.org/ihun/items/SNWHA7EE",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "interest-sequence",
+   "itemKey": "4WTPWBCU",
+   "url": "https://www.zotero.org/ihun/items/4WTPWBCU",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "subjective-reasoning-collapse-routing",
+   "itemKey": "KQ2RWUWM",
+   "url": "https://www.zotero.org/ihun/items/KQ2RWUWM",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "llm-real-estate-reranking",
+   "itemKey": "BWHF2SZG",
+   "url": "https://www.zotero.org/ihun/items/BWHF2SZG",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "llm-user-personas-scale",
+   "itemKey": "M8CCA6I6",
+   "url": "https://www.zotero.org/ihun/items/M8CCA6I6",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "lo-far-sparse-feature-ranking",
+   "itemKey": "EQ6NK9TD",
+   "url": "https://www.zotero.org/ihun/items/EQ6NK9TD",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "learned-cross-task-relationships-youtube",
+   "itemKey": "NDXSEG43",
+   "url": "https://www.zotero.org/ihun/items/NDXSEG43",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "pinterest-model-agnostic-downstream-rewards",
+   "itemKey": "9U9ZB8UW",
+   "url": "https://www.zotero.org/ihun/items/9U9ZB8UW",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "m2r-taobao-implicit-scenario-routing",
+   "itemKey": "97U3CGFA",
+   "url": "https://www.zotero.org/ihun/items/97U3CGFA",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "mdgr-masked-diffusion-genrec",
+   "itemKey": "2XH6GF5M",
+   "url": "https://www.zotero.org/ihun/items/2XH6GF5M",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "mesh-heterogeneous-content-unification",
+   "itemKey": "MZXEQ8MD",
+   "url": "https://www.zotero.org/ihun/items/MZXEQ8MD",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "melo-production-music-agent",
+   "itemKey": "HGAI6ICF",
+   "url": "https://www.zotero.org/ihun/items/HGAI6ICF",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "flvm-latent-preference-measurement",
+   "itemKey": "VPW7IC52",
+   "url": "https://www.zotero.org/ihun/items/VPW7IC52",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "mor-adaptive-retrieval-allocation",
+   "itemKey": "SIMR7JNM",
+   "url": "https://www.zotero.org/ihun/items/SIMR7JNM",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "mosaic",
+   "itemKey": "PDW7WIC4",
+   "url": "https://www.zotero.org/ihun/items/PDW7WIC4",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "twitch-fresh-delayed-segment-aware-ranking",
+   "itemKey": "CNIKRDEX",
+   "url": "https://www.zotero.org/ihun/items/CNIKRDEX",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "multi-probe-zero-collision-hash",
+   "itemKey": "WS6SQU7K",
+   "url": "https://www.zotero.org/ihun/items/WS6SQU7K",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "apple-music-elise",
+   "itemKey": "2QIC2EX6",
+   "url": "https://www.zotero.org/ihun/items/2QIC2EX6",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "nextgen-taobao",
+   "itemKey": "WGHQ75JR",
+   "url": "https://www.zotero.org/ihun/items/WGHQ75JR",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "plain-generative-search",
+   "itemKey": "KX2WUKSU",
+   "url": "https://www.zotero.org/ihun/items/KX2WUKSU",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "poem-partial-order",
+   "itemKey": "PPZVFX2E",
+   "url": "https://www.zotero.org/ihun/items/PPZVFX2E",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "promise-process-reward-generative-rec",
+   "itemKey": "92E84GX5",
+   "url": "https://www.zotero.org/ihun/items/92E84GX5",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "apple-tv-incremental-search-hybrid-text-id",
+   "itemKey": "4AE679BU",
+   "url": "https://www.zotero.org/ihun/items/4AE679BU",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "pindco-whole-page-creative-optimization",
+   "itemKey": "NQ5T4PZA",
+   "url": "https://www.zotero.org/ihun/items/NQ5T4PZA",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "webtoon-progressive-foundation-model-alignment",
+   "itemKey": "45Q3B3FC",
+   "url": "https://www.zotero.org/ihun/items/45Q3B3FC",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "recap-streaming-semantic-profiles",
+   "itemKey": "3N778BNP",
+   "url": "https://www.zotero.org/ihun/items/3N778BNP",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "reef-explore-exploit-dual-rankers-meesho",
+   "itemKey": "UU79NW5Q",
+   "url": "https://www.zotero.org/ihun/items/UU79NW5Q",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "rankgraph-2",
+   "itemKey": "6SS26BTJ",
+   "url": "https://www.zotero.org/ihun/items/6SS26BTJ",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "recevolve-autonomous-agent-recsys",
+   "itemKey": "C2UTJMU4",
+   "url": "https://www.zotero.org/ihun/items/C2UTJMU4",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "smart-gated-hybrid-product-ads",
+   "itemKey": "7K3SEHVU",
+   "url": "https://www.zotero.org/ihun/items/7K3SEHVU",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "sample-is-feature-sample-level-tokens",
+   "itemKey": "R2RMTJ8Z",
+   "url": "https://www.zotero.org/ihun/items/R2RMTJ8Z",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "self-evolving-youtube-agents",
+   "itemKey": "NDFAZ33T",
+   "url": "https://www.zotero.org/ihun/items/NDFAZ33T",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "sequenceo1",
+   "itemKey": "9X65H92N",
+   "url": "https://www.zotero.org/ihun/items/9X65H92N",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "syf-shape-your-feed",
+   "itemKey": "4IE8HVRP",
+   "url": "https://www.zotero.org/ihun/items/4IE8HVRP",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "soft-curriculum-fresh-generalized-recs",
+   "itemKey": "HV5SCTNX",
+   "url": "https://www.zotero.org/ihun/items/HV5SCTNX",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "space-efficient-item-embeddings",
+   "itemKey": "45UVN68E",
+   "url": "https://www.zotero.org/ihun/items/45UVN68E",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "g2rec-interest-profile-tokenization",
+   "itemKey": "SD9G72BV",
+   "url": "https://www.zotero.org/ihun/items/SD9G72BV",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "tssr-beta-interaction-head-retrieval",
+   "itemKey": "GZBW6426",
+   "url": "https://www.zotero.org/ihun/items/GZBW6426",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "text-on-the-creative",
+   "itemKey": "FBJ83IVE",
+   "url": "https://www.zotero.org/ihun/items/FBJ83IVE",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "token-factory",
+   "itemKey": "9DUQVTGE",
+   "url": "https://www.zotero.org/ihun/items/9DUQVTGE",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "sidec-dual-purpose-semantic-ids",
+   "itemKey": "TIHD2NH9",
+   "url": "https://www.zotero.org/ihun/items/TIHD2NH9",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "ccn-full-candidate-route",
+   "itemKey": "IV8EPUGT",
+   "url": "https://www.zotero.org/ihun/items/IV8EPUGT",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "netflix-scaling-generative-recommenders-mtp",
+   "itemKey": "RRG7XZTI",
+   "url": "https://www.zotero.org/ihun/items/RRG7XZTI",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "social-ab-balanced-louvain",
+   "itemKey": "RSWPEVWH",
+   "url": "https://www.zotero.org/ihun/items/RSWPEVWH",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "transact-v2-lifelong-sequences-pinterest",
+   "itemKey": "NAWNFANU",
+   "url": "https://www.zotero.org/ihun/items/NAWNFANU",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "tubifm-unified-streaming-ranking",
+   "itemKey": "I2AMIAXQ",
+   "url": "https://www.zotero.org/ihun/items/I2AMIAXQ",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "unique-flat-quantization-unified-retrieval-ranking",
+   "itemKey": "6ZNXFR2K",
+   "url": "https://www.zotero.org/ihun/items/6ZNXFR2K",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "uncertainty-aware-reward-modeling-youtube",
+   "itemKey": "I28BT8TF",
+   "url": "https://www.zotero.org/ihun/items/I28BT8TF",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "unipinrec-full-stack-unification",
+   "itemKey": "HG3K3498",
+   "url": "https://www.zotero.org/ihun/items/HG3K3498",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "unishare-video-receiver",
+   "itemKey": "XUG9QSQE",
+   "url": "https://www.zotero.org/ihun/items/XUG9QSQE",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "unitraj-cross-domain-long-sequences",
+   "itemKey": "QN59GVI4",
+   "url": "https://www.zotero.org/ihun/items/QN59GVI4",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "versioned-late-materialization",
+   "itemKey": "KKMSH7S8",
+   "url": "https://www.zotero.org/ihun/items/KKMSH7S8",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "whale-wukong-hstu",
+   "itemKey": "QPHA9VBU",
+   "url": "https://www.zotero.org/ihun/items/QPHA9VBU",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "agentrec",
+   "itemKey": "EH7VEWE6",
+   "url": "https://www.zotero.org/ihun/items/EH7VEWE6",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "blue-steer",
+   "itemKey": "ZW2R7NQD",
+   "url": "https://www.zotero.org/ihun/items/ZW2R7NQD",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "ordinal-attribute-calibration",
+   "itemKey": "BNUS5BS2",
+   "url": "https://www.zotero.org/ihun/items/BNUS5BS2",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "cosid-concept-conditioned-sid-decoding",
+   "itemKey": "FU9VPV28",
+   "url": "https://www.zotero.org/ihun/items/FU9VPV28",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "cross-spectrum-candidate-sets",
+   "itemKey": "8SS92H3J",
+   "url": "https://www.zotero.org/ihun/items/8SS92H3J",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "deadweight-loss-recommendation",
+   "itemKey": "PN329AZ4",
+   "url": "https://www.zotero.org/ihun/items/PN329AZ4",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "sid-alignment-openonerec-diagnostics",
+   "itemKey": "EBCZJAXW",
+   "url": "https://www.zotero.org/ihun/items/EBCZJAXW",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "capacity-probes-pairwise-envelope",
+   "itemKey": "GUQVJJ8K",
+   "url": "https://www.zotero.org/ihun/items/GUQVJJ8K",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "sid-collision-last-token-resolution",
+   "itemKey": "AQA5GTN7",
+   "url": "https://www.zotero.org/ihun/items/AQA5GTN7",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "revealed-behavior-stated-news-profiles",
+   "itemKey": "WR7UN6VE",
+   "url": "https://www.zotero.org/ihun/items/WR7UN6VE",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "faithful-reasoning",
+   "itemKey": "PMDB6IKB",
+   "url": "https://www.zotero.org/ihun/items/PMDB6IKB",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "inbatch-negatives-cripple-llm-seqrec",
+   "itemKey": "3TSMZR98",
+   "url": "https://www.zotero.org/ihun/items/3TSMZR98",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "intent-description-anchoring-judge",
+   "itemKey": "8DU88UPU",
+   "url": "https://www.zotero.org/ihun/items/8DU88UPU",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "monte-carlo-power-newsletter",
+   "itemKey": "EASHQUPP",
+   "url": "https://www.zotero.org/ihun/items/EASHQUPP",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "seed-variance-sequential-recommender-tests",
+   "itemKey": "7ES33RHK",
+   "url": "https://www.zotero.org/ihun/items/7ES33RHK",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "deezer-discovery-quality-familiarity",
+   "itemKey": "JFHVFNJN",
+   "url": "https://www.zotero.org/ihun/items/JFHVFNJN",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "pcp-decoding-popularity-calibration-genret",
+   "itemKey": "NSRIWRE9",
+   "url": "https://www.zotero.org/ihun/items/NSRIWRE9",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "pairwise-ranking-offline-explanation",
+   "itemKey": "P6GPGCQT",
+   "url": "https://www.zotero.org/ihun/items/P6GPGCQT",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "fashion-session-trajectories-soft-negatives",
+   "itemKey": "CN9E5HC8",
+   "url": "https://www.zotero.org/ihun/items/CN9E5HC8",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "bluesky-prospective-custom-feed-routing",
+   "itemKey": "CXFZNK4E",
+   "url": "https://www.zotero.org/ihun/items/CXFZNK4E",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "repeat-utility-timing-metrics",
+   "itemKey": "8DD9J3IJ",
+   "url": "https://www.zotero.org/ihun/items/8DD9J3IJ",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "shared-account",
+   "itemKey": "BRPQDKSQ",
+   "url": "https://www.zotero.org/ihun/items/BRPQDKSQ",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "sera-retail-agent-evaluation",
+   "itemKey": "GV6ABB3R",
+   "url": "https://www.zotero.org/ihun/items/GV6ABB3R",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "meta-request-only-sequence-scaling-ads",
+   "itemKey": "Z37KUJIF",
+   "url": "https://www.zotero.org/ihun/items/Z37KUJIF",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "llm-judge-tone-severity-operating-point",
+   "itemKey": "FM6BD4MH",
+   "url": "https://www.zotero.org/ihun/items/FM6BD4MH",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "sae-semantic-domain-adapters",
+   "itemKey": "KTX7I7X9",
+   "url": "https://www.zotero.org/ihun/items/KTX7I7X9",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "illusion-control-3c-rank-zca",
+   "itemKey": "V74WB2DJ",
+   "url": "https://www.zotero.org/ihun/items/V74WB2DJ",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "drsd-complementary-news",
+   "itemKey": "7ZI29ER3",
+   "url": "https://www.zotero.org/ihun/items/7ZI29ER3",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "recseed-training-seed-model-selection",
+   "itemKey": "QGAQ4H6P",
+   "url": "https://www.zotero.org/ihun/items/QGAQ4H6P",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "what-price-fairness",
+   "itemKey": "2CHE2KPG",
+   "url": "https://www.zotero.org/ihun/items/2CHE2KPG",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "when-recommender-systems-not-act",
+   "itemKey": "9URNWH85",
+   "url": "https://www.zotero.org/ihun/items/9URNWH85",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "bluesky-identical-text-exposure",
+   "itemKey": "T8HR566J",
+   "url": "https://www.zotero.org/ihun/items/T8HR566J",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "rating-review-scale-gaps",
+   "itemKey": "45V38HPX",
+   "url": "https://www.zotero.org/ihun/items/45V38HPX",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "pcore-filter-split-order-noncommute",
+   "itemKey": "9H3A4G5X",
+   "url": "https://www.zotero.org/ihun/items/9H3A4G5X",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "autoreclab-experiment-code",
+   "itemKey": "FPB5W7FS",
+   "url": "https://www.zotero.org/ihun/items/FPB5W7FS",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "compresso-sparse-representation-library-demo",
+   "itemKey": "ZJG5CIHB",
+   "url": "https://www.zotero.org/ihun/items/ZJG5CIHB",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "corgi-communal-feed-governance",
+   "itemKey": "DUVJB987",
+   "url": "https://www.zotero.org/ihun/items/DUVJB987",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "live-catalogue-self-refreshing-retrieval",
+   "itemKey": "IFH4UV86",
+   "url": "https://www.zotero.org/ihun/items/IFH4UV86",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "finally-dataset-recommender",
+   "itemKey": "NTG47BPR",
+   "url": "https://www.zotero.org/ihun/items/NTG47BPR",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "fusion-autoencoder-structured-products",
+   "itemKey": "XNFZNDV7",
+   "url": "https://www.zotero.org/ihun/items/XNFZNDV7",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "grouprec",
+   "itemKey": "263JTTCE",
+   "url": "https://www.zotero.org/ihun/items/263JTTCE",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "pbook-self-recommending-living-book",
+   "itemKey": "K9PHASRJ",
+   "url": "https://www.zotero.org/ihun/items/K9PHASRJ",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "loom",
+   "itemKey": "QQRH3WQZ",
+   "url": "https://www.zotero.org/ihun/items/QQRH3WQZ",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "lumi-safety-aware-poi",
+   "itemKey": "F4X25N7U",
+   "url": "https://www.zotero.org/ihun/items/F4X25N7U",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "perseus-heterogeneous-events",
+   "itemKey": "E2UUJXXI",
+   "url": "https://www.zotero.org/ihun/items/E2UUJXXI",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "rebait-choice-time",
+   "itemKey": "HWNNZECF",
+   "url": "https://www.zotero.org/ihun/items/HWNNZECF",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "scikit-rank",
+   "itemKey": "8M9KK3SJ",
+   "url": "https://www.zotero.org/ihun/items/8M9KK3SJ",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "seqpack-sequence-compression",
+   "itemKey": "QUNM7ZBW",
+   "url": "https://www.zotero.org/ihun/items/QUNM7ZBW",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "streamlitrecommenders-inspectability",
+   "itemKey": "3KMD7HQ4",
+   "url": "https://www.zotero.org/ihun/items/3KMD7HQ4",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "tasteprint-cross-platform-memory",
+   "itemKey": "9NH6688W",
+   "url": "https://www.zotero.org/ihun/items/9NH6688W",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "valuevet-constitutional-recommender-audit",
+   "itemKey": "BWFM5UQE",
+   "url": "https://www.zotero.org/ihun/items/BWFM5UQE",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "wisefood",
+   "itemKey": "WDZ7K5IR",
+   "url": "https://www.zotero.org/ihun/items/WDZ7K5IR",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "design-space-agentic-conversational",
+   "itemKey": "8898IT6A",
+   "url": "https://www.zotero.org/ihun/items/8898IT6A",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "axiology-journalistic-values",
+   "itemKey": "KVZC2VGV",
+   "url": "https://www.zotero.org/ihun/items/KVZC2VGV",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "discover-weakly-no-more",
+   "itemKey": "RTIIP69S",
+   "url": "https://www.zotero.org/ihun/items/RTIIP69S",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "carousel-click-off-policy-evaluation",
+   "itemKey": "HAX6J7VC",
+   "url": "https://www.zotero.org/ihun/items/HAX6J7VC",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "human-value-recommendation-evaluation",
+   "itemKey": "JQCGB8T8",
+   "url": "https://www.zotero.org/ihun/items/JQCGB8T8",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "teaching-recommenders-to-listen",
+   "itemKey": "QKPDHKH8",
+   "url": "https://www.zotero.org/ihun/items/QKPDHKH8",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "human-aligned-cognitive-user-modeling",
+   "itemKey": "WQBJM23A",
+   "url": "https://www.zotero.org/ihun/items/WQBJM23A",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "transparency-control-provider-interfaces",
+   "itemKey": "ZMVPT9JS",
+   "url": "https://www.zotero.org/ihun/items/ZMVPT9JS",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "unbiased-implicit-feedback-islam",
+   "itemKey": "VRESGN4H",
+   "url": "https://www.zotero.org/ihun/items/VRESGN4H",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "reasoning-trace-design",
+   "itemKey": "D3G2FKAA",
+   "url": "https://www.zotero.org/ihun/items/D3G2FKAA",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "keeping-the-index-open-dual-encoder-cost",
+   "itemKey": "FC9FTA29",
+   "url": "https://www.zotero.org/ihun/items/FC9FTA29",
+   "match": "title",
+   "duplicates": 0
+  },
+  {
+   "slug": "cluster-goobs-llm-hard-negatives",
+   "itemKey": "N6QHA86U",
+   "url": "https://www.zotero.org/ihun/items/N6QHA86U",
+   "match": "title",
+   "duplicates": 0
+  },
+  {
+   "slug": "multimodal-semantic-expansion-constrained-llm-rerank",
+   "itemKey": "4HV4PZX6",
+   "url": "https://www.zotero.org/ihun/items/4HV4PZX6",
+   "match": "title",
+   "duplicates": 0
+  },
+  {
+   "slug": "talk-cobis-recsys2026-materials",
+   "itemKey": "7B4CJC79",
+   "url": "https://www.zotero.org/ihun/items/7B4CJC79",
+   "match": "title",
+   "duplicates": 0
+  },
+  {
+   "slug": "amazon-music-retrieval-embedding-ranker-feature",
+   "itemKey": "FC4Q54WR",
+   "url": "https://www.zotero.org/ihun/items/FC4Q54WR",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "rohde-reward-optimizing-recsys-tutorial",
+   "itemKey": "VDBU5CWD",
+   "url": "https://www.zotero.org/ihun/items/VDBU5CWD",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "schedl-cognitive-biases-recsys-tutorial",
+   "itemKey": "WRANQXIU",
+   "url": "https://www.zotero.org/ihun/items/WRANQXIU",
+   "match": "doi",
+   "duplicates": 0
+  },
+  {
+   "slug": "said-calibrating-reproduced-claims",
+   "itemKey": "W4BFAJ4Z",
+   "url": "https://www.zotero.org/ihun/items/W4BFAJ4Z",
+   "match": "title",
+   "duplicates": 0
+  },
+  {
+   "slug": "lightweight-ranking-heads-stop-gradient",
+   "itemKey": "IRXWN73K",
+   "url": "https://www.zotero.org/ihun/items/IRXWN73K",
+   "match": "title",
+   "duplicates": 0
+  },
+  {
+   "slug": "timing-aware-repurchase-survival",
+   "itemKey": "FQATQSAH",
+   "url": "https://www.zotero.org/ihun/items/FQATQSAH",
+   "match": "title",
+   "duplicates": 0
+  }
+ ],
+ "rejected": []
+}

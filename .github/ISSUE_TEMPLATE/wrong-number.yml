@@ -1,0 +1,29 @@
+name: Неверное число
+description: Метрика, счётчик или процент не совпадает с источником или с другой страницей
+labels: ["content", "wrong-number"]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Страница
+    validations:
+      required: true
+  - type: input
+    id: on_site
+    attributes:
+      label: Число на сайте
+    validations:
+      required: true
+  - type: input
+    id: expected
+    attributes:
+      label: Правильное число
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Откуда правильное
+      description: Страница или таблица статьи, ссылка, или другая страница путеводителя с другим значением
+    validations:
+      required: true

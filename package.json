@@ -1,0 +1,15 @@
+{
+  "name": "recsys-2026",
+  "private": true,
+  "type": "module",
+  "description": "RecSys 2026 guide: a Nuxt layer of nagornyy.me/stories/recsys-2026",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "test": "node scripts/test-recsys.mjs && node scripts/test-recsys-mutations.mjs && node scripts/test-recsys-affiliations.mjs"
+  },
+  "dependencies": {
+    "markdown-it": "14.1.0",
+    "nuxt": "3.15.4"
+  }
+}

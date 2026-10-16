@@ -1,0 +1,22 @@
+name: Ошибка в разборе
+description: Разбор неверно описывает работу, метод или вывод
+labels: ["content", "review-error"]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Страница
+      description: Адрес разбора, например https://nagornyy.me/stories/recsys-2026/papers/<slug>
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: Что написано и что не так
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Источник
+      description: Где в статье написано иначе (страница, раздел, таблица) или ссылка

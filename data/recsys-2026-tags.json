@@ -1,0 +1,4813 @@
+{
+ "generatedFrom": "Разборы (269 разборов, строка Tags)",
+ "policy": {
+  "normalization": "нижний регистр, ё→е, дефис→подчёркивание; русский вариант онлайн_AB → online_ab",
+  "dropped": [
+   "no_lever",
+   "recsys",
+   "recsys2026",
+   "recsys26",
+   "recsys_2026"
+  ],
+  "display": "самая частая исходная форма, аббревиатуры — заглавными",
+  "cloud": "в облако идут теги с 2 и более работами; однократные остаются в индексе и доступны как фильтр"
+ },
+ "counts": {
+  "unique": 333,
+  "occurrences": 542,
+  "cloud_ge2": 78,
+  "ge3": 34,
+  "single": 255
+ },
+ "tags": [
+  {
+   "id": "semantic_id",
+   "label": "semantic_id",
+   "count": 18,
+   "slugs": [
+    "adaptive-sid-construction-branches",
+    "coarse-to-fine-long-term-interest-genrec",
+    "codebook-sid-five-fractures",
+    "cofirec-coarse-to-fine-tokenization",
+    "cosid-concept-conditioned-sid-decoding",
+    "cross-stage-decoupling-semantic-collaborative-genrec",
+    "gencdsr-hybrid-tokenization",
+    "mdgr-masked-diffusion-genrec",
+    "pcp-decoding-popularity-calibration-genret",
+    "promise-process-reward-generative-rec",
+    "sae-semantic-domain-adapters",
+    "sage-sequence-adaptive-gradient-evolution",
+    "sid-alignment-openonerec-diagnostics",
+    "sid-collision-last-token-resolution",
+    "sidec-dual-purpose-semantic-ids",
+    "soda-distribution-level-contrastive",
+    "topotok-topology-aware-tokenization",
+    "unirec-chain-of-attribute-genrec"
+   ],
+   "forms": {
+    "semantic_id": 16,
+    "semantic-id": 1,
+    "semantic-ID": 1
+   }
+  },
+  {
+   "id": "online_ab",
+   "label": "online_ab",
+   "count": 15,
+   "slugs": [
+    "apple-tv-incremental-search-hybrid-text-id",
+    "bootstrap-iips-offpolicy-evaluation",
+    "coarse-to-fine-long-term-interest-genrec",
+    "conalign-conditional-debiasing",
+    "egr-embedding-native-generative-retrieval",
+    "embedding-subspace-partitioning-multi-objective-retrieval",
+    "g2rec-interest-profile-tokenization",
+    "hipa-net-intent-projection-cvr-calibration",
+    "mdgr-masked-diffusion-genrec",
+    "sidec-dual-purpose-semantic-ids",
+    "syf-shape-your-feed",
+    "tssr-beta-interaction-head-retrieval",
+    "unipinrec-full-stack-unification",
+    "unirec-chain-of-attribute-genrec",
+    "youtube-music-breaking-the-loop-interventions"
+   ],
+   "forms": {
+    "онлайн_AB": 5,
+    "online_ab": 8,
+    "online_AB": 2
+   }
+  },
+  {
+   "id": "cold_start",
+   "label": "cold_start",
+   "count": 11,
+   "slugs": [
+    "cofirec-coarse-to-fine-tokenization",
+    "deltagate-gap-driven-dimensional-gating",
+    "egr-embedding-native-generative-retrieval",
+    "idproxy-mllm-cold-start-ctr",
+    "mesh-heterogeneous-content-unification",
+    "netflix-scaling-generative-recommenders-mtp",
+    "sae-semantic-domain-adapters",
+    "sage-sequence-adaptive-gradient-evolution",
+    "sidec-dual-purpose-semantic-ids",
+    "soft-curriculum-fresh-generalized-recs",
+    "sparse-multimodal-cold-item-embeddings"
+   ],
+   "forms": {
+    "cold_start": 11
+   }
+  },
+  {
+   "id": "generative_retrieval",
+   "label": "generative_retrieval",
+   "count": 11,
+   "slugs": [
+    "adaptive-sid-construction-branches",
+    "bonsai-decoding-trie-optimization",
+    "coarse-to-fine-long-term-interest-genrec",
+    "cofirec-coarse-to-fine-tokenization",
+    "cosid-concept-conditioned-sid-decoding",
+    "cross-stage-decoupling-semantic-collaborative-genrec",
+    "gencdsr-hybrid-tokenization",
+    "mdgr-masked-diffusion-genrec",
+    "pcp-decoding-popularity-calibration-genret",
+    "sid-collision-last-token-resolution",
+    "unirec-chain-of-attribute-genrec"
+   ],
+   "forms": {
+    "generative_retrieval": 10,
+    "generative-retrieval": 1
+   }
+  },
+  {
+   "id": "industrial",
+   "label": "industrial",
+   "count": 11,
+   "slugs": [
+    "amazon-music-retrieval-embedding-ranker-feature",
+    "bootstrap-iips-offpolicy-evaluation",
+    "conalign-conditional-debiasing",
+    "g2rec-interest-profile-tokenization",
+    "hipa-net-intent-projection-cvr-calibration",
+    "idproxy-mllm-cold-start-ctr",
+    "learned-cross-task-relationships-youtube",
+    "meta-request-only-sequence-scaling-ads",
+    "reef-explore-exploit-dual-rankers-meesho",
+    "soft-curriculum-fresh-generalized-recs",
+    "tssr-beta-interaction-head-retrieval"
+   ],
+   "forms": {
+    "industrial": 11
+   }
+  },
+  {
+   "id": "eval_methodology",
+   "label": "eval_methodology",
+   "count": 9,
+   "slugs": [
+    "capacity-probes-pairwise-envelope",
+    "keeping-the-index-open-dual-encoder-cost",
+    "ordinal-attribute-calibration",
+    "recevolve-autonomous-agent-recsys",
+    "recseed-training-seed-model-selection",
+    "repeat-utility-timing-metrics",
+    "said-calibrating-reproduced-claims",
+    "seed-variance-sequential-recommender-tests",
+    "tie-breaking-illusion"
+   ],
+   "forms": {
+    "eval-methodology": 2,
+    "eval_methodology": 7
+   }
+  },
+  {
+   "id": "sasrec",
+   "label": "SASRec",
+   "count": 9,
+   "slugs": [
+    "amazon-music-retrieval-embedding-ranker-feature",
+    "asmoe-automated-selection-moe-seqrec",
+    "capacity-probes-pairwise-envelope",
+    "hsr-hamiltonian-spectral-sequential-rec",
+    "recrec-latent-interests-recursive-reasoning",
+    "recseed-training-seed-model-selection",
+    "residual-dominance",
+    "seed-variance-sequential-recommender-tests",
+    "soft-curriculum-fresh-generalized-recs"
+   ],
+   "forms": {
+    "sasrec": 4,
+    "SASRec": 5
+   }
+  },
+  {
+   "id": "popularity_bias",
+   "label": "popularity_bias",
+   "count": 8,
+   "slugs": [
+    "cluster-goobs-llm-hard-negatives",
+    "gtp-group-aware-token-pruning-popularity",
+    "ordinal-attribute-calibration",
+    "pcp-decoding-popularity-calibration-genret",
+    "redundancy-reduction-controllable-seqrec",
+    "schedl-cognitive-biases-recsys-tutorial",
+    "soft-curriculum-fresh-generalized-recs",
+    "youtube-music-breaking-the-loop-interventions"
+   ],
+   "forms": {
+    "popularity_bias": 7,
+    "popularity-bias": 1
+   }
+  },
+  {
+   "id": "sequential",
+   "label": "sequential",
+   "count": 8,
+   "slugs": [
+    "asmoe-automated-selection-moe-seqrec",
+    "dpgflow-flow-matching-cross-domain-seqrec",
+    "gtp-group-aware-token-pruning-popularity",
+    "hsr-hamiltonian-spectral-sequential-rec",
+    "hyperbrec-hyperbolic-dct-attention",
+    "meta-request-only-sequence-scaling-ads",
+    "pcore-filter-split-order-noncommute",
+    "recrec-latent-interests-recursive-reasoning"
+   ],
+   "forms": {
+    "sequential": 8
+   }
+  },
+  {
+   "id": "tokenization",
+   "label": "tokenization",
+   "count": 8,
+   "slugs": [
+    "adaptive-sid-construction-branches",
+    "cofirec-coarse-to-fine-tokenization",
+    "cross-stage-decoupling-semantic-collaborative-genrec",
+    "g2rec-interest-profile-tokenization",
+    "sid-collision-last-token-resolution",
+    "sidec-dual-purpose-semantic-ids",
+    "soda-distribution-level-contrastive",
+    "topotok-topology-aware-tokenization"
+   ],
+   "forms": {
+    "tokenization": 8
+   }
+  },
+  {
+   "id": "tiger",
+   "label": "TIGER",
+   "count": 7,
+   "slugs": [
+    "adaptive-sid-construction-branches",
+    "cofirec-coarse-to-fine-tokenization",
+    "cosid-concept-conditioned-sid-decoding",
+    "cross-stage-decoupling-semantic-collaborative-genrec",
+    "sid-collision-last-token-resolution",
+    "soda-distribution-level-contrastive",
+    "topotok-topology-aware-tokenization"
+   ],
+   "forms": {
+    "TIGER": 4,
+    "tiger": 3
+   }
+  },
+  {
+   "id": "two_tower",
+   "label": "two_tower",
+   "count": 7,
+   "slugs": [
+    "amazon-music-retrieval-embedding-ranker-feature",
+    "cluster-goobs-llm-hard-negatives",
+    "egr-embedding-native-generative-retrieval",
+    "embedding-subspace-partitioning-multi-objective-retrieval",
+    "keeping-the-index-open-dual-encoder-cost",
+    "recevolve-autonomous-agent-recsys",
+    "soft-curriculum-fresh-generalized-recs"
+   ],
+   "forms": {
+    "two_tower": 7
+   }
+  },
+  {
+   "id": "beam_search",
+   "label": "beam_search",
+   "count": 5,
+   "slugs": [
+    "bonsai-decoding-trie-optimization",
+    "coarse-to-fine-long-term-interest-genrec",
+    "cosid-concept-conditioned-sid-decoding",
+    "pcp-decoding-popularity-calibration-genret",
+    "promise-process-reward-generative-rec"
+   ],
+   "forms": {
+    "beam_search": 4,
+    "beam-search": 1
+   }
+  },
+  {
+   "id": "ranking",
+   "label": "ranking",
+   "count": 5,
+   "slugs": [
+    "amazon-music-retrieval-embedding-ranker-feature",
+    "learned-cross-task-relationships-youtube",
+    "meta-request-only-sequence-scaling-ads",
+    "reef-explore-exploit-dual-rankers-meesho",
+    "sample-is-feature-sample-level-tokens"
+   ],
+   "forms": {
+    "ranking": 5
+   }
+  },
+  {
+   "id": "rq_vae",
+   "label": "RQ-VAE",
+   "count": 5,
+   "slugs": [
+    "codebook-sid-five-fractures",
+    "cross-stage-decoupling-semantic-collaborative-genrec",
+    "gencdsr-hybrid-tokenization",
+    "soda-distribution-level-contrastive",
+    "topotok-topology-aware-tokenization"
+   ],
+   "forms": {
+    "rq_vae": 3,
+    "RQ_VAE": 1,
+    "RQ-VAE": 1
+   }
+  },
+  {
+   "id": "выбор_колонки",
+   "label": "выбор_колонки",
+   "count": 5,
+   "slugs": [
+    "bonsai-decoding-trie-optimization",
+    "capacity-probes-pairwise-envelope",
+    "sidec-dual-purpose-semantic-ids",
+    "syf-shape-your-feed",
+    "unipinrec-full-stack-unification"
+   ],
+   "forms": {
+    "выбор_колонки": 4,
+    "выбор-колонки": 1
+   }
+  },
+  {
+   "id": "amazon",
+   "label": "Amazon",
+   "count": 4,
+   "slugs": [
+    "adaptive-sid-construction-branches",
+    "cross-stage-decoupling-semantic-collaborative-genrec",
+    "inbatch-negatives-cripple-llm-seqrec",
+    "sid-collision-last-token-resolution"
+   ],
+   "forms": {
+    "Amazon": 3,
+    "amazon": 1
+   }
+  },
+  {
+   "id": "evaluation",
+   "label": "evaluation",
+   "count": 4,
+   "slugs": [
+    "codebook-sid-five-fractures",
+    "position-bias-listwise-llm-reranking",
+    "soda-distribution-level-contrastive",
+    "tau-rec"
+   ],
+   "forms": {
+    "evaluation": 4
+   }
+  },
+  {
+   "id": "воспроизводимость",
+   "label": "воспроизводимость",
+   "count": 4,
+   "slugs": [
+    "keeping-the-index-open-dual-encoder-cost",
+    "pcore-filter-split-order-noncommute",
+    "recseed-training-seed-model-selection",
+    "tie-breaking-illusion"
+   ],
+   "forms": {
+    "воспроизводимость": 4
+   }
+  },
+  {
+   "id": "calibration",
+   "label": "calibration",
+   "count": 3,
+   "slugs": [
+    "bootstrap-iips-offpolicy-evaluation",
+    "hipa-net-intent-projection-cvr-calibration",
+    "ordinal-attribute-calibration"
+   ],
+   "forms": {
+    "calibration": 3
+   }
+  },
+  {
+   "id": "content_embedding",
+   "label": "content_embedding",
+   "count": 3,
+   "slugs": [
+    "cross-stage-decoupling-semantic-collaborative-genrec",
+    "egr-embedding-native-generative-retrieval",
+    "sparse-multimodal-cold-item-embeddings"
+   ],
+   "forms": {
+    "content_embedding": 3
+   }
+  },
+  {
+   "id": "contrastive",
+   "label": "contrastive",
+   "count": 3,
+   "slugs": [
+    "dpgflow-flow-matching-cross-domain-seqrec",
+    "egr-embedding-native-generative-retrieval",
+    "soda-distribution-level-contrastive"
+   ],
+   "forms": {
+    "contrastive": 3
+   }
+  },
+  {
+   "id": "ctr",
+   "label": "CTR",
+   "count": 3,
+   "slugs": [
+    "idproxy-mllm-cold-start-ctr",
+    "transact-v2-lifelong-sequences-pinterest",
+    "user-foundation-model-open-web"
+   ],
+   "forms": {
+    "ctr": 2,
+    "CTR": 1
+   }
+  },
+  {
+   "id": "ecommerce",
+   "label": "ecommerce",
+   "count": 3,
+   "slugs": [
+    "reef-explore-exploit-dual-rankers-meesho",
+    "repeat-utility-timing-metrics",
+    "tssr-beta-interaction-head-retrieval"
+   ],
+   "forms": {
+    "ecommerce": 3
+   }
+  },
+  {
+   "id": "generative_recommendation",
+   "label": "generative_recommendation",
+   "count": 3,
+   "slugs": [
+    "codebook-sid-five-fractures",
+    "g2rec-interest-profile-tokenization",
+    "soda-distribution-level-contrastive"
+   ],
+   "forms": {
+    "generative_recommendation": 3
+   }
+  },
+  {
+   "id": "kuaishou",
+   "label": "Kuaishou",
+   "count": 3,
+   "slugs": [
+    "coarse-to-fine-long-term-interest-genrec",
+    "hipa-net-intent-projection-cvr-calibration",
+    "promise-process-reward-generative-rec"
+   ],
+   "forms": {
+    "Kuaishou": 2,
+    "kuaishou": 1
+   }
+  },
+  {
+   "id": "llm_recsys",
+   "label": "llm_recsys",
+   "count": 3,
+   "slugs": [
+    "egr-embedding-native-generative-retrieval",
+    "g2rec-interest-profile-tokenization",
+    "sid-alignment-openonerec-diagnostics"
+   ],
+   "forms": {
+    "llm_recsys": 3
+   }
+  },
+  {
+   "id": "long_tail",
+   "label": "long_tail",
+   "count": 3,
+   "slugs": [
+    "adaptive-sid-construction-branches",
+    "pcp-decoding-popularity-calibration-genret",
+    "scaling-l3ae-industrial-catalogs"
+   ],
+   "forms": {
+    "long_tail": 3
+   }
+  },
+  {
+   "id": "position_bias",
+   "label": "position_bias",
+   "count": 3,
+   "slugs": [
+    "control-function-position-bias-ltr",
+    "position-bias-listwise-llm-reranking",
+    "schedl-cognitive-biases-recsys-tutorial"
+   ],
+   "forms": {
+    "position_bias": 2,
+    "position-bias": 1
+   }
+  },
+  {
+   "id": "retrieval",
+   "label": "retrieval",
+   "count": 3,
+   "slugs": [
+    "embedding-subspace-partitioning-multi-objective-retrieval",
+    "mesh-heterogeneous-content-unification",
+    "tssr-beta-interaction-head-retrieval"
+   ],
+   "forms": {
+    "retrieval": 3
+   }
+  },
+  {
+   "id": "sequential_recommendation",
+   "label": "sequential-recommendation",
+   "count": 3,
+   "slugs": [
+    "redundancy-reduction-controllable-seqrec",
+    "residual-dominance",
+    "tsd-sr-topology-aware-spectral-denoising-sisr"
+   ],
+   "forms": {
+    "sequential_recommendation": 1,
+    "sequential-recommendation": 2
+   }
+  },
+  {
+   "id": "youtube",
+   "label": "YouTube",
+   "count": 3,
+   "slugs": [
+    "lightweight-ranking-heads-stop-gradient",
+    "sidec-dual-purpose-semantic-ids",
+    "soft-curriculum-fresh-generalized-recs"
+   ],
+   "forms": {
+    "YouTube": 2,
+    "youtube": 1
+   }
+  },
+  {
+   "id": "абляция",
+   "label": "абляция",
+   "count": 3,
+   "slugs": [
+    "sidec-dual-purpose-semantic-ids",
+    "syf-shape-your-feed",
+    "unipinrec-full-stack-unification"
+   ],
+   "forms": {
+    "абляция": 3
+   }
+  },
+  {
+   "id": "индустриальная_статья",
+   "label": "индустриальная_статья",
+   "count": 3,
+   "slugs": [
+    "sidec-dual-purpose-semantic-ids",
+    "unipinrec-full-stack-unification",
+    "youtube-music-breaking-the-loop-interventions"
+   ],
+   "forms": {
+    "индустриальная_статья": 3
+   }
+  },
+  {
+   "id": "arxiv",
+   "label": "arXiv",
+   "count": 2,
+   "slugs": [
+    "idproxy-mllm-cold-start-ctr",
+    "learned-cross-task-relationships-youtube"
+   ],
+   "forms": {
+    "arXiv": 2
+   }
+  },
+  {
+   "id": "bert4rec",
+   "label": "BERT4Rec",
+   "count": 2,
+   "slugs": [
+    "recseed-training-seed-model-selection",
+    "said-calibrating-reproduced-claims"
+   ],
+   "forms": {
+    "BERT4Rec": 1,
+    "bert4rec": 1
+   }
+  },
+  {
+   "id": "bootstrap",
+   "label": "bootstrap",
+   "count": 2,
+   "slugs": [
+    "bootstrap-iips-offpolicy-evaluation",
+    "seed-variance-sequential-recommender-tests"
+   ],
+   "forms": {
+    "bootstrap": 2
+   }
+  },
+  {
+   "id": "bpr",
+   "label": "BPR",
+   "count": 2,
+   "slugs": [
+    "recseed-training-seed-model-selection",
+    "tie-breaking-illusion"
+   ],
+   "forms": {
+    "BPR": 2
+   }
+  },
+  {
+   "id": "collisions",
+   "label": "collisions",
+   "count": 2,
+   "slugs": [
+    "codebook-sid-five-fractures",
+    "sid-collision-last-token-resolution"
+   ],
+   "forms": {
+    "collisions": 2
+   }
+  },
+  {
+   "id": "conversational_recsys",
+   "label": "conversational_recsys",
+   "count": 2,
+   "slugs": [
+    "syf-shape-your-feed",
+    "tau-rec"
+   ],
+   "forms": {
+    "conversational_recsys": 2
+   }
+  },
+  {
+   "id": "cross_domain",
+   "label": "cross-domain",
+   "count": 2,
+   "slugs": [
+    "dpgflow-flow-matching-cross-domain-seqrec",
+    "gencdsr-hybrid-tokenization"
+   ],
+   "forms": {
+    "cross-domain": 2
+   }
+  },
+  {
+   "id": "debiasing",
+   "label": "debiasing",
+   "count": 2,
+   "slugs": [
+    "conalign-conditional-debiasing",
+    "gtp-group-aware-token-pruning-popularity"
+   ],
+   "forms": {
+    "debiasing": 2
+   }
+  },
+  {
+   "id": "discovery",
+   "label": "discovery",
+   "count": 2,
+   "slugs": [
+    "deezer-discovery-quality-familiarity",
+    "reef-explore-exploit-dual-rankers-meesho"
+   ],
+   "forms": {
+    "discovery": 2
+   }
+  },
+  {
+   "id": "gating",
+   "label": "gating",
+   "count": 2,
+   "slugs": [
+    "coarse-to-fine-long-term-interest-genrec",
+    "cross-stage-decoupling-semantic-collaborative-genrec"
+   ],
+   "forms": {
+    "gating": 2
+   }
+  },
+  {
+   "id": "hyperbolic",
+   "label": "hyperbolic",
+   "count": 2,
+   "slugs": [
+    "cross-stage-decoupling-semantic-collaborative-genrec",
+    "hyperbrec-hyperbolic-dct-attention"
+   ],
+   "forms": {
+    "hyperbolic": 2
+   }
+  },
+  {
+   "id": "in_batch",
+   "label": "in_batch",
+   "count": 2,
+   "slugs": [
+    "inbatch-negatives-cripple-llm-seqrec",
+    "recevolve-autonomous-agent-recsys"
+   ],
+   "forms": {
+    "in_batch": 2
+   }
+  },
+  {
+   "id": "industry",
+   "label": "industry",
+   "count": 2,
+   "slugs": [
+    "mesh-heterogeneous-content-unification",
+    "sample-is-feature-sample-level-tokens"
+   ],
+   "forms": {
+    "industry": 2
+   }
+  },
+  {
+   "id": "inference_cost",
+   "label": "inference_cost",
+   "count": 2,
+   "slugs": [
+    "cosid-concept-conditioned-sid-decoding",
+    "mdgr-masked-diffusion-genrec"
+   ],
+   "forms": {
+    "inference_cost": 2
+   }
+  },
+  {
+   "id": "interpretability",
+   "label": "interpretability",
+   "count": 2,
+   "slugs": [
+    "compresso-sparse-representation-library-demo",
+    "residual-dominance"
+   ],
+   "forms": {
+    "interpretability": 2
+   }
+  },
+  {
+   "id": "knowledge_distillation",
+   "label": "knowledge_distillation",
+   "count": 2,
+   "slugs": [
+    "conalign-conditional-debiasing",
+    "cosid-concept-conditioned-sid-decoding"
+   ],
+   "forms": {
+    "knowledge_distillation": 2
+   }
+  },
+  {
+   "id": "linear_autoencoder",
+   "label": "linear_autoencoder",
+   "count": 2,
+   "slugs": [
+    "scaling-l3ae-industrial-catalogs",
+    "sparse-multimodal-cold-item-embeddings"
+   ],
+   "forms": {
+    "linear_autoencoder": 2
+   }
+  },
+  {
+   "id": "llm_agents",
+   "label": "llm_agents",
+   "count": 2,
+   "slugs": [
+    "recevolve-autonomous-agent-recsys",
+    "tau-rec"
+   ],
+   "forms": {
+    "llm_agents": 1,
+    "LLM_agents": 1
+   }
+  },
+  {
+   "id": "multi_behavior",
+   "label": "multi_behavior",
+   "count": 2,
+   "slugs": [
+    "hipa-net-intent-projection-cvr-calibration",
+    "hyperbrec-hyperbolic-dct-attention"
+   ],
+   "forms": {
+    "multi_behavior": 2
+   }
+  },
+  {
+   "id": "multi_task",
+   "label": "multi_task",
+   "count": 2,
+   "slugs": [
+    "learned-cross-task-relationships-youtube",
+    "reef-explore-exploit-dual-rankers-meesho"
+   ],
+   "forms": {
+    "multi_task": 2
+   }
+  },
+  {
+   "id": "negative_sampling",
+   "label": "negative_sampling",
+   "count": 2,
+   "slugs": [
+    "cluster-goobs-llm-hard-negatives",
+    "inbatch-negatives-cripple-llm-seqrec"
+   ],
+   "forms": {
+    "negative_sampling": 2
+   }
+  },
+  {
+   "id": "off_policy",
+   "label": "off_policy",
+   "count": 2,
+   "slugs": [
+    "bootstrap-iips-offpolicy-evaluation",
+    "rohde-reward-optimizing-recsys-tutorial"
+   ],
+   "forms": {
+    "off_policy": 1,
+    "off-policy": 1
+   }
+  },
+  {
+   "id": "onerec",
+   "label": "onerec",
+   "count": 2,
+   "slugs": [
+    "sid-alignment-openonerec-diagnostics",
+    "unirec-chain-of-attribute-genrec"
+   ],
+   "forms": {
+    "onerec": 2
+   }
+  },
+  {
+   "id": "pinterest",
+   "label": "pinterest",
+   "count": 2,
+   "slugs": [
+    "mesh-heterogeneous-content-unification",
+    "transact-v2-lifelong-sequences-pinterest"
+   ],
+   "forms": {
+    "pinterest": 1,
+    "Pinterest": 1
+   }
+  },
+  {
+   "id": "protocol",
+   "label": "protocol",
+   "count": 2,
+   "slugs": [
+    "said-calibrating-reproduced-claims",
+    "seed-variance-sequential-recommender-tests"
+   ],
+   "forms": {
+    "protocol": 2
+   }
+  },
+  {
+   "id": "recbole",
+   "label": "RecBole",
+   "count": 2,
+   "slugs": [
+    "asmoe-automated-selection-moe-seqrec",
+    "tsd-sr-topology-aware-spectral-denoising-sisr"
+   ],
+   "forms": {
+    "recbole": 1,
+    "RecBole": 1
+   }
+  },
+  {
+   "id": "repeat_consumption",
+   "label": "repeat_consumption",
+   "count": 2,
+   "slugs": [
+    "deezer-discovery-quality-familiarity",
+    "repeat-utility-timing-metrics"
+   ],
+   "forms": {
+    "repeat_consumption": 2
+   }
+  },
+  {
+   "id": "repeat_explore",
+   "label": "repeat_explore",
+   "count": 2,
+   "slugs": [
+    "capacity-probes-pairwise-envelope",
+    "residual-dominance"
+   ],
+   "forms": {
+    "repeat_explore": 1,
+    "repeat-explore": 1
+   }
+  },
+  {
+   "id": "scaling",
+   "label": "scaling",
+   "count": 2,
+   "slugs": [
+    "meta-request-only-sequence-scaling-ads",
+    "sample-is-feature-sample-level-tokens"
+   ],
+   "forms": {
+    "scaling": 2
+   }
+  },
+  {
+   "id": "scaling_law",
+   "label": "scaling_law",
+   "count": 2,
+   "slugs": [
+    "mesh-heterogeneous-content-unification",
+    "netflix-scaling-generative-recommenders-mtp"
+   ],
+   "forms": {
+    "scaling_law": 2
+   }
+  },
+  {
+   "id": "self_supervised",
+   "label": "self_supervised",
+   "count": 2,
+   "slugs": [
+    "redundancy-reduction-controllable-seqrec",
+    "user-foundation-model-open-web"
+   ],
+   "forms": {
+    "self_supervised": 2
+   }
+  },
+  {
+   "id": "serving",
+   "label": "serving",
+   "count": 2,
+   "slugs": [
+    "embedding-subspace-partitioning-multi-objective-retrieval",
+    "meta-request-only-sequence-scaling-ads"
+   ],
+   "forms": {
+    "serving": 2
+   }
+  },
+  {
+   "id": "short_paper",
+   "label": "short_paper",
+   "count": 2,
+   "slugs": [
+    "sid-collision-last-token-resolution",
+    "soda-distribution-level-contrastive"
+   ],
+   "forms": {
+    "short_paper": 2
+   }
+  },
+  {
+   "id": "sngp",
+   "label": "SNGP",
+   "count": 2,
+   "slugs": [
+    "soft-curriculum-fresh-generalized-recs",
+    "youtube-music-breaking-the-loop-interventions"
+   ],
+   "forms": {
+    "SNGP": 2
+   }
+  },
+  {
+   "id": "sparse_autoencoder",
+   "label": "sparse-autoencoder",
+   "count": 2,
+   "slugs": [
+    "compresso-sparse-representation-library-demo",
+    "sae-semantic-domain-adapters"
+   ],
+   "forms": {
+    "sparse-autoencoder": 1,
+    "sparse_autoencoder": 1
+   }
+  },
+  {
+   "id": "tutorial",
+   "label": "tutorial",
+   "count": 2,
+   "slugs": [
+    "rohde-reward-optimizing-recsys-tutorial",
+    "schedl-cognitive-biases-recsys-tutorial"
+   ],
+   "forms": {
+    "tutorial": 2
+   }
+  },
+  {
+   "id": "user_modeling",
+   "label": "user-modeling",
+   "count": 2,
+   "slugs": [
+    "schedl-cognitive-biases-recsys-tutorial",
+    "uprec-llm-user-profile-session-social-rec"
+   ],
+   "forms": {
+    "user-modeling": 2
+   }
+  },
+  {
+   "id": "генеративные_рекомендации",
+   "label": "генеративные-рекомендации",
+   "count": 2,
+   "slugs": [
+    "promise-process-reward-generative-rec",
+    "unipinrec-full-stack-unification"
+   ],
+   "forms": {
+    "генеративные-рекомендации": 1,
+    "генеративные_рекомендации": 1
+   }
+  },
+  {
+   "id": "негативы",
+   "label": "негативы",
+   "count": 2,
+   "slugs": [
+    "keeping-the-index-open-dual-encoder-cost",
+    "transact-v2-lifelong-sequences-pinterest"
+   ],
+   "forms": {
+    "негативы": 2
+   }
+  },
+  {
+   "id": "офлайн_оценка",
+   "label": "офлайн_оценка",
+   "count": 2,
+   "slugs": [
+    "tie-breaking-illusion",
+    "timing-aware-repurchase-survival"
+   ],
+   "forms": {
+    "офлайн_оценка": 2
+   }
+  },
+  {
+   "id": "препринт",
+   "label": "препринт",
+   "count": 2,
+   "slugs": [
+    "transact-v2-lifelong-sequences-pinterest",
+    "unipinrec-full-stack-unification"
+   ],
+   "forms": {
+    "препринт": 2
+   }
+  },
+  {
+   "id": "ранжирование",
+   "label": "ранжирование",
+   "count": 2,
+   "slugs": [
+    "lightweight-ranking-heads-stop-gradient",
+    "transact-v2-lifelong-sequences-pinterest"
+   ],
+   "forms": {
+    "ранжирование": 2
+   }
+  },
+  {
+   "id": "рекомендательные_системы",
+   "label": "рекомендательные_системы",
+   "count": 2,
+   "slugs": [
+    "capacity-probes-pairwise-envelope",
+    "tie-breaking-illusion"
+   ],
+   "forms": {
+    "рекомендательные_системы": 2
+   }
+  },
+  {
+   "id": "сплит",
+   "label": "сплит",
+   "count": 2,
+   "slugs": [
+    "keeping-the-index-open-dual-encoder-cost",
+    "pcore-filter-split-order-noncommute"
+   ],
+   "forms": {
+    "сплит": 2
+   }
+  },
+  {
+   "id": "a_b",
+   "label": "A_B",
+   "count": 1,
+   "slugs": [
+    "transact-v2-lifelong-sequences-pinterest"
+   ],
+   "forms": {
+    "A_B": 1
+   }
+  },
+  {
+   "id": "ab_testing",
+   "label": "ab-testing",
+   "count": 1,
+   "slugs": [
+    "rohde-reward-optimizing-recsys-tutorial"
+   ],
+   "forms": {
+    "ab-testing": 1
+   }
+  },
+  {
+   "id": "agentic_recsys",
+   "label": "agentic_recsys",
+   "count": 1,
+   "slugs": [
+    "tau-rec"
+   ],
+   "forms": {
+    "agentic_recsys": 1
+   }
+  },
+  {
+   "id": "alibaba",
+   "label": "alibaba",
+   "count": 1,
+   "slugs": [
+    "mdgr-masked-diffusion-genrec"
+   ],
+   "forms": {
+    "alibaba": 1
+   }
+  },
+  {
+   "id": "alignment",
+   "label": "alignment",
+   "count": 1,
+   "slugs": [
+    "sid-alignment-openonerec-diagnostics"
+   ],
+   "forms": {
+    "alignment": 1
+   }
+  },
+  {
+   "id": "autoresearch",
+   "label": "autoresearch",
+   "count": 1,
+   "slugs": [
+    "recevolve-autonomous-agent-recsys"
+   ],
+   "forms": {
+    "autoresearch": 1
+   }
+  },
+  {
+   "id": "auxiliary_loss",
+   "label": "auxiliary_loss",
+   "count": 1,
+   "slugs": [
+    "learned-cross-task-relationships-youtube"
+   ],
+   "forms": {
+    "auxiliary_loss": 1
+   }
+  },
+  {
+   "id": "baidu_ultr",
+   "label": "baidu_ultr",
+   "count": 1,
+   "slugs": [
+    "control-function-position-bias-ltr"
+   ],
+   "forms": {
+    "baidu_ultr": 1
+   }
+  },
+  {
+   "id": "barlow_twins",
+   "label": "barlow_twins",
+   "count": 1,
+   "slugs": [
+    "redundancy-reduction-controllable-seqrec"
+   ],
+   "forms": {
+    "barlow_twins": 1
+   }
+  },
+  {
+   "id": "benchmark",
+   "label": "benchmark",
+   "count": 1,
+   "slugs": [
+    "tau-rec"
+   ],
+   "forms": {
+    "benchmark": 1
+   }
+  },
+  {
+   "id": "causal_inference",
+   "label": "causal-inference",
+   "count": 1,
+   "slugs": [
+    "rohde-reward-optimizing-recsys-tutorial"
+   ],
+   "forms": {
+    "causal-inference": 1
+   }
+  },
+  {
+   "id": "chain_of_attribute",
+   "label": "chain_of_attribute",
+   "count": 1,
+   "slugs": [
+    "unirec-chain-of-attribute-genrec"
+   ],
+   "forms": {
+    "chain_of_attribute": 1
+   }
+  },
+  {
+   "id": "click_debiasing",
+   "label": "click_debiasing",
+   "count": 1,
+   "slugs": [
+    "control-function-position-bias-ltr"
+   ],
+   "forms": {
+    "click_debiasing": 1
+   }
+  },
+  {
+   "id": "codebook",
+   "label": "codebook",
+   "count": 1,
+   "slugs": [
+    "codebook-sid-five-fractures"
+   ],
+   "forms": {
+    "codebook": 1
+   }
+  },
+  {
+   "id": "cognitive_biases",
+   "label": "cognitive-biases",
+   "count": 1,
+   "slugs": [
+    "schedl-cognitive-biases-recsys-tutorial"
+   ],
+   "forms": {
+    "cognitive-biases": 1
+   }
+  },
+  {
+   "id": "collaborative_filtering",
+   "label": "collaborative_filtering",
+   "count": 1,
+   "slugs": [
+    "scaling-l3ae-industrial-catalogs"
+   ],
+   "forms": {
+    "collaborative_filtering": 1
+   }
+  },
+  {
+   "id": "collaborative_signal",
+   "label": "collaborative_signal",
+   "count": 1,
+   "slugs": [
+    "cross-stage-decoupling-semantic-collaborative-genrec"
+   ],
+   "forms": {
+    "collaborative_signal": 1
+   }
+  },
+  {
+   "id": "content_based",
+   "label": "content_based",
+   "count": 1,
+   "slugs": [
+    "sae-semantic-domain-adapters"
+   ],
+   "forms": {
+    "content_based": 1
+   }
+  },
+  {
+   "id": "continuous_training",
+   "label": "continuous_training",
+   "count": 1,
+   "slugs": [
+    "soft-curriculum-fresh-generalized-recs"
+   ],
+   "forms": {
+    "continuous_training": 1
+   }
+  },
+  {
+   "id": "control_function",
+   "label": "control_function",
+   "count": 1,
+   "slugs": [
+    "control-function-position-bias-ltr"
+   ],
+   "forms": {
+    "control_function": 1
+   }
+  },
+  {
+   "id": "counterfactual",
+   "label": "counterfactual",
+   "count": 1,
+   "slugs": [
+    "bootstrap-iips-offpolicy-evaluation"
+   ],
+   "forms": {
+    "counterfactual": 1
+   }
+  },
+  {
+   "id": "coverage",
+   "label": "coverage",
+   "count": 1,
+   "slugs": [
+    "redundancy-reduction-controllable-seqrec"
+   ],
+   "forms": {
+    "coverage": 1
+   }
+  },
+  {
+   "id": "curriculum_learning",
+   "label": "curriculum_learning",
+   "count": 1,
+   "slugs": [
+    "soft-curriculum-fresh-generalized-recs"
+   ],
+   "forms": {
+    "curriculum_learning": 1
+   }
+  },
+  {
+   "id": "cvr",
+   "label": "cvr",
+   "count": 1,
+   "slugs": [
+    "hipa-net-intent-projection-cvr-calibration"
+   ],
+   "forms": {
+    "cvr": 1
+   }
+  },
+  {
+   "id": "decoding",
+   "label": "decoding",
+   "count": 1,
+   "slugs": [
+    "pcp-decoding-popularity-calibration-genret"
+   ],
+   "forms": {
+    "decoding": 1
+   }
+  },
+  {
+   "id": "decoding_trie",
+   "label": "decoding_trie",
+   "count": 1,
+   "slugs": [
+    "bonsai-decoding-trie-optimization"
+   ],
+   "forms": {
+    "decoding_trie": 1
+   }
+  },
+  {
+   "id": "deep_supervision",
+   "label": "deep_supervision",
+   "count": 1,
+   "slugs": [
+    "recrec-latent-interests-recursive-reasoning"
+   ],
+   "forms": {
+    "deep_supervision": 1
+   }
+  },
+  {
+   "id": "demo",
+   "label": "demo",
+   "count": 1,
+   "slugs": [
+    "compresso-sparse-representation-library-demo"
+   ],
+   "forms": {
+    "demo": 1
+   }
+  },
+  {
+   "id": "denoising",
+   "label": "denoising",
+   "count": 1,
+   "slugs": [
+    "tsd-sr-topology-aware-spectral-denoising-sisr"
+   ],
+   "forms": {
+    "denoising": 1
+   }
+  },
+  {
+   "id": "diagnostics",
+   "label": "diagnostics",
+   "count": 1,
+   "slugs": [
+    "residual-dominance"
+   ],
+   "forms": {
+    "diagnostics": 1
+   }
+  },
+  {
+   "id": "distillation",
+   "label": "distillation",
+   "count": 1,
+   "slugs": [
+    "topotok-topology-aware-tokenization"
+   ],
+   "forms": {
+    "distillation": 1
+   }
+  },
+  {
+   "id": "diversity",
+   "label": "diversity",
+   "count": 1,
+   "slugs": [
+    "sage-sequence-adaptive-gradient-evolution"
+   ],
+   "forms": {
+    "diversity": 1
+   }
+  },
+  {
+   "id": "dpo",
+   "label": "DPO",
+   "count": 1,
+   "slugs": [
+    "syf-shape-your-feed"
+   ],
+   "forms": {
+    "DPO": 1
+   }
+  },
+  {
+   "id": "dual_encoder",
+   "label": "dual_encoder",
+   "count": 1,
+   "slugs": [
+    "tssr-beta-interaction-head-retrieval"
+   ],
+   "forms": {
+    "dual_encoder": 1
+   }
+  },
+  {
+   "id": "e_commerce",
+   "label": "e_commerce",
+   "count": 1,
+   "slugs": [
+    "unirec-chain-of-attribute-genrec"
+   ],
+   "forms": {
+    "e_commerce": 1
+   }
+  },
+  {
+   "id": "e_grocery",
+   "label": "e_grocery",
+   "count": 1,
+   "slugs": [
+    "timing-aware-repurchase-survival"
+   ],
+   "forms": {
+    "e_grocery": 1
+   }
+  },
+  {
+   "id": "econometrics",
+   "label": "econometrics",
+   "count": 1,
+   "slugs": [
+    "control-function-position-bias-ltr"
+   ],
+   "forms": {
+    "econometrics": 1
+   }
+  },
+  {
+   "id": "efficient_attention",
+   "label": "efficient_attention",
+   "count": 1,
+   "slugs": [
+    "hyperbrec-hyperbolic-dct-attention"
+   ],
+   "forms": {
+    "efficient_attention": 1
+   }
+  },
+  {
+   "id": "elsa",
+   "label": "elsa",
+   "count": 1,
+   "slugs": [
+    "sparse-multimodal-cold-item-embeddings"
+   ],
+   "forms": {
+    "elsa": 1
+   }
+  },
+  {
+   "id": "embedding_compression",
+   "label": "embedding-compression",
+   "count": 1,
+   "slugs": [
+    "compresso-sparse-representation-library-demo"
+   ],
+   "forms": {
+    "embedding-compression": 1
+   }
+  },
+  {
+   "id": "esasrec",
+   "label": "eSASRec",
+   "count": 1,
+   "slugs": [
+    "capacity-probes-pairwise-envelope"
+   ],
+   "forms": {
+    "eSASRec": 1
+   }
+  },
+  {
+   "id": "etegrec",
+   "label": "etegrec",
+   "count": 1,
+   "slugs": [
+    "topotok-topology-aware-tokenization"
+   ],
+   "forms": {
+    "etegrec": 1
+   }
+  },
+  {
+   "id": "exhaustive_knn",
+   "label": "exhaustive_KNN",
+   "count": 1,
+   "slugs": [
+    "embedding-subspace-partitioning-multi-objective-retrieval"
+   ],
+   "forms": {
+    "exhaustive_KNN": 1
+   }
+  },
+  {
+   "id": "exploration",
+   "label": "exploration",
+   "count": 1,
+   "slugs": [
+    "youtube-music-breaking-the-loop-interventions"
+   ],
+   "forms": {
+    "exploration": 1
+   }
+  },
+  {
+   "id": "explore_exploit",
+   "label": "explore_exploit",
+   "count": 1,
+   "slugs": [
+    "reef-explore-exploit-dual-rankers-meesho"
+   ],
+   "forms": {
+    "explore_exploit": 1
+   }
+  },
+  {
+   "id": "exposure_bias",
+   "label": "exposure_bias",
+   "count": 1,
+   "slugs": [
+    "conalign-conditional-debiasing"
+   ],
+   "forms": {
+    "exposure_bias": 1
+   }
+  },
+  {
+   "id": "exposure_fairness",
+   "label": "exposure_fairness",
+   "count": 1,
+   "slugs": [
+    "gtp-group-aware-token-pruning-popularity"
+   ],
+   "forms": {
+    "exposure_fairness": 1
+   }
+  },
+  {
+   "id": "familiarity",
+   "label": "familiarity",
+   "count": 1,
+   "slugs": [
+    "deezer-discovery-quality-familiarity"
+   ],
+   "forms": {
+    "familiarity": 1
+   }
+  },
+  {
+   "id": "feature_engineering",
+   "label": "feature_engineering",
+   "count": 1,
+   "slugs": [
+    "amazon-music-retrieval-embedding-ranker-feature"
+   ],
+   "forms": {
+    "feature_engineering": 1
+   }
+  },
+  {
+   "id": "feedback_loop",
+   "label": "feedback-loop",
+   "count": 1,
+   "slugs": [
+    "schedl-cognitive-biases-recsys-tutorial"
+   ],
+   "forms": {
+    "feedback-loop": 1
+   }
+  },
+  {
+   "id": "filter_bubble",
+   "label": "filter_bubble",
+   "count": 1,
+   "slugs": [
+    "conalign-conditional-debiasing"
+   ],
+   "forms": {
+    "filter_bubble": 1
+   }
+  },
+  {
+   "id": "flow_matching",
+   "label": "flow-matching",
+   "count": 1,
+   "slugs": [
+    "dpgflow-flow-matching-cross-domain-seqrec"
+   ],
+   "forms": {
+    "flow-matching": 1
+   }
+  },
+  {
+   "id": "freshness",
+   "label": "freshness",
+   "count": 1,
+   "slugs": [
+    "soft-curriculum-fresh-generalized-recs"
+   ],
+   "forms": {
+    "freshness": 1
+   }
+  },
+  {
+   "id": "full_softmax",
+   "label": "full_softmax",
+   "count": 1,
+   "slugs": [
+    "inbatch-negatives-cripple-llm-seqrec"
+   ],
+   "forms": {
+    "full_softmax": 1
+   }
+  },
+  {
+   "id": "generative",
+   "label": "generative",
+   "count": 1,
+   "slugs": [
+    "dpgflow-flow-matching-cross-domain-seqrec"
+   ],
+   "forms": {
+    "generative": 1
+   }
+  },
+  {
+   "id": "generative_recommender",
+   "label": "generative_recommender",
+   "count": 1,
+   "slugs": [
+    "netflix-scaling-generative-recommenders-mtp"
+   ],
+   "forms": {
+    "generative_recommender": 1
+   }
+  },
+  {
+   "id": "generative_recsys",
+   "label": "generative_recsys",
+   "count": 1,
+   "slugs": [
+    "sage-sequence-adaptive-gradient-evolution"
+   ],
+   "forms": {
+    "generative_recsys": 1
+   }
+  },
+  {
+   "id": "google",
+   "label": "google",
+   "count": 1,
+   "slugs": [
+    "recevolve-autonomous-agent-recsys"
+   ],
+   "forms": {
+    "google": 1
+   }
+  },
+  {
+   "id": "gradient_interference",
+   "label": "gradient_interference",
+   "count": 1,
+   "slugs": [
+    "mesh-heterogeneous-content-unification"
+   ],
+   "forms": {
+    "gradient_interference": 1
+   }
+  },
+  {
+   "id": "graph_clustering",
+   "label": "graph_clustering",
+   "count": 1,
+   "slugs": [
+    "g2rec-interest-profile-tokenization"
+   ],
+   "forms": {
+    "graph_clustering": 1
+   }
+  },
+  {
+   "id": "gru4rec",
+   "label": "gru4rec",
+   "count": 1,
+   "slugs": [
+    "seed-variance-sequential-recommender-tests"
+   ],
+   "forms": {
+    "gru4rec": 1
+   }
+  },
+  {
+   "id": "hard_negatives",
+   "label": "hard_negatives",
+   "count": 1,
+   "slugs": [
+    "cluster-goobs-llm-hard-negatives"
+   ],
+   "forms": {
+    "hard_negatives": 1
+   }
+  },
+  {
+   "id": "hard_search",
+   "label": "hard_search",
+   "count": 1,
+   "slugs": [
+    "coarse-to-fine-long-term-interest-genrec"
+   ],
+   "forms": {
+    "hard_search": 1
+   }
+  },
+  {
+   "id": "heckman",
+   "label": "heckman",
+   "count": 1,
+   "slugs": [
+    "control-function-position-bias-ltr"
+   ],
+   "forms": {
+    "heckman": 1
+   }
+  },
+  {
+   "id": "heterogeneous_feedback",
+   "label": "heterogeneous_feedback",
+   "count": 1,
+   "slugs": [
+    "hipa-net-intent-projection-cvr-calibration"
+   ],
+   "forms": {
+    "heterogeneous_feedback": 1
+   }
+  },
+  {
+   "id": "hierarchical_clustering",
+   "label": "hierarchical_clustering",
+   "count": 1,
+   "slugs": [
+    "adaptive-sid-construction-branches"
+   ],
+   "forms": {
+    "hierarchical_clustering": 1
+   }
+  },
+  {
+   "id": "hstu",
+   "label": "HSTU",
+   "count": 1,
+   "slugs": [
+    "hsr-hamiltonian-spectral-sequential-rec"
+   ],
+   "forms": {
+    "HSTU": 1
+   }
+  },
+  {
+   "id": "hypernetwork",
+   "label": "hypernetwork",
+   "count": 1,
+   "slugs": [
+    "meta-request-only-sequence-scaling-ads"
+   ],
+   "forms": {
+    "hypernetwork": 1
+   }
+  },
+  {
+   "id": "identifiability",
+   "label": "identifiability",
+   "count": 1,
+   "slugs": [
+    "rohde-reward-optimizing-recsys-tutorial"
+   ],
+   "forms": {
+    "identifiability": 1
+   }
+  },
+  {
+   "id": "implicit_feedback",
+   "label": "implicit_feedback",
+   "count": 1,
+   "slugs": [
+    "hipa-net-intent-projection-cvr-calibration"
+   ],
+   "forms": {
+    "implicit_feedback": 1
+   }
+  },
+  {
+   "id": "impression_негативы",
+   "label": "impression_негативы",
+   "count": 1,
+   "slugs": [
+    "transact-v2-lifelong-sequences-pinterest"
+   ],
+   "forms": {
+    "impression_негативы": 1
+   }
+  },
+  {
+   "id": "inference_time",
+   "label": "inference-time",
+   "count": 1,
+   "slugs": [
+    "residual-dominance"
+   ],
+   "forms": {
+    "inference-time": 1
+   }
+  },
+  {
+   "id": "infonce",
+   "label": "infonce",
+   "count": 1,
+   "slugs": [
+    "inbatch-negatives-cripple-llm-seqrec"
+   ],
+   "forms": {
+    "infonce": 1
+   }
+  },
+  {
+   "id": "initialization",
+   "label": "initialization",
+   "count": 1,
+   "slugs": [
+    "sid-alignment-openonerec-diagnostics"
+   ],
+   "forms": {
+    "initialization": 1
+   }
+  },
+  {
+   "id": "interaction_head",
+   "label": "interaction_head",
+   "count": 1,
+   "slugs": [
+    "tssr-beta-interaction-head-retrieval"
+   ],
+   "forms": {
+    "interaction_head": 1
+   }
+  },
+  {
+   "id": "io_эффективность",
+   "label": "IO_эффективность",
+   "count": 1,
+   "slugs": [
+    "sidec-dual-purpose-semantic-ids"
+   ],
+   "forms": {
+    "IO_эффективность": 1
+   }
+  },
+  {
+   "id": "ips",
+   "label": "ips",
+   "count": 1,
+   "slugs": [
+    "bootstrap-iips-offpolicy-evaluation"
+   ],
+   "forms": {
+    "ips": 1
+   }
+  },
+  {
+   "id": "ipw",
+   "label": "ipw",
+   "count": 1,
+   "slugs": [
+    "control-function-position-bias-ltr"
+   ],
+   "forms": {
+    "ipw": 1
+   }
+  },
+  {
+   "id": "item_embedding",
+   "label": "item_embedding",
+   "count": 1,
+   "slugs": [
+    "idproxy-mllm-cold-start-ctr"
+   ],
+   "forms": {
+    "item_embedding": 1
+   }
+  },
+  {
+   "id": "jd",
+   "label": "jd",
+   "count": 1,
+   "slugs": [
+    "pcp-decoding-popularity-calibration-genret"
+   ],
+   "forms": {
+    "jd": 1
+   }
+  },
+  {
+   "id": "kv_кэш",
+   "label": "KV_кэш",
+   "count": 1,
+   "slugs": [
+    "unipinrec-full-stack-unification"
+   ],
+   "forms": {
+    "KV_кэш": 1
+   }
+  },
+  {
+   "id": "labels",
+   "label": "labels",
+   "count": 1,
+   "slugs": [
+    "deezer-discovery-quality-familiarity"
+   ],
+   "forms": {
+    "labels": 1
+   }
+  },
+  {
+   "id": "lambdamart",
+   "label": "lambdamart",
+   "count": 1,
+   "slugs": [
+    "control-function-position-bias-ltr"
+   ],
+   "forms": {
+    "lambdamart": 1
+   }
+  },
+  {
+   "id": "late_breaking",
+   "label": "late_breaking",
+   "count": 1,
+   "slugs": [
+    "inbatch-negatives-cripple-llm-seqrec"
+   ],
+   "forms": {
+    "late_breaking": 1
+   }
+  },
+  {
+   "id": "latent_reasoning",
+   "label": "latent_reasoning",
+   "count": 1,
+   "slugs": [
+    "recrec-latent-interests-recursive-reasoning"
+   ],
+   "forms": {
+    "latent_reasoning": 1
+   }
+  },
+  {
+   "id": "lead_ads",
+   "label": "lead_ads",
+   "count": 1,
+   "slugs": [
+    "hipa-net-intent-projection-cvr-calibration"
+   ],
+   "forms": {
+    "lead_ads": 1
+   }
+  },
+  {
+   "id": "leave_one_out",
+   "label": "leave-one-out",
+   "count": 1,
+   "slugs": [
+    "tsd-sr-topology-aware-spectral-denoising-sisr"
+   ],
+   "forms": {
+    "leave-one-out": 1
+   }
+  },
+  {
+   "id": "lewbel",
+   "label": "lewbel",
+   "count": 1,
+   "slugs": [
+    "control-function-position-bias-ltr"
+   ],
+   "forms": {
+    "lewbel": 1
+   }
+  },
+  {
+   "id": "library",
+   "label": "library",
+   "count": 1,
+   "slugs": [
+    "compresso-sparse-representation-library-demo"
+   ],
+   "forms": {
+    "library": 1
+   }
+  },
+  {
+   "id": "liger",
+   "label": "LIGER",
+   "count": 1,
+   "slugs": [
+    "cross-stage-decoupling-semantic-collaborative-genrec"
+   ],
+   "forms": {
+    "LIGER": 1
+   }
+  },
+  {
+   "id": "linkedin",
+   "label": "LinkedIn",
+   "count": 1,
+   "slugs": [
+    "embedding-subspace-partitioning-multi-objective-retrieval"
+   ],
+   "forms": {
+    "LinkedIn": 1
+   }
+  },
+  {
+   "id": "llm_as_judge",
+   "label": "llm_as_judge",
+   "count": 1,
+   "slugs": [
+    "syf-shape-your-feed"
+   ],
+   "forms": {
+    "llm_as_judge": 1
+   }
+  },
+  {
+   "id": "llm_as_optimizer",
+   "label": "llm_as_optimizer",
+   "count": 1,
+   "slugs": [
+    "user-foundation-model-open-web"
+   ],
+   "forms": {
+    "llm_as_optimizer": 1
+   }
+  },
+  {
+   "id": "llm_encoder",
+   "label": "llm_encoder",
+   "count": 1,
+   "slugs": [
+    "inbatch-negatives-cripple-llm-seqrec"
+   ],
+   "forms": {
+    "llm_encoder": 1
+   }
+  },
+  {
+   "id": "llm_profile",
+   "label": "llm-profile",
+   "count": 1,
+   "slugs": [
+    "uprec-llm-user-profile-session-social-rec"
+   ],
+   "forms": {
+    "llm-profile": 1
+   }
+  },
+  {
+   "id": "llm_rec",
+   "label": "llm-rec",
+   "count": 1,
+   "slugs": [
+    "structure-preserving-projection-modality-bias"
+   ],
+   "forms": {
+    "llm-rec": 1
+   }
+  },
+  {
+   "id": "llm_reranking",
+   "label": "llm_reranking",
+   "count": 1,
+   "slugs": [
+    "position-bias-listwise-llm-reranking"
+   ],
+   "forms": {
+    "llm_reranking": 1
+   }
+  },
+  {
+   "id": "llm_агенты",
+   "label": "LLM_агенты",
+   "count": 1,
+   "slugs": [
+    "syf-shape-your-feed"
+   ],
+   "forms": {
+    "LLM_агенты": 1
+   }
+  },
+  {
+   "id": "llm_разметка",
+   "label": "LLM_разметка",
+   "count": 1,
+   "slugs": [
+    "apple-tv-incremental-search-hybrid-text-id"
+   ],
+   "forms": {
+    "LLM_разметка": 1
+   }
+  },
+  {
+   "id": "llm_рекомендер",
+   "label": "LLM_рекомендер",
+   "count": 1,
+   "slugs": [
+    "multimodal-semantic-expansion-constrained-llm-rerank"
+   ],
+   "forms": {
+    "LLM_рекомендер": 1
+   }
+  },
+  {
+   "id": "long_sequence",
+   "label": "long_sequence",
+   "count": 1,
+   "slugs": [
+    "coarse-to-fine-long-term-interest-genrec"
+   ],
+   "forms": {
+    "long_sequence": 1
+   }
+  },
+  {
+   "id": "loss_weighting",
+   "label": "loss_weighting",
+   "count": 1,
+   "slugs": [
+    "soft-curriculum-fresh-generalized-recs"
+   ],
+   "forms": {
+    "loss_weighting": 1
+   }
+  },
+  {
+   "id": "masked_diffusion",
+   "label": "masked_diffusion",
+   "count": 1,
+   "slugs": [
+    "mdgr-masked-diffusion-genrec"
+   ],
+   "forms": {
+    "masked_diffusion": 1
+   }
+  },
+  {
+   "id": "metrics",
+   "label": "metrics",
+   "count": 1,
+   "slugs": [
+    "repeat-utility-timing-metrics"
+   ],
+   "forms": {
+    "metrics": 1
+   }
+  },
+  {
+   "id": "milp",
+   "label": "MILP",
+   "count": 1,
+   "slugs": [
+    "adaptive-sid-construction-branches"
+   ],
+   "forms": {
+    "MILP": 1
+   }
+  },
+  {
+   "id": "mixture_of_experts",
+   "label": "mixture_of_experts",
+   "count": 1,
+   "slugs": [
+    "asmoe-automated-selection-moe-seqrec"
+   ],
+   "forms": {
+    "mixture_of_experts": 1
+   }
+  },
+  {
+   "id": "model_selection",
+   "label": "model_selection",
+   "count": 1,
+   "slugs": [
+    "recseed-training-seed-model-selection"
+   ],
+   "forms": {
+    "model_selection": 1
+   }
+  },
+  {
+   "id": "multi_interest",
+   "label": "multi_interest",
+   "count": 1,
+   "slugs": [
+    "recrec-latent-interests-recursive-reasoning"
+   ],
+   "forms": {
+    "multi_interest": 1
+   }
+  },
+  {
+   "id": "multi_objective",
+   "label": "multi_objective",
+   "count": 1,
+   "slugs": [
+    "embedding-subspace-partitioning-multi-objective-retrieval"
+   ],
+   "forms": {
+    "multi_objective": 1
+   }
+  },
+  {
+   "id": "multi_token_prediction",
+   "label": "multi_token_prediction",
+   "count": 1,
+   "slugs": [
+    "netflix-scaling-generative-recommenders-mtp"
+   ],
+   "forms": {
+    "multi_token_prediction": 1
+   }
+  },
+  {
+   "id": "multimodal",
+   "label": "multimodal",
+   "count": 1,
+   "slugs": [
+    "idproxy-mllm-cold-start-ctr"
+   ],
+   "forms": {
+    "multimodal": 1
+   }
+  },
+  {
+   "id": "multitask",
+   "label": "multitask",
+   "count": 1,
+   "slugs": [
+    "embedding-subspace-partitioning-multi-objective-retrieval"
+   ],
+   "forms": {
+    "multitask": 1
+   }
+  },
+  {
+   "id": "music",
+   "label": "music",
+   "count": 1,
+   "slugs": [
+    "deezer-discovery-quality-familiarity"
+   ],
+   "forms": {
+    "music": 1
+   }
+  },
+  {
+   "id": "negative_feedback",
+   "label": "negative_feedback",
+   "count": 1,
+   "slugs": [
+    "hipa-net-intent-projection-cvr-calibration"
+   ],
+   "forms": {
+    "negative_feedback": 1
+   }
+  },
+  {
+   "id": "netflix",
+   "label": "netflix",
+   "count": 1,
+   "slugs": [
+    "netflix-scaling-generative-recommenders-mtp"
+   ],
+   "forms": {
+    "netflix": 1
+   }
+  },
+  {
+   "id": "neumf",
+   "label": "NeuMF",
+   "count": 1,
+   "slugs": [
+    "recseed-training-seed-model-selection"
+   ],
+   "forms": {
+    "NeuMF": 1
+   }
+  },
+  {
+   "id": "offline_evaluation",
+   "label": "offline_evaluation",
+   "count": 1,
+   "slugs": [
+    "bootstrap-iips-offpolicy-evaluation"
+   ],
+   "forms": {
+    "offline_evaluation": 1
+   }
+  },
+  {
+   "id": "oversmoothing",
+   "label": "oversmoothing",
+   "count": 1,
+   "slugs": [
+    "hyperbrec-hyperbolic-dct-attention"
+   ],
+   "forms": {
+    "oversmoothing": 1
+   }
+  },
+  {
+   "id": "p_core",
+   "label": "p-core",
+   "count": 1,
+   "slugs": [
+    "pcore-filter-split-order-noncommute"
+   ],
+   "forms": {
+    "p-core": 1
+   }
+  },
+  {
+   "id": "parallel_decoding",
+   "label": "parallel_decoding",
+   "count": 1,
+   "slugs": [
+    "mdgr-masked-diffusion-genrec"
+   ],
+   "forms": {
+    "parallel_decoding": 1
+   }
+  },
+  {
+   "id": "pass_k",
+   "label": "pass_k",
+   "count": 1,
+   "slugs": [
+    "tau-rec"
+   ],
+   "forms": {
+    "pass_k": 1
+   }
+  },
+  {
+   "id": "pctm",
+   "label": "PCTM",
+   "count": 1,
+   "slugs": [
+    "capacity-probes-pairwise-envelope"
+   ],
+   "forms": {
+    "PCTM": 1
+   }
+  },
+  {
+   "id": "permutation_invariance",
+   "label": "permutation_invariance",
+   "count": 1,
+   "slugs": [
+    "position-bias-listwise-llm-reranking"
+   ],
+   "forms": {
+    "permutation_invariance": 1
+   }
+  },
+  {
+   "id": "pitfall",
+   "label": "pitfall",
+   "count": 1,
+   "slugs": [
+    "tie-breaking-illusion"
+   ],
+   "forms": {
+    "pitfall": 1
+   }
+  },
+  {
+   "id": "plm",
+   "label": "plm",
+   "count": 1,
+   "slugs": [
+    "gtp-group-aware-token-pruning-popularity"
+   ],
+   "forms": {
+    "plm": 1
+   }
+  },
+  {
+   "id": "policy_optimization",
+   "label": "policy_optimization",
+   "count": 1,
+   "slugs": [
+    "sage-sequence-adaptive-gradient-evolution"
+   ],
+   "forms": {
+    "policy_optimization": 1
+   }
+  },
+  {
+   "id": "popularity",
+   "label": "popularity",
+   "count": 1,
+   "slugs": [
+    "sid-collision-last-token-resolution"
+   ],
+   "forms": {
+    "popularity": 1
+   }
+  },
+  {
+   "id": "position_paper",
+   "label": "position_paper",
+   "count": 1,
+   "slugs": [
+    "codebook-sid-five-fractures"
+   ],
+   "forms": {
+    "position_paper": 1
+   }
+  },
+  {
+   "id": "process_reward_model",
+   "label": "process-reward-model",
+   "count": 1,
+   "slugs": [
+    "promise-process-reward-generative-rec"
+   ],
+   "forms": {
+    "process-reward-model": 1
+   }
+  },
+  {
+   "id": "random_seeds",
+   "label": "random_seeds",
+   "count": 1,
+   "slugs": [
+    "seed-variance-sequential-recommender-tests"
+   ],
+   "forms": {
+    "random_seeds": 1
+   }
+  },
+  {
+   "id": "ranking_stability",
+   "label": "ranking_stability",
+   "count": 1,
+   "slugs": [
+    "position-bias-listwise-llm-reranking"
+   ],
+   "forms": {
+    "ranking_stability": 1
+   }
+  },
+  {
+   "id": "recsys_challenge",
+   "label": "RecSys_Challenge",
+   "count": 1,
+   "slugs": [
+    "multimodal-semantic-expansion-constrained-llm-rerank"
+   ],
+   "forms": {
+    "RecSys_Challenge": 1
+   }
+  },
+  {
+   "id": "reinforcement_learning",
+   "label": "reinforcement_learning",
+   "count": 1,
+   "slugs": [
+    "sage-sequence-adaptive-gradient-evolution"
+   ],
+   "forms": {
+    "reinforcement_learning": 1
+   }
+  },
+  {
+   "id": "reproducibility",
+   "label": "reproducibility",
+   "count": 1,
+   "slugs": [
+    "said-calibrating-reproduced-claims"
+   ],
+   "forms": {
+    "reproducibility": 1
+   }
+  },
+  {
+   "id": "reranking",
+   "label": "reranking",
+   "count": 1,
+   "slugs": [
+    "ordinal-attribute-calibration"
+   ],
+   "forms": {
+    "reranking": 1
+   }
+  },
+  {
+   "id": "reward_hacking",
+   "label": "reward_hacking",
+   "count": 1,
+   "slugs": [
+    "recevolve-autonomous-agent-recsys"
+   ],
+   "forms": {
+    "reward_hacking": 1
+   }
+  },
+  {
+   "id": "reward_optimization",
+   "label": "reward-optimization",
+   "count": 1,
+   "slugs": [
+    "rohde-reward-optimizing-recsys-tutorial"
+   ],
+   "forms": {
+    "reward-optimization": 1
+   }
+  },
+  {
+   "id": "rl_grpo",
+   "label": "RL_GRPO",
+   "count": 1,
+   "slugs": [
+    "bonsai-decoding-trie-optimization"
+   ],
+   "forms": {
+    "RL_GRPO": 1
+   }
+  },
+  {
+   "id": "rq_kmeans",
+   "label": "RQ_kmeans",
+   "count": 1,
+   "slugs": [
+    "sid-collision-last-token-resolution"
+   ],
+   "forms": {
+    "RQ_kmeans": 1
+   }
+  },
+  {
+   "id": "rtb",
+   "label": "rtb",
+   "count": 1,
+   "slugs": [
+    "user-foundation-model-open-web"
+   ],
+   "forms": {
+    "rtb": 1
+   }
+  },
+  {
+   "id": "sample_level_tokenization",
+   "label": "sample_level_tokenization",
+   "count": 1,
+   "slugs": [
+    "sample-is-feature-sample-level-tokens"
+   ],
+   "forms": {
+    "sample_level_tokenization": 1
+   }
+  },
+  {
+   "id": "sampled_softmax",
+   "label": "sampled_softmax",
+   "count": 1,
+   "slugs": [
+    "netflix-scaling-generative-recommenders-mtp"
+   ],
+   "forms": {
+    "sampled_softmax": 1
+   }
+  },
+  {
+   "id": "scalability",
+   "label": "scalability",
+   "count": 1,
+   "slugs": [
+    "scaling-l3ae-industrial-catalogs"
+   ],
+   "forms": {
+    "scalability": 1
+   }
+  },
+  {
+   "id": "search",
+   "label": "search",
+   "count": 1,
+   "slugs": [
+    "tssr-beta-interaction-head-retrieval"
+   ],
+   "forms": {
+    "search": 1
+   }
+  },
+  {
+   "id": "semantic_embeddings",
+   "label": "semantic_embeddings",
+   "count": 1,
+   "slugs": [
+    "scaling-l3ae-industrial-catalogs"
+   ],
+   "forms": {
+    "semantic_embeddings": 1
+   }
+  },
+  {
+   "id": "seqrules",
+   "label": "SeqRules",
+   "count": 1,
+   "slugs": [
+    "capacity-probes-pairwise-envelope"
+   ],
+   "forms": {
+    "SeqRules": 1
+   }
+  },
+  {
+   "id": "sequence_modeling",
+   "label": "sequence_modeling",
+   "count": 1,
+   "slugs": [
+    "sample-is-feature-sample-level-tokens"
+   ],
+   "forms": {
+    "sequence_modeling": 1
+   }
+  },
+  {
+   "id": "sequential_modeling",
+   "label": "sequential_modeling",
+   "count": 1,
+   "slugs": [
+    "user-foundation-model-open-web"
+   ],
+   "forms": {
+    "sequential_modeling": 1
+   }
+  },
+  {
+   "id": "sequential_rec",
+   "label": "sequential_rec",
+   "count": 1,
+   "slugs": [
+    "inbatch-negatives-cripple-llm-seqrec"
+   ],
+   "forms": {
+    "sequential_rec": 1
+   }
+  },
+  {
+   "id": "serving_latency",
+   "label": "serving_latency",
+   "count": 1,
+   "slugs": [
+    "netflix-scaling-generative-recommenders-mtp"
+   ],
+   "forms": {
+    "serving_latency": 1
+   }
+  },
+  {
+   "id": "session_based",
+   "label": "session-based",
+   "count": 1,
+   "slugs": [
+    "uprec-llm-user-profile-session-social-rec"
+   ],
+   "forms": {
+    "session-based": 1
+   }
+  },
+  {
+   "id": "short_video",
+   "label": "short_video",
+   "count": 1,
+   "slugs": [
+    "sid-alignment-openonerec-diagnostics"
+   ],
+   "forms": {
+    "short_video": 1
+   }
+  },
+  {
+   "id": "shuffle_проба",
+   "label": "shuffle_проба",
+   "count": 1,
+   "slugs": [
+    "structure-preserving-projection-modality-bias"
+   ],
+   "forms": {
+    "shuffle_проба": 1
+   }
+  },
+  {
+   "id": "side_information",
+   "label": "side-information",
+   "count": 1,
+   "slugs": [
+    "tsd-sr-topology-aware-spectral-denoising-sisr"
+   ],
+   "forms": {
+    "side-information": 1
+   }
+  },
+  {
+   "id": "significance_testing",
+   "label": "significance_testing",
+   "count": 1,
+   "slugs": [
+    "seed-variance-sequential-recommender-tests"
+   ],
+   "forms": {
+    "significance_testing": 1
+   }
+  },
+  {
+   "id": "silhouette",
+   "label": "silhouette",
+   "count": 1,
+   "slugs": [
+    "adaptive-sid-construction-branches"
+   ],
+   "forms": {
+    "silhouette": 1
+   }
+  },
+  {
+   "id": "sim",
+   "label": "SIM",
+   "count": 1,
+   "slugs": [
+    "coarse-to-fine-long-term-interest-genrec"
+   ],
+   "forms": {
+    "SIM": 1
+   }
+  },
+  {
+   "id": "simulation",
+   "label": "simulation",
+   "count": 1,
+   "slugs": [
+    "schedl-cognitive-biases-recsys-tutorial"
+   ],
+   "forms": {
+    "simulation": 1
+   }
+  },
+  {
+   "id": "snap",
+   "label": "snap",
+   "count": 1,
+   "slugs": [
+    "egr-embedding-native-generative-retrieval"
+   ],
+   "forms": {
+    "snap": 1
+   }
+  },
+  {
+   "id": "social",
+   "label": "social",
+   "count": 1,
+   "slugs": [
+    "uprec-llm-user-profile-session-social-rec"
+   ],
+   "forms": {
+    "social": 1
+   }
+  },
+  {
+   "id": "sparse_representation",
+   "label": "sparse_representation",
+   "count": 1,
+   "slugs": [
+    "sparse-multimodal-cold-item-embeddings"
+   ],
+   "forms": {
+    "sparse_representation": 1
+   }
+  },
+  {
+   "id": "sparse_representations",
+   "label": "sparse-representations",
+   "count": 1,
+   "slugs": [
+    "compresso-sparse-representation-library-demo"
+   ],
+   "forms": {
+    "sparse-representations": 1
+   }
+  },
+  {
+   "id": "sparsemax",
+   "label": "sparsemax",
+   "count": 1,
+   "slugs": [
+    "sparse-multimodal-cold-item-embeddings"
+   ],
+   "forms": {
+    "sparsemax": 1
+   }
+  },
+  {
+   "id": "spectral_filtering",
+   "label": "spectral-filtering",
+   "count": 1,
+   "slugs": [
+    "tsd-sr-topology-aware-spectral-denoising-sisr"
+   ],
+   "forms": {
+    "spectral-filtering": 1
+   }
+  },
+  {
+   "id": "ssm",
+   "label": "SSM",
+   "count": 1,
+   "slugs": [
+    "hsr-hamiltonian-spectral-sequential-rec"
+   ],
+   "forms": {
+    "SSM": 1
+   }
+  },
+  {
+   "id": "stop_gradient",
+   "label": "stop_gradient",
+   "count": 1,
+   "slugs": [
+    "lightweight-ranking-heads-stop-gradient"
+   ],
+   "forms": {
+    "stop_gradient": 1
+   }
+  },
+  {
+   "id": "target_attention",
+   "label": "target_attention",
+   "count": 1,
+   "slugs": [
+    "hipa-net-intent-projection-cvr-calibration"
+   ],
+   "forms": {
+    "target_attention": 1
+   }
+  },
+  {
+   "id": "temperature",
+   "label": "temperature",
+   "count": 1,
+   "slugs": [
+    "inbatch-negatives-cripple-llm-seqrec"
+   ],
+   "forms": {
+    "temperature": 1
+   }
+  },
+  {
+   "id": "term_id",
+   "label": "term_ID",
+   "count": 1,
+   "slugs": [
+    "bonsai-decoding-trie-optimization"
+   ],
+   "forms": {
+    "term_ID": 1
+   }
+  },
+  {
+   "id": "test_time_scaling",
+   "label": "test-time-scaling",
+   "count": 1,
+   "slugs": [
+    "promise-process-reward-generative-rec"
+   ],
+   "forms": {
+    "test-time-scaling": 1
+   }
+  },
+  {
+   "id": "text_based",
+   "label": "text_based",
+   "count": 1,
+   "slugs": [
+    "gtp-group-aware-token-pruning-popularity"
+   ],
+   "forms": {
+    "text_based": 1
+   }
+  },
+  {
+   "id": "text_embeddings",
+   "label": "text_embeddings",
+   "count": 1,
+   "slugs": [
+    "sae-semantic-domain-adapters"
+   ],
+   "forms": {
+    "text_embeddings": 1
+   }
+  },
+  {
+   "id": "training_scheme",
+   "label": "training_scheme",
+   "count": 1,
+   "slugs": [
+    "asmoe-automated-selection-moe-seqrec"
+   ],
+   "forms": {
+    "training_scheme": 1
+   }
+  },
+  {
+   "id": "transfer",
+   "label": "transfer",
+   "count": 1,
+   "slugs": [
+    "amazon-music-retrieval-embedding-ranker-feature"
+   ],
+   "forms": {
+    "transfer": 1
+   }
+  },
+  {
+   "id": "transformers",
+   "label": "transformers",
+   "count": 1,
+   "slugs": [
+    "residual-dominance"
+   ],
+   "forms": {
+    "transformers": 1
+   }
+  },
+  {
+   "id": "unbiased_data",
+   "label": "unbiased_data",
+   "count": 1,
+   "slugs": [
+    "conalign-conditional-debiasing"
+   ],
+   "forms": {
+    "unbiased_data": 1
+   }
+  },
+  {
+   "id": "unbiased_ltr",
+   "label": "unbiased_ltr",
+   "count": 1,
+   "slugs": [
+    "control-function-position-bias-ltr"
+   ],
+   "forms": {
+    "unbiased_ltr": 1
+   }
+  },
+  {
+   "id": "user_foundation_model",
+   "label": "user_foundation_model",
+   "count": 1,
+   "slugs": [
+    "user-foundation-model-open-web"
+   ],
+   "forms": {
+    "user_foundation_model": 1
+   }
+  },
+  {
+   "id": "user_interest",
+   "label": "user_interest",
+   "count": 1,
+   "slugs": [
+    "g2rec-interest-profile-tokenization"
+   ],
+   "forms": {
+    "user_interest": 1
+   }
+  },
+  {
+   "id": "variance_inflation",
+   "label": "variance_inflation",
+   "count": 1,
+   "slugs": [
+    "seed-variance-sequential-recommender-tests"
+   ],
+   "forms": {
+    "variance_inflation": 1
+   }
+  },
+  {
+   "id": "vector_quantization",
+   "label": "vector_quantization",
+   "count": 1,
+   "slugs": [
+    "sample-is-feature-sample-level-tokens"
+   ],
+   "forms": {
+    "vector_quantization": 1
+   }
+  },
+  {
+   "id": "xgboost",
+   "label": "XGBoost",
+   "count": 1,
+   "slugs": [
+    "apple-tv-incremental-search-hybrid-text-id"
+   ],
+   "forms": {
+    "XGBoost": 1
+   }
+  },
+  {
+   "id": "анализ_выживаемости",
+   "label": "анализ_выживаемости",
+   "count": 1,
+   "slugs": [
+    "timing-aware-repurchase-survival"
+   ],
+   "forms": {
+    "анализ_выживаемости": 1
+   }
+  },
+  {
+   "id": "атрибуция_числа",
+   "label": "атрибуция_числа",
+   "count": 1,
+   "slugs": [
+    "unipinrec-full-stack-unification"
+   ],
+   "forms": {
+    "атрибуция_числа": 1
+   }
+  },
+  {
+   "id": "бейзлайны",
+   "label": "бейзлайны",
+   "count": 1,
+   "slugs": [
+    "capacity-probes-pairwise-envelope"
+   ],
+   "forms": {
+    "бейзлайны": 1
+   }
+  },
+  {
+   "id": "бенчмарк",
+   "label": "бенчмарк",
+   "count": 1,
+   "slugs": [
+    "pcore-filter-split-order-noncommute"
+   ],
+   "forms": {
+    "бенчмарк": 1
+   }
+  },
+  {
+   "id": "вспомогательный_лосс",
+   "label": "вспомогательный_лосс",
+   "count": 1,
+   "slugs": [
+    "transact-v2-lifelong-sequences-pinterest"
+   ],
+   "forms": {
+    "вспомогательный_лосс": 1
+   }
+  },
+  {
+   "id": "выравнивание",
+   "label": "выравнивание",
+   "count": 1,
+   "slugs": [
+    "structure-preserving-projection-modality-bias"
+   ],
+   "forms": {
+    "выравнивание": 1
+   }
+  },
+  {
+   "id": "гейт",
+   "label": "гейт",
+   "count": 1,
+   "slugs": [
+    "deltagate-gap-driven-dimensional-gating"
+   ],
+   "forms": {
+    "гейт": 1
+   }
+  },
+  {
+   "id": "гибридные_представления",
+   "label": "гибридные_представления",
+   "count": 1,
+   "slugs": [
+    "apple-tv-incremental-search-hybrid-text-id"
+   ],
+   "forms": {
+    "гибридные_представления": 1
+   }
+  },
+  {
+   "id": "горизонт",
+   "label": "горизонт",
+   "count": 1,
+   "slugs": [
+    "timing-aware-repurchase-survival"
+   ],
+   "forms": {
+    "горизонт": 1
+   }
+  },
+  {
+   "id": "декодирование",
+   "label": "декодирование",
+   "count": 1,
+   "slugs": [
+    "gencdsr-hybrid-tokenization"
+   ],
+   "forms": {
+    "декодирование": 1
+   }
+  },
+  {
+   "id": "диагностика",
+   "label": "диагностика",
+   "count": 1,
+   "slugs": [
+    "structure-preserving-projection-modality-bias"
+   ],
+   "forms": {
+    "диагностика": 1
+   }
+  },
+  {
+   "id": "диалоговые_рекомендации",
+   "label": "диалоговые_рекомендации",
+   "count": 1,
+   "slugs": [
+    "multimodal-semantic-expansion-constrained-llm-rerank"
+   ],
+   "forms": {
+    "диалоговые_рекомендации": 1
+   }
+  },
+  {
+   "id": "динамика_предпочтений",
+   "label": "динамика_предпочтений",
+   "count": 1,
+   "slugs": [
+    "hsr-hamiltonian-spectral-sequential-rec"
+   ],
+   "forms": {
+    "динамика_предпочтений": 1
+   }
+  },
+  {
+   "id": "длинная_история",
+   "label": "длинная_история",
+   "count": 1,
+   "slugs": [
+    "transact-v2-lifelong-sequences-pinterest"
+   ],
+   "forms": {
+    "длинная_история": 1
+   }
+  },
+  {
+   "id": "длинная_пауза",
+   "label": "длинная_пауза",
+   "count": 1,
+   "slugs": [
+    "deltagate-gap-driven-dimensional-gating"
+   ],
+   "forms": {
+    "длинная_пауза": 1
+   }
+  },
+  {
+   "id": "доверительные_интервалы",
+   "label": "доверительные_интервалы",
+   "count": 1,
+   "slugs": [
+    "apple-tv-incremental-search-hybrid-text-id"
+   ],
+   "forms": {
+    "доверительные_интервалы": 1
+   }
+  },
+  {
+   "id": "есть_код",
+   "label": "есть_код",
+   "count": 1,
+   "slugs": [
+    "deltagate-gap-driven-dimensional-gating"
+   ],
+   "forms": {
+    "есть_код": 1
+   }
+  },
+  {
+   "id": "замороженный_бэкбон",
+   "label": "замороженный_бэкбон",
+   "count": 1,
+   "slugs": [
+    "deltagate-gap-driven-dimensional-gating"
+   ],
+   "forms": {
+    "замороженный_бэкбон": 1
+   }
+  },
+  {
+   "id": "знаменатель_метрики",
+   "label": "знаменатель_метрики",
+   "count": 1,
+   "slugs": [
+    "structure-preserving-projection-modality-bias"
+   ],
+   "forms": {
+    "знаменатель_метрики": 1
+   }
+  },
+  {
+   "id": "калибровка",
+   "label": "калибровка",
+   "count": 1,
+   "slugs": [
+    "timing-aware-repurchase-survival"
+   ],
+   "forms": {
+    "калибровка": 1
+   }
+  },
+  {
+   "id": "кодек",
+   "label": "кодек",
+   "count": 1,
+   "slugs": [
+    "sidec-dual-purpose-semantic-ids"
+   ],
+   "forms": {
+    "кодек": 1
+   }
+  },
+  {
+   "id": "контрастное_обучение",
+   "label": "контрастное_обучение",
+   "count": 1,
+   "slugs": [
+    "apple-tv-incremental-search-hybrid-text-id"
+   ],
+   "forms": {
+    "контрастное_обучение": 1
+   }
+  },
+  {
+   "id": "латентность",
+   "label": "латентность",
+   "count": 1,
+   "slugs": [
+    "gencdsr-hybrid-tokenization"
+   ],
+   "forms": {
+    "латентность": 1
+   }
+  },
+  {
+   "id": "маскирование_действий",
+   "label": "маскирование_действий",
+   "count": 1,
+   "slugs": [
+    "unipinrec-full-stack-unification"
+   ],
+   "forms": {
+    "маскирование_действий": 1
+   }
+  },
+  {
+   "id": "метрики",
+   "label": "метрики",
+   "count": 1,
+   "slugs": [
+    "tie-breaking-illusion"
+   ],
+   "forms": {
+    "метрики": 1
+   }
+  },
+  {
+   "id": "минимальное_покрытие",
+   "label": "минимальное_покрытие",
+   "count": 1,
+   "slugs": [
+    "bonsai-decoding-trie-optimization"
+   ],
+   "forms": {
+    "минимальное_покрытие": 1
+   }
+  },
+  {
+   "id": "многозадачность",
+   "label": "многозадачность",
+   "count": 1,
+   "slugs": [
+    "lightweight-ranking-heads-stop-gradient"
+   ],
+   "forms": {
+    "многозадачность": 1
+   }
+  },
+  {
+   "id": "модальностный_перекос",
+   "label": "модальностный_перекос",
+   "count": 1,
+   "slugs": [
+    "structure-preserving-projection-modality-bias"
+   ],
+   "forms": {
+    "модальностный_перекос": 1
+   }
+  },
+  {
+   "id": "негативный_перенос",
+   "label": "негативный_перенос",
+   "count": 1,
+   "slugs": [
+    "lightweight-ranking-heads-stop-gradient"
+   ],
+   "forms": {
+    "негативный_перенос": 1
+   }
+  },
+  {
+   "id": "новизна",
+   "label": "новизна",
+   "count": 1,
+   "slugs": [
+    "youtube-music-breaking-the-loop-interventions"
+   ],
+   "forms": {
+    "новизна": 1
+   }
+  },
+  {
+   "id": "отбор_чекпоинта",
+   "label": "отбор_чекпоинта",
+   "count": 1,
+   "slugs": [
+    "hsr-hamiltonian-spectral-sequential-rec"
+   ],
+   "forms": {
+    "отбор_чекпоинта": 1
+   }
+  },
+  {
+   "id": "открытый_код",
+   "label": "открытый_код",
+   "count": 1,
+   "slugs": [
+    "bonsai-decoding-trie-optimization"
+   ],
+   "forms": {
+    "открытый_код": 1
+   }
+  },
+  {
+   "id": "оценка",
+   "label": "оценка",
+   "count": 1,
+   "slugs": [
+    "pcore-filter-split-order-noncommute"
+   ],
+   "forms": {
+    "оценка": 1
+   }
+  },
+  {
+   "id": "паритет_бюджета",
+   "label": "паритет_бюджета",
+   "count": 1,
+   "slugs": [
+    "bonsai-decoding-trie-optimization"
+   ],
+   "forms": {
+    "паритет_бюджета": 1
+   }
+  },
+  {
+   "id": "переранжирование",
+   "label": "переранжирование",
+   "count": 1,
+   "slugs": [
+    "multimodal-semantic-expansion-constrained-llm-rerank"
+   ],
+   "forms": {
+    "переранжирование": 1
+   }
+  },
+  {
+   "id": "периодичность",
+   "label": "периодичность",
+   "count": 1,
+   "slugs": [
+    "hsr-hamiltonian-spectral-sequential-rec"
+   ],
+   "forms": {
+    "периодичность": 1
+   }
+  },
+  {
+   "id": "персонализация_поиска",
+   "label": "персонализация_поиска",
+   "count": 1,
+   "slugs": [
+    "apple-tv-incremental-search-hybrid-text-id"
+   ],
+   "forms": {
+    "персонализация_поиска": 1
+   }
+  },
+  {
+   "id": "петля_обратной_связи",
+   "label": "петля_обратной_связи",
+   "count": 1,
+   "slugs": [
+    "youtube-music-breaking-the-loop-interventions"
+   ],
+   "forms": {
+    "петля_обратной_связи": 1
+   }
+  },
+  {
+   "id": "плагин",
+   "label": "плагин",
+   "count": 1,
+   "slugs": [
+    "deltagate-gap-driven-dimensional-gating"
+   ],
+   "forms": {
+    "плагин": 1
+   }
+  },
+  {
+   "id": "повторные_покупки",
+   "label": "повторные_покупки",
+   "count": 1,
+   "slugs": [
+    "timing-aware-repurchase-survival"
+   ],
+   "forms": {
+    "повторные_покупки": 1
+   }
+  },
+  {
+   "id": "позиционное_смещение",
+   "label": "позиционное_смещение",
+   "count": 1,
+   "slugs": [
+    "multimodal-semantic-expansion-constrained-llm-rerank"
+   ],
+   "forms": {
+    "позиционное_смещение": 1
+   }
+  },
+  {
+   "id": "покрытие",
+   "label": "покрытие",
+   "count": 1,
+   "slugs": [
+    "apple-tv-incremental-search-hybrid-text-id"
+   ],
+   "forms": {
+    "покрытие": 1
+   }
+  },
+  {
+   "id": "продовое_внедрение",
+   "label": "продовое_внедрение",
+   "count": 1,
+   "slugs": [
+    "transact-v2-lifelong-sequences-pinterest"
+   ],
+   "forms": {
+    "продовое_внедрение": 1
+   }
+  },
+  {
+   "id": "проектор",
+   "label": "проектор",
+   "count": 1,
+   "slugs": [
+    "structure-preserving-projection-modality-bias"
+   ],
+   "forms": {
+    "проектор": 1
+   }
+  },
+  {
+   "id": "промышленное_внедрение",
+   "label": "промышленное_внедрение",
+   "count": 1,
+   "slugs": [
+    "timing-aware-repurchase-survival"
+   ],
+   "forms": {
+    "промышленное_внедрение": 1
+   }
+  },
+  {
+   "id": "промышленный_рекомендер",
+   "label": "промышленный_рекомендер",
+   "count": 1,
+   "slugs": [
+    "lightweight-ranking-heads-stop-gradient"
+   ],
+   "forms": {
+    "промышленный_рекомендер": 1
+   }
+  },
+  {
+   "id": "протокол",
+   "label": "протокол",
+   "count": 1,
+   "slugs": [
+    "tie-breaking-illusion"
+   ],
+   "forms": {
+    "протокол": 1
+   }
+  },
+  {
+   "id": "протокол_оценки",
+   "label": "протокол-оценки",
+   "count": 1,
+   "slugs": [
+    "pcore-filter-split-order-noncommute"
+   ],
+   "forms": {
+    "протокол-оценки": 1
+   }
+  },
+  {
+   "id": "размер_выборки",
+   "label": "размер_выборки",
+   "count": 1,
+   "slugs": [
+    "structure-preserving-projection-modality-bias"
+   ],
+   "forms": {
+    "размер_выборки": 1
+   }
+  },
+  {
+   "id": "разнообразие",
+   "label": "разнообразие",
+   "count": 1,
+   "slugs": [
+    "youtube-music-breaking-the-loop-interventions"
+   ],
+   "forms": {
+    "разнообразие": 1
+   }
+  },
+  {
+   "id": "реактивация",
+   "label": "реактивация",
+   "count": 1,
+   "slugs": [
+    "deltagate-gap-driven-dimensional-gating"
+   ],
+   "forms": {
+    "реактивация": 1
+   }
+  },
+  {
+   "id": "репер",
+   "label": "репер",
+   "count": 1,
+   "slugs": [
+    "capacity-probes-pairwise-envelope"
+   ],
+   "forms": {
+    "репер": 1
+   }
+  },
+  {
+   "id": "свежесть",
+   "label": "свежесть",
+   "count": 1,
+   "slugs": [
+    "youtube-music-breaking-the-loop-interventions"
+   ],
+   "forms": {
+    "свежесть": 1
+   }
+  },
+  {
+   "id": "сиды",
+   "label": "сиды",
+   "count": 1,
+   "slugs": [
+    "recseed-training-seed-model-selection"
+   ],
+   "forms": {
+    "сиды": 1
+   }
+  },
+  {
+   "id": "сила_бейзлайна",
+   "label": "сила_бейзлайна",
+   "count": 1,
+   "slugs": [
+    "apple-tv-incremental-search-hybrid-text-id"
+   ],
+   "forms": {
+    "сила_бейзлайна": 1
+   }
+  },
+  {
+   "id": "скорость_экспериментов",
+   "label": "скорость_экспериментов",
+   "count": 1,
+   "slugs": [
+    "lightweight-ranking-heads-stop-gradient"
+   ],
+   "forms": {
+    "скорость_экспериментов": 1
+   }
+  },
+  {
+   "id": "слабейший_бейзлайн_как_репер",
+   "label": "слабейший_бейзлайн_как_репер",
+   "count": 1,
+   "slugs": [
+    "deltagate-gap-driven-dimensional-gating"
+   ],
+   "forms": {
+    "слабейший_бейзлайн_как_репер": 1
+   }
+  },
+  {
+   "id": "слияние_сигналов",
+   "label": "слияние_сигналов",
+   "count": 1,
+   "slugs": [
+    "multimodal-semantic-expansion-constrained-llm-rerank"
+   ],
+   "forms": {
+    "слияние_сигналов": 1
+   }
+  },
+  {
+   "id": "согласие_списков",
+   "label": "согласие_списков",
+   "count": 1,
+   "slugs": [
+    "recseed-training-seed-model-selection"
+   ],
+   "forms": {
+    "согласие_списков": 1
+   }
+  },
+  {
+   "id": "спектральные_методы",
+   "label": "спектральные_методы",
+   "count": 1,
+   "slugs": [
+    "hsr-hamiltonian-spectral-sequential-rec"
+   ],
+   "forms": {
+    "спектральные_методы": 1
+   }
+  },
+  {
+   "id": "срезовый_анализ",
+   "label": "срезовый_анализ",
+   "count": 1,
+   "slugs": [
+    "apple-tv-incremental-search-hybrid-text-id"
+   ],
+   "forms": {
+    "срезовый_анализ": 1
+   }
+  },
+  {
+   "id": "стоимость_сервинга",
+   "label": "стоимость_сервинга",
+   "count": 1,
+   "slugs": [
+    "unipinrec-full-stack-unification"
+   ],
+   "forms": {
+    "стоимость_сервинга": 1
+   }
+  },
+  {
+   "id": "тихий_отказ",
+   "label": "тихий_отказ",
+   "count": 1,
+   "slugs": [
+    "keeping-the-index-open-dual-encoder-cost"
+   ],
+   "forms": {
+    "тихий_отказ": 1
+   }
+  },
+  {
+   "id": "унификация_ретривала_и_ранжирования",
+   "label": "унификация_ретривала_и_ранжирования",
+   "count": 1,
+   "slugs": [
+    "unipinrec-full-stack-unification"
+   ],
+   "forms": {
+    "унификация_ретривала_и_ранжирования": 1
+   }
+  },
+  {
+   "id": "утечка",
+   "label": "утечка",
+   "count": 1,
+   "slugs": [
+    "pcore-filter-split-order-noncommute"
+   ],
+   "forms": {
+    "утечка": 1
+   }
+  },
+  {
+   "id": "утечка_данных",
+   "label": "утечка_данных",
+   "count": 1,
+   "slugs": [
+    "multimodal-semantic-expansion-constrained-llm-rerank"
+   ],
+   "forms": {
+    "утечка_данных": 1
+   }
+  },
+  {
+   "id": "форма_прироста",
+   "label": "форма_прироста",
+   "count": 1,
+   "slugs": [
+    "hsr-hamiltonian-spectral-sequential-rec"
+   ],
+   "forms": {
+    "форма_прироста": 1
+   }
+  },
+  {
+   "id": "функция_потерь",
+   "label": "функция_потерь",
+   "count": 1,
+   "slugs": [
+    "keeping-the-index-open-dual-encoder-cost"
+   ],
+   "forms": {
+    "функция_потерь": 1
+   }
+  },
+  {
+   "id": "холодный_старт",
+   "label": "холодный_старт",
+   "count": 1,
+   "slugs": [
+    "keeping-the-index-open-dual-encoder-cost"
+   ],
+   "forms": {
+    "холодный_старт": 1
+   }
+  },
+  {
+   "id": "честная_статья",
+   "label": "честная_статья",
+   "count": 1,
+   "slugs": [
+    "youtube-music-breaking-the-loop-interventions"
+   ],
+   "forms": {
+    "честная_статья": 1
+   }
+  },
+  {
+   "id": "числа_из_репозитория",
+   "label": "числа_из_репозитория",
+   "count": 1,
+   "slugs": [
+    "recseed-training-seed-model-selection"
+   ],
+   "forms": {
+    "числа_из_репозитория": 1
+   }
+  },
+  {
+   "id": "этап2",
+   "label": "этап2",
+   "count": 1,
+   "slugs": [
+    "structure-preserving-projection-modality-bias"
+   ],
+   "forms": {
+    "этап2": 1
+   }
+  },
+  {
+   "id": "явная_обратная_связь",
+   "label": "явная_обратная_связь",
+   "count": 1,
+   "slugs": [
+    "syf-shape-your-feed"
+   ],
+   "forms": {
+    "явная_обратная_связь": 1
+   }
+  }
+ ],
+ "byPaper": {
+  "adaptive-retraining-rl": [],
+  "adaptive-sid-construction-branches": [
+   "semantic_id",
+   "generative_retrieval",
+   "tokenization",
+   "tiger",
+   "amazon",
+   "long_tail",
+   "hierarchical_clustering",
+   "milp",
+   "silhouette"
+  ],
+  "affect-balanced-news-reframing": [],
+  "agentcf-connectivity-security": [],
+  "agentrec": [],
+  "amazon-music-retrieval-embedding-ranker-feature": [
+   "industrial",
+   "sasrec",
+   "two_tower",
+   "ranking",
+   "feature_engineering",
+   "transfer"
+  ],
+  "apple-music-elise": [],
+  "apple-tv-incremental-search-hybrid-text-id": [
+   "online_ab",
+   "llm_разметка",
+   "xgboost",
+   "гибридные_представления",
+   "доверительные_интервалы",
+   "контрастное_обучение",
+   "персонализация_поиска",
+   "покрытие",
+   "сила_бейзлайна",
+   "срезовый_анализ"
+  ],
+  "asmoe-automated-selection-moe-seqrec": [
+   "sasrec",
+   "sequential",
+   "recbole",
+   "mixture_of_experts",
+   "training_scheme"
+  ],
+  "autonomous-agents": [],
+  "autoreclab-experiment-code": [],
+  "axiology-journalistic-values": [],
+  "backward-inward-personalization-safety": [],
+  "bilpr-teacher-student-learning-path": [],
+  "binge-watch-m3l": [],
+  "bipcl-bilateral-intent-perturbation": [],
+  "blue-steer": [],
+  "bluesky-identical-text-exposure": [],
+  "bluesky-prospective-custom-feed-routing": [],
+  "bonsai-decoding-trie-optimization": [
+   "generative_retrieval",
+   "beam_search",
+   "выбор_колонки",
+   "decoding_trie",
+   "rl_grpo",
+   "term_id",
+   "минимальное_покрытие",
+   "открытый_код",
+   "паритет_бюджета"
+  ],
+  "bookforyou-narrative-tropes": [],
+  "bootstrap-iips-offpolicy-evaluation": [
+   "online_ab",
+   "industrial",
+   "calibration",
+   "bootstrap",
+   "off_policy",
+   "counterfactual",
+   "ips",
+   "offline_evaluation"
+  ],
+  "bounded-attention-explanation-structure": [],
+  "capacity-probes-pairwise-envelope": [
+   "eval_methodology",
+   "sasrec",
+   "выбор_колонки",
+   "repeat_explore",
+   "рекомендательные_системы",
+   "esasrec",
+   "pctm",
+   "seqrules",
+   "бейзлайны",
+   "репер"
+  ],
+  "capts": [],
+  "carousel-click-off-policy-evaluation": [],
+  "cascade-reward-preranking": [],
+  "ccn-full-candidate-route": [],
+  "children-recsys-twenty-years": [],
+  "cluster-goobs-llm-hard-negatives": [
+   "popularity_bias",
+   "two_tower",
+   "negative_sampling",
+   "hard_negatives"
+  ],
+  "coarse-to-fine-long-term-interest-genrec": [
+   "semantic_id",
+   "online_ab",
+   "generative_retrieval",
+   "beam_search",
+   "kuaishou",
+   "gating",
+   "hard_search",
+   "long_sequence",
+   "sim"
+  ],
+  "codebook-sid-five-fractures": [
+   "semantic_id",
+   "rq_vae",
+   "evaluation",
+   "generative_recommendation",
+   "collisions",
+   "codebook",
+   "position_paper"
+  ],
+  "cofirec-coarse-to-fine-tokenization": [
+   "semantic_id",
+   "cold_start",
+   "generative_retrieval",
+   "tokenization",
+   "tiger"
+  ],
+  "comparability-stakeholder-welfare": [],
+  "compresso-sparse-representation-library-demo": [
+   "interpretability",
+   "sparse_autoencoder",
+   "demo",
+   "embedding_compression",
+   "library",
+   "sparse_representations"
+  ],
+  "conalign-conditional-debiasing": [
+   "online_ab",
+   "industrial",
+   "debiasing",
+   "knowledge_distillation",
+   "exposure_bias",
+   "filter_bubble",
+   "unbiased_data"
+  ],
+  "conga-long-history-sequential-recommendation": [],
+  "consensus-vs-dissent-group-llm": [],
+  "constraint-to-control-expected-fairness": [],
+  "contrastive-explanations-when-needed": [],
+  "control-function-position-bias-ltr": [
+   "position_bias",
+   "baidu_ultr",
+   "click_debiasing",
+   "control_function",
+   "econometrics",
+   "heckman",
+   "ipw",
+   "lambdamart",
+   "lewbel",
+   "unbiased_ltr"
+  ],
+  "convergent-validity": [],
+  "coreatt-core-task-attention": [],
+  "corgi-communal-feed-governance": [],
+  "cosid-concept-conditioned-sid-decoding": [
+   "semantic_id",
+   "generative_retrieval",
+   "tiger",
+   "beam_search",
+   "inference_cost",
+   "knowledge_distillation"
+  ],
+  "covns-noise-robust-optimization": [],
+  "cross-interaction-leakage-egr": [],
+  "cross-spectrum-candidate-sets": [],
+  "cross-stage-decoupling-semantic-collaborative-genrec": [
+   "semantic_id",
+   "generative_retrieval",
+   "tokenization",
+   "tiger",
+   "rq_vae",
+   "amazon",
+   "content_embedding",
+   "gating",
+   "hyperbolic",
+   "collaborative_signal",
+   "liger"
+  ],
+  "ct-mta-dual-debiasing": [],
+  "dart-adaptive-tweedie-objective": [],
+  "dart-drift-aware-ranking": [],
+  "dcd-xrec": [],
+  "dcdr-target-guided-calibration": [],
+  "deadweight-loss-recommendation": [],
+  "decoupled-slate-privacy-stability": [],
+  "deezer-discovery-quality-familiarity": [
+   "discovery",
+   "repeat_consumption",
+   "familiarity",
+   "labels",
+   "music"
+  ],
+  "deltagate-gap-driven-dimensional-gating": [
+   "cold_start",
+   "гейт",
+   "длинная_пауза",
+   "есть_код",
+   "замороженный_бэкбон",
+   "плагин",
+   "реактивация",
+   "слабейший_бейзлайн_как_репер"
+  ],
+  "design-space-agentic-conversational": [],
+  "discover-weakly-no-more": [],
+  "dp-rec": [],
+  "dpgflow-flow-matching-cross-domain-seqrec": [
+   "sequential",
+   "contrastive",
+   "cross_domain",
+   "flow_matching",
+   "generative"
+  ],
+  "dpgr": [],
+  "dranker-disney-homepage": [],
+  "drsd-complementary-news": [],
+  "eachmovie-archaeology": [],
+  "egr-embedding-native-generative-retrieval": [
+   "online_ab",
+   "cold_start",
+   "two_tower",
+   "content_embedding",
+   "contrastive",
+   "llm_recsys",
+   "snap"
+  ],
+  "egrec-latent-interest-discovery": [],
+  "ehr-drug-reproducibility-external-validity": [],
+  "embedding-subspace-partitioning-multi-objective-retrieval": [
+   "online_ab",
+   "two_tower",
+   "retrieval",
+   "serving",
+   "exhaustive_knn",
+   "linkedin",
+   "multi_objective",
+   "multitask"
+  ],
+  "ensrec-id-text-complementarity": [],
+  "fairsae-provider-retrieval": [],
+  "faithful-reasoning": [],
+  "fasc-aspect-sentiment-evaluation": [],
+  "fashion-session-trajectories-soft-negatives": [],
+  "ficorec-fine-grained-dual-aggregation": [],
+  "finally-dataset-recommender": [],
+  "fixed-candidate-model-selection": [],
+  "fluid-lucid-id-free-livestream": [],
+  "flvm-latent-preference-measurement": [],
+  "forward-outward-conversational-understanding": [],
+  "fusion-autoencoder-structured-products": [],
+  "g2rec-interest-profile-tokenization": [
+   "online_ab",
+   "industrial",
+   "tokenization",
+   "generative_recommendation",
+   "llm_recsys",
+   "graph_clustering",
+   "user_interest"
+  ],
+  "gateboxgcn": [],
+  "gencdsr-hybrid-tokenization": [
+   "semantic_id",
+   "generative_retrieval",
+   "rq_vae",
+   "cross_domain",
+   "декодирование",
+   "латентность"
+  ],
+  "genpage-netflix": [],
+  "genrxr": [],
+  "gpbm-ranking-ope": [],
+  "gplan-spatiotemporal-intent-sequences": [],
+  "gradsup": [],
+  "grip-profile-completion": [],
+  "grouprec": [],
+  "gsprec": [],
+  "gtp-group-aware-token-pruning-popularity": [
+   "popularity_bias",
+   "sequential",
+   "debiasing",
+   "exposure_fairness",
+   "plm",
+   "text_based"
+  ],
+  "gwhere-amap-generative-next-poi": [],
+  "heterogeneous-ranking-ha-moe-lens": [],
+  "hierarchical-gtv": [],
+  "hipa-net-intent-projection-cvr-calibration": [
+   "online_ab",
+   "industrial",
+   "calibration",
+   "kuaishou",
+   "multi_behavior",
+   "cvr",
+   "heterogeneous_feedback",
+   "implicit_feedback",
+   "lead_ads",
+   "negative_feedback",
+   "target_attention"
+  ],
+  "hoploy": [],
+  "hsr-hamiltonian-spectral-sequential-rec": [
+   "sasrec",
+   "sequential",
+   "hstu",
+   "ssm",
+   "динамика_предпочтений",
+   "отбор_чекпоинта",
+   "периодичность",
+   "спектральные_методы",
+   "форма_прироста"
+  ],
+  "human-aligned-cognitive-user-modeling": [],
+  "human-centered-recommender-providers": [],
+  "human-value-recommendation-evaluation": [],
+  "hyperbrec-hyperbolic-dct-attention": [
+   "sequential",
+   "hyperbolic",
+   "multi_behavior",
+   "efficient_attention",
+   "oversmoothing"
+  ],
+  "hypothesis-driven-shelf-generation": [],
+  "icl-recommendation-membership-inference": [],
+  "idproxy-mllm-cold-start-ctr": [
+   "cold_start",
+   "industrial",
+   "ctr",
+   "arxiv",
+   "item_embedding",
+   "multimodal"
+  ],
+  "illusion-control-3c-rank-zca": [],
+  "impression-share-prediction-ranking": [],
+  "inbatch-negatives-cripple-llm-seqrec": [
+   "amazon",
+   "in_batch",
+   "negative_sampling",
+   "full_softmax",
+   "infonce",
+   "late_breaking",
+   "llm_encoder",
+   "sequential_rec",
+   "temperature"
+  ],
+  "intent-description-anchoring-judge": [],
+  "interaction-modality-trust": [],
+  "interest-sequence": [],
+  "inverse-theory-of-mind": [],
+  "jth-temporal-job-recommendation": [],
+  "keeping-the-index-open-dual-encoder-cost": [
+   "eval_methodology",
+   "two_tower",
+   "воспроизводимость",
+   "негативы",
+   "сплит",
+   "тихий_отказ",
+   "функция_потерь",
+   "холодный_старт"
+  ],
+  "knowledge-integration-two-decades": [],
+  "learned-cross-task-relationships-youtube": [
+   "industrial",
+   "ranking",
+   "arxiv",
+   "multi_task",
+   "auxiliary_loss"
+  ],
+  "lightweight-ranking-heads-stop-gradient": [
+   "youtube",
+   "ранжирование",
+   "stop_gradient",
+   "многозадачность",
+   "негативный_перенос",
+   "промышленный_рекомендер",
+   "скорость_экспериментов"
+  ],
+  "live-catalogue-self-refreshing-retrieval": [],
+  "llm-explanation-evaluation-utility": [],
+  "llm-judge-conversational-music": [],
+  "llm-judge-tone-severity-operating-point": [],
+  "llm-prit-profile-instance-transfer": [],
+  "llm-real-estate-reranking": [],
+  "llm-user-personas-scale": [],
+  "lo-far-sparse-feature-ranking": [],
+  "loom": [],
+  "lumi-safety-aware-poi": [],
+  "m2r-taobao-implicit-scenario-routing": [],
+  "mamgr-adaptive-multiobjective-reranking": [],
+  "maskpoison-intent-guided-diffusion": [],
+  "mdgr-masked-diffusion-genrec": [
+   "semantic_id",
+   "online_ab",
+   "generative_retrieval",
+   "inference_cost",
+   "alibaba",
+   "masked_diffusion",
+   "parallel_decoding"
+  ],
+  "melo-production-music-agent": [],
+  "mercari-hybrid-multimodal-reranking": [],
+  "mesh-heterogeneous-content-unification": [
+   "cold_start",
+   "retrieval",
+   "industry",
+   "pinterest",
+   "scaling_law",
+   "gradient_interference"
+  ],
+  "meta-request-only-sequence-scaling-ads": [
+   "industrial",
+   "sequential",
+   "ranking",
+   "scaling",
+   "serving",
+   "hypernetwork"
+  ],
+  "mode-reciprocal-matching": [],
+  "monte-carlo-power-newsletter": [],
+  "mor-adaptive-retrieval-allocation": [],
+  "mosaic": [],
+  "multi-probe-zero-collision-hash": [],
+  "multimodal-semantic-expansion-constrained-llm-rerank": [
+   "llm_рекомендер",
+   "recsys_challenge",
+   "диалоговые_рекомендации",
+   "переранжирование",
+   "позиционное_смещение",
+   "слияние_сигналов",
+   "утечка_данных"
+  ],
+  "netflix-scaling-generative-recommenders-mtp": [
+   "cold_start",
+   "scaling_law",
+   "generative_recommender",
+   "multi_token_prediction",
+   "netflix",
+   "sampled_softmax",
+   "serving_latency"
+  ],
+  "news-engineers-personalization-explainability": [],
+  "nextgen-taobao": [],
+  "ordinal-attribute-calibration": [
+   "eval_methodology",
+   "popularity_bias",
+   "calibration",
+   "reranking"
+  ],
+  "pairwise-ranking-offline-explanation": [],
+  "pbook-self-recommending-living-book": [],
+  "pcore-filter-split-order-noncommute": [
+   "sequential",
+   "воспроизводимость",
+   "сплит",
+   "p_core",
+   "бенчмарк",
+   "оценка",
+   "протокол_оценки",
+   "утечка"
+  ],
+  "pcp-decoding-popularity-calibration-genret": [
+   "semantic_id",
+   "generative_retrieval",
+   "popularity_bias",
+   "beam_search",
+   "long_tail",
+   "decoding",
+   "jd"
+  ],
+  "perseus-heterogeneous-events": [],
+  "pindco-whole-page-creative-optimization": [],
+  "pinterest-model-agnostic-downstream-rewards": [],
+  "pinterest-onsite-offsite-transra": [],
+  "plain-generative-search": [],
+  "poem-partial-order": [],
+  "position-bias-listwise-llm-reranking": [
+   "evaluation",
+   "position_bias",
+   "llm_reranking",
+   "permutation_invariance",
+   "ranking_stability"
+  ],
+  "pricorec-feature-constrained-cloud-device": [],
+  "probabilistic-residual-learning": [],
+  "promise-process-reward-generative-rec": [
+   "semantic_id",
+   "beam_search",
+   "kuaishou",
+   "генеративные_рекомендации",
+   "process_reward_model",
+   "test_time_scaling"
+  ],
+  "prta-personalized-recommendation-tools": [],
+  "query-aware-multimodal-routing-crs": [],
+  "rankgraph-2": [],
+  "rating-review-scale-gaps": [],
+  "rdsr-information-aware-compression": [],
+  "reasoning-trace-design": [],
+  "rebait-choice-time": [],
+  "recap-streaming-semantic-profiles": [],
+  "recevolve-autonomous-agent-recsys": [
+   "eval_methodology",
+   "two_tower",
+   "in_batch",
+   "llm_agents",
+   "autoresearch",
+   "google",
+   "reward_hacking"
+  ],
+  "recommending-to-agentic-web": [],
+  "recrec-latent-interests-recursive-reasoning": [
+   "sasrec",
+   "sequential",
+   "deep_supervision",
+   "latent_reasoning",
+   "multi_interest"
+  ],
+  "recseed-training-seed-model-selection": [
+   "eval_methodology",
+   "sasrec",
+   "воспроизводимость",
+   "bert4rec",
+   "bpr",
+   "model_selection",
+   "neumf",
+   "сиды",
+   "согласие_списков",
+   "числа_из_репозитория"
+  ],
+  "redundancy-reduction-controllable-seqrec": [
+   "popularity_bias",
+   "sequential_recommendation",
+   "self_supervised",
+   "barlow_twins",
+   "coverage"
+  ],
+  "reef-explore-exploit-dual-rankers-meesho": [
+   "industrial",
+   "ranking",
+   "ecommerce",
+   "discovery",
+   "multi_task",
+   "explore_exploit"
+  ],
+  "repeat-utility-timing-metrics": [
+   "eval_methodology",
+   "ecommerce",
+   "repeat_consumption",
+   "metrics"
+  ],
+  "reranking-space-adapted-queries": [],
+  "residual-dominance": [
+   "sasrec",
+   "sequential_recommendation",
+   "interpretability",
+   "repeat_explore",
+   "diagnostics",
+   "inference_time",
+   "transformers"
+  ],
+  "retargetrec-dpoir-slot-allocation": [],
+  "revealed-behavior-stated-news-profiles": [],
+  "rohde-reward-optimizing-recsys-tutorial": [
+   "off_policy",
+   "tutorial",
+   "ab_testing",
+   "causal_inference",
+   "identifiability",
+   "reward_optimization"
+  ],
+  "sae-semantic-domain-adapters": [
+   "semantic_id",
+   "cold_start",
+   "sparse_autoencoder",
+   "content_based",
+   "text_embeddings"
+  ],
+  "safety-aware-next-poi-llm": [],
+  "sage-sequence-adaptive-gradient-evolution": [
+   "semantic_id",
+   "cold_start",
+   "diversity",
+   "generative_recsys",
+   "policy_optimization",
+   "reinforcement_learning"
+  ],
+  "said-calibrating-reproduced-claims": [
+   "eval_methodology",
+   "bert4rec",
+   "protocol",
+   "reproducibility"
+  ],
+  "salm-selective-augmentation": [],
+  "sample-is-feature-sample-level-tokens": [
+   "ranking",
+   "industry",
+   "scaling",
+   "sample_level_tokenization",
+   "sequence_modeling",
+   "vector_quantization"
+  ],
+  "scaling-l3ae-industrial-catalogs": [
+   "long_tail",
+   "linear_autoencoder",
+   "collaborative_filtering",
+   "scalability",
+   "semantic_embeddings"
+  ],
+  "schedl-cognitive-biases-recsys-tutorial": [
+   "popularity_bias",
+   "position_bias",
+   "tutorial",
+   "user_modeling",
+   "cognitive_biases",
+   "feedback_loop",
+   "simulation"
+  ],
+  "scikit-rank": [],
+  "scikit-rec-agent-unified-library": [],
+  "seed-variance-sequential-recommender-tests": [
+   "eval_methodology",
+   "sasrec",
+   "bootstrap",
+   "protocol",
+   "gru4rec",
+   "random_seeds",
+   "significance_testing",
+   "variance_inflation"
+  ],
+  "self-evolving-youtube-agents": [],
+  "sentiment-semantics-kg-explainable-recommendation": [],
+  "seqpack-sequence-compression": [],
+  "sequenceo1": [],
+  "sera-retail-agent-evaluation": [],
+  "shared-account": [],
+  "sid-alignment-openonerec-diagnostics": [
+   "semantic_id",
+   "llm_recsys",
+   "onerec",
+   "alignment",
+   "initialization",
+   "short_video"
+  ],
+  "sid-collision-last-token-resolution": [
+   "semantic_id",
+   "generative_retrieval",
+   "tokenization",
+   "tiger",
+   "amazon",
+   "collisions",
+   "short_paper",
+   "popularity",
+   "rq_kmeans"
+  ],
+  "sidec-dual-purpose-semantic-ids": [
+   "semantic_id",
+   "online_ab",
+   "cold_start",
+   "tokenization",
+   "выбор_колонки",
+   "youtube",
+   "абляция",
+   "индустриальная_статья",
+   "io_эффективность",
+   "кодек"
+  ],
+  "simulating-diverse-user-behavioral-stereotypes": [],
+  "smart-gated-hybrid-product-ads": [],
+  "social-ab-balanced-louvain": [],
+  "soda-distribution-level-contrastive": [
+   "semantic_id",
+   "tokenization",
+   "tiger",
+   "rq_vae",
+   "evaluation",
+   "contrastive",
+   "generative_recommendation",
+   "short_paper"
+  ],
+  "soft-curriculum-fresh-generalized-recs": [
+   "cold_start",
+   "industrial",
+   "sasrec",
+   "popularity_bias",
+   "two_tower",
+   "youtube",
+   "sngp",
+   "continuous_training",
+   "curriculum_learning",
+   "freshness",
+   "loss_weighting"
+  ],
+  "space-constraint-aware-virtual-users": [],
+  "space-efficient-item-embeddings": [],
+  "sparse-multimodal-cold-item-embeddings": [
+   "cold_start",
+   "content_embedding",
+   "linear_autoencoder",
+   "elsa",
+   "sparse_representation",
+   "sparsemax"
+  ],
+  "spear-selection-aware-rewriting-retrieval": [],
+  "spotify-bootstrapping-conversational-agents": [],
+  "ssprec-stability-plasticity": [],
+  "star-continuous-time": [],
+  "steps-self-triggered-push": [],
+  "stnb-page-module-interactions": [],
+  "streamlitrecommenders-inspectability": [],
+  "structure-preserving-projection-modality-bias": [
+   "llm_rec",
+   "shuffle_проба",
+   "выравнивание",
+   "диагностика",
+   "знаменатель_метрики",
+   "модальностный_перекос",
+   "проектор",
+   "размер_выборки",
+   "этап2"
+  ],
+  "subjective-reasoning-collapse-routing": [],
+  "support-gap": [],
+  "surface-matching": [],
+  "syf-shape-your-feed": [
+   "online_ab",
+   "выбор_колонки",
+   "абляция",
+   "conversational_recsys",
+   "dpo",
+   "llm_as_judge",
+   "llm_агенты",
+   "явная_обратная_связь"
+  ],
+  "tagrec-tailness-gate": [],
+  "talk-cobis-recsys2026-materials": [],
+  "tasteprint-cross-platform-memory": [],
+  "tau-rec": [
+   "evaluation",
+   "conversational_recsys",
+   "llm_agents",
+   "agentic_recsys",
+   "benchmark",
+   "pass_k"
+  ],
+  "teaching-recommenders-to-listen": [],
+  "text-on-the-creative": [],
+  "tie-breaking-illusion": [
+   "eval_methodology",
+   "воспроизводимость",
+   "bpr",
+   "офлайн_оценка",
+   "рекомендательные_системы",
+   "pitfall",
+   "метрики",
+   "протокол"
+  ],
+  "time-and-order-rope": [],
+  "timing-aware-repurchase-survival": [
+   "офлайн_оценка",
+   "e_grocery",
+   "анализ_выживаемости",
+   "горизонт",
+   "калибровка",
+   "повторные_покупки",
+   "промышленное_внедрение"
+  ],
+  "token-factory": [],
+  "topotok-topology-aware-tokenization": [
+   "semantic_id",
+   "tokenization",
+   "tiger",
+   "rq_vae",
+   "distillation",
+   "etegrec"
+  ],
+  "trace-counterfactual-sequential": [],
+  "transact-v2-lifelong-sequences-pinterest": [
+   "ctr",
+   "pinterest",
+   "негативы",
+   "препринт",
+   "ранжирование",
+   "a_b",
+   "impression_негативы",
+   "вспомогательный_лосс",
+   "длинная_история",
+   "продовое_внедрение"
+  ],
+  "transparency-control-provider-interfaces": [],
+  "tsd-sr-topology-aware-spectral-denoising-sisr": [
+   "sequential_recommendation",
+   "recbole",
+   "denoising",
+   "leave_one_out",
+   "side_information",
+   "spectral_filtering"
+  ],
+  "tsmoo-constrained-thompson-experimentation": [],
+  "tssr-beta-interaction-head-retrieval": [
+   "online_ab",
+   "industrial",
+   "ecommerce",
+   "retrieval",
+   "dual_encoder",
+   "interaction_head",
+   "search"
+  ],
+  "tubifm-unified-streaming-ranking": [],
+  "twiner-explainable-course-sequential-graph": [],
+  "twitch-fresh-delayed-segment-aware-ranking": [],
+  "udsig-sparse-image-generation": [],
+  "unbiased-implicit-feedback-islam": [],
+  "uncertainty-aware-reward-modeling-youtube": [],
+  "uncertainty-gated-context-poi": [],
+  "underrated-catalyst-critiquing": [],
+  "unipinrec-full-stack-unification": [
+   "online_ab",
+   "выбор_колонки",
+   "абляция",
+   "индустриальная_статья",
+   "генеративные_рекомендации",
+   "препринт",
+   "kv_кэш",
+   "атрибуция_числа",
+   "маскирование_действий",
+   "стоимость_сервинга",
+   "унификация_ретривала_и_ранжирования"
+  ],
+  "unique-flat-quantization-unified-retrieval-ranking": [],
+  "unirec-chain-of-attribute-genrec": [
+   "semantic_id",
+   "online_ab",
+   "generative_retrieval",
+   "onerec",
+   "chain_of_attribute",
+   "e_commerce"
+  ],
+  "unishare-video-receiver": [],
+  "unitraj-cross-domain-long-sequences": [],
+  "uprec-llm-user-profile-session-social-rec": [
+   "user_modeling",
+   "llm_profile",
+   "session_based",
+   "social"
+  ],
+  "user-controlled-intent-layers": [],
+  "user-foundation-model-open-web": [
+   "ctr",
+   "self_supervised",
+   "llm_as_optimizer",
+   "rtb",
+   "sequential_modeling",
+   "user_foundation_model"
+  ],
+  "user-governed-preference-memory": [],
+  "user-item-edges-exposure-allocation": [],
+  "value-aligned-modeling-robust-experimentation": [],
+  "valuevet-constitutional-recommender-audit": [],
+  "versioned-late-materialization": [],
+  "vlm-relevance-web-scale": [],
+  "watchlens-video-experiment-platform": [],
+  "webtoon-progressive-foundation-model-alignment": [],
+  "welfare-oriented-activity-travel": [],
+  "whale-wukong-hstu": [],
+  "what-price-fairness": [],
+  "when-recommender-systems-not-act": [],
+  "wisefood": [],
+  "workrb-work-domain-benchmark": [],
+  "youtube-music-breaking-the-loop-interventions": [
+   "online_ab",
+   "popularity_bias",
+   "индустриальная_статья",
+   "sngp",
+   "exploration",
+   "новизна",
+   "петля_обратной_связи",
+   "разнообразие",
+   "свежесть",
+   "честная_статья"
+  ]
+ }
+}

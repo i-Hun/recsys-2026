@@ -1,0 +1,14 @@
+name: Предложение
+description: Добавить работу, тему, фильтр, улучшить вёрстку или навигацию
+labels: ["suggestion"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: Что предлагаете
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Страница (если про конкретную)
