@@ -1090,7 +1090,7 @@ const pad = (n) => String(n).padStart(3, "0");
     </main>
     <footer class="rs-footer rs-wrap">
       <NuxtLink :to="base">RecSys<b>2026</b></NuxtLink>
-      <p>Разборы работ RecSys 2026 · обновлено {{ data.version }}. <span data-e2e="autodeploy">e2e-autodeploy-test</span></p>
+      <p>Разборы работ RecSys 2026 · обновлено {{ data.version }}.</p>
       <NuxtLink :to="base + '#method'">Методика и ограничения ↑</NuxtLink>
     </footer>
   </div>
