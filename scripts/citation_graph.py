@@ -112,8 +112,8 @@ def main():
     G = nx.Graph()
     G.add_nodes_from(range(len(core)))
     for e in sub.es:
-        G.add_edge(e.source, e.target, weight=e["weight"])
-    pos = nx.spring_layout(G, weight="weight", seed=SEED, k=1.2 / math.sqrt(len(core)), iterations=400)
+        G.add_edge(e.source, e.target, weight=float(e["weight"]) ** 0.7)
+    pos = nx.spring_layout(G, weight="weight", seed=SEED, k=0.5, iterations=900)
     P = np.array([pos[i] for i in range(len(core))])
     P = (P - P.min(0)) / np.maximum(np.ptp(P, axis=0), 1e-9) * 0.84 + 0.08
     for k, i in enumerate(core):
@@ -138,6 +138,8 @@ def main():
         },
         "points": [{"slug": slugs[i], "x": round(float(xs[i]), 1), "y": round(float(ys[i]), 1),
                     "community": int(labels[i])} for i in range(n)],
+        # рёбра: [индекс, индекс, вес]; вес = число общих источников
+        "edges": [[i, j, int(w)] for (i, j), w in sorted(edges.items(), key=lambda kv: -kv[1])],
         "communities": [],
     }
     for c in sorted(sizes, key=lambda c: -sizes[c]):
@@ -149,6 +151,20 @@ def main():
         theme = collections.Counter(themes[i] for i in members).most_common(1)[0][0]
         out["communities"].append({"id": int(c), "size": int(sizes[c]), "theme": theme,
                                    "topRefs": [k.split(":", 1)[1] for k, _ in cnt.most_common(6)]})
+    names = {0: "Диалоговые и LLM", 1: "Промышленное ранжирование", 2: "Бенчмарки и критика оценки",
+             3: "Генеративный поиск", 4: "CTR и многозадачность", 5: "Последовательные модели"}
+    titles = {
+        0: ["A Survey on Conversational Recommender Systems", "Recommendation as Language Processing (RLP): P5"],
+        1: ["Deep Neural Networks for YouTube Recommendations", "Unbiased Learning-to-Rank with Biased Feedback"],
+        2: ["The MovieLens Datasets", "Are we really making much progress? A worrying analysis"],
+        3: ["Recommender Systems with Generative Retrieval", "OneRec: Unifying Retrieve and Rank"],
+        4: ["Deep Interest Network for Click-Through Rate Prediction", "Wide & Deep Learning for Recommender Systems"],
+        5: ["Self-Attentive Sequential Recommendation", "BERT4Rec"],
+    }
+    for c in out["communities"]:
+        c["name"] = names.get(c["id"], c["theme"])
+        c["refsTitles"] = [{"doi": "", "title": t} for t in titles.get(c["id"], [])]
+        c.pop("topRefs", None)
     (ROOT / "data" / "recsys-2026-communities.json").write_text(json.dumps(out, ensure_ascii=False), encoding="utf-8")
     print("сообщества:", [(c["id"], c["size"]) for c in out["communities"]])
 

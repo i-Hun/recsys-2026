@@ -280,6 +280,23 @@ const mapFill = (p) => {
   return mapKeyOf(p) === mapSel.value ? "var(--accent)" : "var(--rule)";
 };
 const mapOpacity = (p) => (!mapSel.value ? (mapIsNoise(p) ? 0.4 : 0.8) : mapKeyOf(p) === mapSel.value ? 1 : 0.16);
+// Рёбра графа общих ссылок: толщина ∝ числу общих источников.
+// Без выбранного сообщества рисуем только сильные связи (>=4 общих), иначе экран — клубок.
+const mapEdges = computed(() => {
+  if (mapMode.value !== "refs" || !communitiesData.edges) return [];
+  const pts = communitiesData.points;
+  const sel = mapSel.value;
+  return communitiesData.edges
+    // показываем только связи внутри сообщества: межгрупповые рёбра превращают карту в паутину
+    .filter(([i, j, w]) => pts[i].community === pts[j].community
+      && (sel ? "k" + pts[i].community === sel : w >= 4))
+    .map(([i, j, w]) => ({
+      key: i + "-" + j,
+      x1: pts[i].x, y1: pts[i].y, x2: pts[j].x, y2: pts[j].y,
+      sw: Math.min(3.6, 0.4 + w * 0.22),
+      op: sel ? 0.6 : Math.min(0.5, 0.08 + w * 0.03),
+    }));
+});
 const mapSelected = computed(() => mapGroups.value.find((g) => g.key === mapSel.value) || null);
 const mapSelectedPapers = computed(() =>
   !mapSel.value ? [] : mapPoints.value.filter((p) => mapKeyOf(p) === mapSel.value).map((p) => bySlug[p.slug]).filter(Boolean),
@@ -861,7 +878,7 @@ const pad = (n) => String(n).padStart(3, "0");
                       :key="p.slug"
                       :cx="p.x"
                       :cy="p.y"
-                      r="5.4"
+                      :r="mapMode === 'refs' ? 3.8 : 5.4"
                       class="rs-mdot"
                       :data-slug="p.slug"
                       :style="{ fill: mapFill(p), opacity: mapOpacity(p) }"
@@ -869,6 +886,17 @@ const pad = (n) => String(n).padStart(3, "0");
                     >
                       <title>{{ bySlug[p.slug]?.title }}</title>
                     </circle>
+                    <g v-if="mapEdges.length" class="rs-medges">
+                      <line
+                        v-for="e in mapEdges"
+                        :key="e.key"
+                        :x1="e.x1"
+                        :y1="e.y1"
+                        :x2="e.x2"
+                        :y2="e.y2"
+                        :style="{ strokeWidth: e.sw, opacity: e.op }"
+                      />
+                    </g>
                     <text
                       v-for="s in mapCenters"
                       :key="'l' + s.key"
