@@ -55,10 +55,37 @@ for (const p of data.papers.filter((p) => p.status === "reviewed")) {
     }
   }
 }
+// Карта близости: координаты, кластеры и связь с каталогом.
+const map = JSON.parse(
+  fs.readFileSync(new URL("../data/recsys-2026-map.json", import.meta.url)),
+);
+const reviewed = data.papers.filter((p) => p.status === "reviewed");
+assert.equal(map.points.length, reviewed.length, "map: по точке на каждый разбор");
+const mapSlugs = new Set();
+for (const p of map.points) {
+  assert(slugSet.has(p.slug), "map: неизвестный slug " + p.slug);
+  assert(!mapSlugs.has(p.slug), "map: дубль slug " + p.slug);
+  mapSlugs.add(p.slug);
+  assert(p.x >= 0 && p.x <= 1000 && p.y >= 0 && p.y <= 1000, "map: координаты вне поля " + p.slug);
+  assert(data.themes.some((t) => t.id === p.theme), "map: неизвестная тема " + p.theme);
+}
+const clusterIds = new Set(map.clusters.map((c) => c.id));
+for (const c of map.clusters) {
+  assert.equal(map.points.filter((p) => p.cluster === c.id).length, c.size, "map: размер кластера " + c.id);
+  assert(c.name && c.name.length < 60, "map: нет названия кластера " + c.id);
+}
+for (const p of map.points) assert(p.cluster === -1 || clusterIds.has(p.cluster), "map: кластер вне списка " + p.slug);
+assert.equal(
+  map.clusters.reduce((n, c) => n + c.size, 0) + map.meta.noise,
+  map.points.length,
+  "map: шум и кластеры не покрывают корпус",
+);
+
 console.log(
   JSON.stringify({
     status: "PASS",
     renderedSections: sections,
+    mapPoints: map.points.length,
     xss: "raw HTML, javascript URLs and images blocked; safe formatting retained",
   }),
 );
