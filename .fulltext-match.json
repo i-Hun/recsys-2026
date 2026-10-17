@@ -1,0 +1,352 @@
+{
+"convergent-validity": {
+"file": "2607.25097.pdf",
+"via": "doi",
+"score": 1.0
+},
+"uprec-llm-user-profile-session-social-rec": {
+"file": "3773078.3831732.pdf",
+"via": "doi",
+"score": 1.0
+},
+"cofirec-coarse-to-fine-tokenization": {
+"file": "3773078.3831740.pdf",
+"via": "doi",
+"score": 1.0
+},
+"sage-sequence-adaptive-gradient-evolution": {
+"file": "3773078.3831745.pdf",
+"via": "doi",
+"score": 1.0
+},
+"sample-is-feature-sample-level-tokens": {
+"file": "3773078.3831746.pdf",
+"via": "doi",
+"score": 1.0
+},
+"rohde-reward-optimizing-recsys-tutorial": {
+"file": "3773078.3831747.pdf",
+"via": "doi",
+"score": 1.0
+},
+"dpgflow-flow-matching-cross-domain-seqrec": {
+"file": "3773078.3831749.pdf",
+"via": "doi",
+"score": 1.0
+},
+"soda-distribution-level-contrastive": {
+"file": "3773078.3831770.pdf",
+"via": "doi",
+"score": 1.0
+},
+"tsd-sr-topology-aware-spectral-denoising-sisr": {
+"file": "3773078.3831773.pdf",
+"via": "doi",
+"score": 1.0
+},
+"position-bias-listwise-llm-reranking": {
+"file": "3773078.3831801.pdf",
+"via": "doi",
+"score": 1.0
+},
+"codebook-sid-five-fractures": {
+"file": "3773078.3831806.pdf",
+"via": "doi",
+"score": 1.0
+},
+"scaling-l3ae-industrial-catalogs": {
+"file": "3773078.3831815.pdf",
+"via": "doi",
+"score": 1.0
+},
+"redundancy-reduction-controllable-seqrec": {
+"file": "3773078.3831830.pdf",
+"via": "doi",
+"score": 1.0
+},
+"schedl-cognitive-biases-recsys-tutorial": {
+"file": "3773078.3831860.pdf",
+"via": "doi",
+"score": 1.0
+},
+"conalign-conditional-debiasing": {
+"file": "3773078.3831873.pdf",
+"via": "doi",
+"score": 1.0
+},
+"bootstrap-iips-offpolicy-evaluation": {
+"file": "3773078.3831911.pdf",
+"via": "doi",
+"score": 1.0
+},
+"mesh-heterogeneous-content-unification": {
+"file": "3773078.3831925.pdf",
+"via": "doi",
+"score": 1.0
+},
+"g2rec-interest-profile-tokenization": {
+"file": "3773078.3831928.pdf",
+"via": "doi",
+"score": 1.0
+},
+"user-foundation-model-open-web": {
+"file": "3773078.3831931.pdf",
+"via": "doi",
+"score": 1.0
+},
+"tssr-beta-interaction-head-retrieval": {
+"file": "3773078.3831933.pdf",
+"via": "doi",
+"score": 1.0
+},
+"reef-explore-exploit-dual-rankers-meesho": {
+"file": "3773078.3831934.pdf",
+"via": "doi",
+"score": 1.0
+},
+"meta-request-only-sequence-scaling-ads": {
+"file": "3773078.3841247.pdf",
+"via": "doi",
+"score": 1.0
+},
+"ordinal-attribute-calibration": {
+"file": "3773078.3841248.pdf",
+"via": "doi",
+"score": 1.0
+},
+"compresso-sparse-representation-library-demo": {
+"file": "3773078.3841254.pdf",
+"via": "doi",
+"score": 1.0
+},
+"amazon-music-retrieval-embedding-ranker-feature": {
+"file": "3773078.3841256.pdf",
+"via": "doi",
+"score": 1.0
+},
+"seqpack-sequence-compression": {
+"file": "3773078.3841279.pdf",
+"via": "doi",
+"score": 1.0
+},
+"rating-review-scale-gaps": {
+"file": "3773078.3841285.pdf",
+"via": "doi",
+"score": 1.0
+},
+"repeat-utility-timing-metrics": {
+"file": "3773078.3841286.pdf",
+"via": "doi",
+"score": 1.0
+},
+"fashion-session-trajectories-soft-negatives": {
+"file": "3773078.3841292.pdf",
+"via": "doi",
+"score": 1.0
+},
+"cross-spectrum-candidate-sets": {
+"file": "3773078.3841293.pdf",
+"via": "doi",
+"score": 1.0
+},
+"deezer-discovery-quality-familiarity": {
+"file": "3773078.3841296.pdf",
+"via": "doi",
+"score": 1.0
+},
+"bonsai-decoding-trie-optimization": {
+"file": "arxiv2607.16633.pdf",
+"via": "doi",
+"score": 1.0
+},
+"deltagate-gap-driven-dimensional-gating": {
+"file": "arxiv2607.19802.pdf",
+"via": "doi",
+"score": 1.0
+},
+"structure-preserving-projection-modality-bias": {
+"file": "arxiv2608.08583_spp.pdf",
+"via": "doi",
+"score": 1.0
+},
+"adaptive-sid-construction-branches": {
+"file": "atlas26/acm3773078_3831756_adaptive-sid-branches.pdf",
+"via": "doi",
+"score": 1.0
+},
+"sparse-multimodal-cold-item-embeddings": {
+"file": "atlas26/acm3773078_3831760.pdf",
+"via": "doi",
+"score": 1.0
+},
+"covns-noise-robust-optimization": {
+"file": "atlas26/acm3773078_3831766.pdf",
+"via": "doi",
+"score": 1.0
+},
+"unirec-chain-of-attribute-genrec": {
+"file": "atlas26/acm3773078_3831776.pdf",
+"via": "doi",
+"score": 1.0
+},
+"hyperbrec-hyperbolic-dct-attention": {
+"file": "atlas26/acm3773078_3831789_hyperbrec.pdf",
+"via": "doi",
+"score": 1.0
+},
+"asmoe-automated-selection-moe-seqrec": {
+"file": "atlas26/acm3773078_3831791_asmoe.pdf",
+"via": "doi",
+"score": 1.0
+},
+"gtp-group-aware-token-pruning-popularity": {
+"file": "atlas26/acm3773078_3831805_gtp-token-pruning.pdf",
+"via": "doi",
+"score": 1.0
+},
+"salm-selective-augmentation": {
+"file": "atlas26/acm3773078_3831810_salm.pdf",
+"via": "doi",
+"score": 1.0
+},
+"mdgr-masked-diffusion-genrec": {
+"file": "atlas26/acm3773078_3831862.pdf",
+"via": "doi",
+"score": 1.0
+},
+"soft-curriculum-fresh-generalized-recs": {
+"file": "atlas26/acm3773078_3831904_soft-curriculum-fresh.pdf",
+"via": "doi",
+"score": 1.0
+},
+"hipa-net-intent-projection-cvr-calibration": {
+"file": "atlas26/acm3773078_3831909_hipa-net-cvr-feedback.pdf",
+"via": "doi",
+"score": 1.0
+},
+"sid-alignment-openonerec-diagnostics": {
+"file": "atlas26/acm3773078_3841246.pdf",
+"via": "doi",
+"score": 1.0
+},
+"sae-semantic-domain-adapters": {
+"file": "atlas26/acm3773078_3841253_sae-adapters.pdf",
+"via": "doi",
+"score": 1.0
+},
+"inbatch-negatives-cripple-llm-seqrec": {
+"file": "atlas26/acm3773078_3841255_inbatch-negatives-llm-seqrec.pdf",
+"via": "doi",
+"score": 1.0
+},
+"pcore-filter-split-order-noncommute": {
+"file": "atlas26/acm3773078_3841280.pdf",
+"via": "doi",
+"score": 1.0
+},
+"seed-variance-sequential-recommender-tests": {
+"file": "atlas26/acm3773078_3841281_seed-variance-seqrec-tests.pdf",
+"via": "doi",
+"score": 1.0
+},
+"shared-account": {
+"file": "atlas26/acm3773078_3841282.pdf",
+"via": "doi",
+"score": 1.0
+},
+"cosid-concept-conditioned-sid-decoding": {
+"file": "atlas26/acm3773078_3841283_cosid.pdf",
+"via": "doi",
+"score": 1.0
+},
+"sid-collision-last-token-resolution": {
+"file": "atlas26/acm3773078_3841287_sid-collision-last-token.pdf",
+"via": "doi",
+"score": 1.0
+},
+"pcp-decoding-popularity-calibration-genret": {
+"file": "atlas26/acm3773078_3841288.pdf",
+"via": "doi",
+"score": 1.0
+},
+"control-function-position-bias-ltr": {
+"file": "atlas26/arxiv2506.06989_control-function-position-bias.pdf",
+"via": "doi",
+"score": 1.0
+},
+"coarse-to-fine-long-term-interest-genrec": {
+"file": "atlas26/arxiv2602.05663_coarse-to-fine-long-term-genrec.pdf",
+"via": "doi",
+"score": 1.0
+},
+"capts": {
+"file": "atlas26/arxiv2602.12564.pdf",
+"via": "doi",
+"score": 1.0
+},
+"topotok-topology-aware-tokenization": {
+"file": "atlas26/arxiv2607.18600.pdf",
+"via": "doi",
+"score": 1.0
+},
+"mosaic": {
+"file": "atlas26/arxiv2607.24015.pdf",
+"via": "doi",
+"score": 1.0
+},
+"cross-stage-decoupling-semantic-collaborative-genrec": {
+"file": "atlas26/arxiv2609.13678_cross-stage-decoupling-genrec.pdf",
+"via": "doi",
+"score": 1.0
+},
+"embedding-subspace-partitioning-multi-objective-retrieval": {
+"file": "atlas26/arxiv2609.30601_embedding-subspace-partitioning.pdf",
+"via": "doi",
+"score": 1.0
+},
+"youtube-music-breaking-the-loop-interventions": {
+"file": "debt16/2607.23749.pdf",
+"via": "doi",
+"score": 1.0
+},
+"apple-tv-incremental-search-hybrid-text-id": {
+"file": "2607.13493.pdf",
+"via": "arxiv:2607.13493",
+"score": 1.0
+},
+"said-calibrating-reproduced-claims": {
+"file": "2609.26975.pdf",
+"via": "arxiv:2609.26975",
+"score": 1.0
+},
+"netflix-scaling-generative-recommenders-mtp": {
+"file": "atlas26/arxiv2605.23312.pdf",
+"via": "arxiv:2605.23312",
+"score": 1.0
+},
+"poem-partial-order": {
+"file": "atlas26/arxiv2606.29946.pdf",
+"via": "arxiv:2606.29946",
+"score": 1.0
+},
+"recrec-latent-interests-recursive-reasoning": {
+"file": "atlas26/arxiv2607.12945.pdf",
+"via": "arxiv:2607.12945",
+"score": 1.0
+},
+"egr-embedding-native-generative-retrieval": {
+"file": "atlas26/arxiv2607.23038_egr-embedding-native-genret.pdf",
+"via": "arxiv:2607.23038",
+"score": 1.0
+},
+"recevolve-autonomous-agent-recsys": {
+"file": "atlas26/arxiv2609.01622_recevolve.pdf",
+"via": "arxiv:2609.01622",
+"score": 1.0
+},
+"unipinrec-full-stack-unification": {
+"file": "unipinrec_2606.00422.pdf",
+"via": "arxiv:2606.00422",
+"score": 1.0
+}
+}
