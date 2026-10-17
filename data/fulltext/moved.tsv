@@ -1,0 +1,172 @@
+slug	theme	reviewCluster	reviewClusterTheme	fulltextCluster	fulltextClusterTheme	change	cosFulltextReview	title
+unbiased-implicit-feedback-islam	eval	7	ads	6	eval	ads → eval	0.595	Unbiased Recommender Systems with Implicit Feedback
+forward-outward-conversational-understanding	human	5	graph	12	human	graph → human	0.662	Forward and Outward: From Aggregate to Individual and Towards Human Understanding in Conversational Recommendation
+talk-cobis-recsys2026-materials	human	2	human	6	eval	human → eval	0.693	Cognitive Biases in Recommender Systems — материалы COBIS RecSys 2026
+rohde-reward-optimizing-recsys-tutorial	eval	7	ads	-1	None	шум по полному тексту	0.705	Reward Optimizing Recommender Systems
+human-aligned-cognitive-user-modeling	human	2	human	6	eval	human → eval	0.72	Toward Human-Aligned Recommender Systems via Cognitive and Behavioral User Modeling
+rdsr-information-aware-compression	seq	6	prod	24	seq	prod → seq	0.722	Information-Aware Long Sequence Compression for Sequential Recommendation
+unitraj-cross-domain-long-sequences	seq	-1	None	-1	None	шум по полному тексту	0.722	UniTraj: Cross-Domain Long-Sequence Modeling for Commercial Recommendation
+rankgraph-2	graph	8	graph	-1	None	шум по полному тексту	0.729	RankGraph-2: Lifecycle Co-Design for Billion-Node Graph Learning in Recommendation
+knowledge-integration-two-decades	graph	5	graph	9	llm	graph → llm	0.731	From Side Information and Knowledge Graphs to Large Language Models: Two Decades of Knowledge Integration in Recommender Systems
+melo-production-music-agent	llm	4	eval	9	llm	eval → llm	0.731	Melo: A Production LLM-Powered Music Recommendation Agent
+webtoon-progressive-foundation-model-alignment	prod	-1	None	19	prod	не было кластера в разборе	0.731	Progressive Alignment of Recommender Foundation Model through Multi-Phase Post-Training
+query-aware-multimodal-routing-crs	llm	5	graph	-1	None	шум по полному тексту	0.734	Choosing What Matters: Query-Aware Multimodal Routing for Conversational Recommendation
+bipcl-bilateral-intent-perturbation	seq	8	graph	23	seq	graph → seq	0.741	Bilateral Intent-Enhanced Sequential Recommendation with Embedding Perturbation-Based Contrastive Learning
+design-space-agentic-conversational	llm	15	llm	12	human	llm → human	0.741	A Design-Space Approach to Robust Agentic Conversational Recommendation
+autonomous-agents	llm	15	llm	10	human	llm → human	0.748	A Position Paper on Recommender Systems in the Era of Autonomous Agents
+human-value-recommendation-evaluation	eval	2	human	6	eval	human → eval	0.748	Human Value in Recommendations: Towards Improved Evaluation Measures
+live-catalogue-self-refreshing-retrieval	prod	1	gen	13	human	gen → human	0.748	Conversational Recommendation over Live E-Commerce Catalogues with Self-Refreshing Retrieval
+pbook-self-recommending-living-book	human	-1	None	11	human	не было кластера в разборе	0.749	How Would You Like Your Recommendations? p-book, a Self-Recommending Living Book That Teaches How Recommender Systems Work
+shared-account	eval	9	seq	-1	None	шум по полному тексту	0.753	Revisiting the Assumptions of Shared-Account Sequential Recommendation
+interaction-modality-trust	human	5	graph	12	human	graph → human	0.754	Interaction Modality and Trust: Investigating System-Driven Conversational Recommendation and Faceted Search
+sample-is-feature-sample-level-tokens	prod	1	gen	-1	None	шум по полному тексту	0.754	Sample Is Feature: Beyond Item-Level, Toward Sample-Level Tokens for Unified Large Recommender Models
+apple-music-elise	prod	4	eval	4	prod	eval → prod	0.755	Multilingual Semantic Retrieval for Apple Music Search
+illusion-control-3c-rank-zca	human	10	human	-1	None	шум по полному тексту	0.755	The Illusion of Control: Commensurability, Concentration, and Correlation in Multi-Objective Recommendation
+youtube-music-breaking-the-loop-interventions	prod	0	human	5	prod	human → prod	0.756	Breaking the Loop: An Empirical Comparison of Strategies for Novelty and Freshness in YouTube Music
+cross-interaction-leakage-egr	eval	10	human	3	eval	human → eval	0.757	We’ve Already Been There: A Study of Data Leakage in Ephemeral Group Recommender Systems
+fusion-autoencoder-structured-products	graph	12	graph	22	prod	graph → prod	0.759	Fusion AutoEncoder: Feature-Grounded Embeddings for Products with Mixed Structured Attributes
+multimodal-semantic-expansion-constrained-llm-rerank	domain	4	eval	-1	None	шум по полному тексту	0.76	Multi-Modal Semantic Expansion with Constrained LLM Reranking for Conversational Music Recommendation
+backward-inward-personalization-safety	human	-1	None	12	human	не было кластера в разборе	0.761	Backward and Inward: From Preferences to Personalization and the Safety Crisis Within Conversational Recommender Systems
+discover-weakly-no-more	human	0	human	6	eval	human → eval	0.761	Discover Weakly No More: User-Centric Design Criteria for Discovery in Music Recommendation
+sparse-multimodal-cold-item-embeddings	domain	12	graph	20	prod	graph → prod	0.763	Learning Sparse Representations of Multimodal Content for Enhanced Cold Item Recommendation
+structure-preserving-projection-modality-bias	llm	17	prod	23	seq	prod → seq	0.763	Structure-Preserving Projection for Mitigating Modality Bias in LLM-Based Sequential Recommendation
+gplan-spatiotemporal-intent-sequences	llm	14	llm	0	human	llm → human	0.764	Generative Spatiotemporal Intent Sequence Recommendation via Implicit Reasoning in Amap
+gsprec	graph	8	graph	-1	None	шум по полному тексту	0.765	GSPRec: On Improving Item Representations in Graph Signal Processing for Collaborative Filtering
+teaching-recommenders-to-listen	human	14	llm	14	human	llm → human	0.766	Teaching Recommenders to Listen: Bidirectional Natural-Language Control for Personalized News
+seqpack-sequence-compression	prod	6	prod	24	seq	prod → seq	0.768	SeqPack: Interactive Composable Sequence Compression for Real-time Recommender Systems
+sera-retail-agent-evaluation	eval	-1	None	9	llm	не было кластера в разборе	0.77	SERA: A Multi-Dimensional Evaluation Framework for Retail Agentic Shopping Assistants
+pricorec-feature-constrained-cloud-device	ads	-1	None	16	prod	не было кластера в разборе	0.771	PriCoRec: A Privacy-Aware Cloud–Device Collaborative Framework for Ad Recommendation under Feature Constraints
+loom	llm	14	llm	-1	None	шум по полному тексту	0.772	Loom: LLM-Powered Naturally Embedded Recommendation
+transact-v2-lifelong-sequences-pinterest	seq	-1	None	19	prod	не было кластера в разборе	0.772	TransAct V2: Lifelong User Action Sequence Modeling on Pinterest Recommendation
+genpage-netflix	gen	1	gen	19	prod	gen → prod	0.773	GenPage: Towards End-to-End Generative Homepage Construction at Netflix
+lo-far-sparse-feature-ranking	ads	-1	None	16	prod	не было кластера в разборе	0.773	LO-FAR: A Cost-Aware Local Filter for Sparse Feature Ranking in Industrial Ad Recommendation
+value-aligned-modeling-robust-experimentation	ads	7	ads	1	eval	ads → eval	0.773	A Framework for Value-Aligned Modeling and Robust Experimentation
+dart-drift-aware-ranking	prod	3	prod	1	eval	prod → eval	0.775	DART - Drift Aware Ranking with forecasTing and uncertainty
+agentcf-connectivity-security	human	8	graph	0	human	graph → human	0.776	Attacking and Defending Multi-Agent Collaborative Filtering Systems Through Connectivity
+icl-recommendation-membership-inference	human	9	seq	0	human	seq → human	0.776	Membership Inference Attacks on In-Context Learning Recommendation
+safety-aware-next-poi-llm	domain	-1	None	0	human	не было кластера в разборе	0.776	Safety-Aware Next-POI Recommendation with Large Language Models
+recap-streaming-semantic-profiles	llm	-1	None	7	llm	не было кластера в разборе	0.778	RECAP: Feedback-Driven Streaming Semantic User Profiles for Short-Video Recommendation
+gwhere-amap-generative-next-poi	gen	1	gen	0	human	gen → human	0.779	Guess Where You Go: Generative Next Point-of-Interest Recommendation in Amap
+scaling-l3ae-industrial-catalogs	prod	12	graph	22	prod	graph → prod	0.779	Scaling LLM-Enhanced Linear Autoencoders to Industrial-Size Catalogs
+spear-selection-aware-rewriting-retrieval	prod	-1	None	4	prod	не было кластера в разборе	0.779	SPEAR: Selection-aware Personalized End-to-end Adaptive Rewriting and Retrieval for Community Search
+uncertainty-aware-reward-modeling-youtube	prod	7	ads	5	prod	ads → prod	0.782	Uncertainty-Aware Reward Modeling: A Large-Scale Case Study in Video Recommendation
+corgi-communal-feed-governance	human	-1	None	13	human	не было кластера в разборе	0.784	CORGI: Communal Feed Governance for Bluesky
+schedl-cognitive-biases-recsys-tutorial	human	2	human	6	eval	human → eval	0.786	Cognitive Biases in Recommender Systems
+pcore-filter-split-order-noncommute	eval	6	prod	3	eval	prod → eval	0.787	Your 5-Core Train Split May Not Be 5-Core: Core Filtering and Temporal Splitting Do Not Commute
+tie-breaking-illusion	eval	10	human	3	eval	human → eval	0.788	Are We Really Making Progress in Group Recommendation? Unmasking the Tie-Breaking Illusion
+dp-rec	seq	6	prod	24	seq	prod → seq	0.79	DP-Rec: Towards Dynamic Patching for Efficient Long-Sequence Recommendation
+decoupled-slate-privacy-stability	human	1	gen	1	eval	gen → eval	0.791	Decoupled Learning and Selection in Slate Recommendation for Privacy and Stability Under Noisy Scores
+pindco-whole-page-creative-optimization	ads	7	ads	19	prod	ads → prod	0.792	PinDCO: Whole-Page Aware Dynamic Creative Optimization at Scale
+fairsae-provider-retrieval	human	12	graph	2	human	graph → human	0.793	Candidate Retrieval for Provider Fairness under Severe Recommendation Imbalance
+finally-dataset-recommender	eval	11	eval	9	llm	eval → llm	0.793	FINALLY: A Dataset Recommender for RecSys Experiments
+g2rec-interest-profile-tokenization	gen	8	graph	-1	None	шум по полному тексту	0.793	Structuring and Tokenizing Distributed User Interest Context for Generative Recommendation
+netflix-scaling-generative-recommenders-mtp	gen	1	gen	19	prod	gen → prod	0.793	Towards Generalizable and Efficient Large-Scale Generative Recommenders
+surface-matching	eval	4	eval	4	prod	eval → prod	0.793	Surface Matching in Skill Recommenders: Incomplete Evaluation Hides Simplicity Bias
+bounded-attention-explanation-structure	human	-1	None	8	eval	не было кластера в разборе	0.794	When attention is bounded, structure matters: personalizing recommendation explanations under time constraints
+llm-user-personas-scale	llm	-1	None	7	llm	не было кластера в разборе	0.796	LLM-Based User Personas for Recommendations at Scale
+binge-watch-m3l	domain	17	prod	-1	None	шум по полному тексту	0.797	Binge Watch: Reproducible Multimodal Benchmark Datasets for Large-Scale Movie Recommendation on MovieLens-10M and 20M
+inbatch-negatives-cripple-llm-seqrec	seq	-1	None	22	prod	не было кластера в разборе	0.797	In-Batch Negatives Can Silently Cripple LLM-Encoded Sequential Recommenders
+conalign-conditional-debiasing	eval	3	prod	1	eval	prod → eval	0.798	ConAlign: Conditional Alignment Framework for Balancing Biased and Unbiased Recommendation
+impression-share-prediction-ranking	ads	7	ads	1	eval	ads → eval	0.799	Impression Share Prediction: An Offline Evaluation Task for Ads Ranking Systems
+llm-prit-profile-instance-transfer	domain	17	prod	17	gen	prod → gen	0.799	Bridge the Unseen Gap: Enhancing Non-overlapping Cross-domain CTR Prediction via Profile Retrieval
+sidec-dual-purpose-semantic-ids	prod	1	gen	20	prod	gen → prod	0.799	Tokens are All You Need: Dual-purpose Semantic IDs for Achieving LLM-Level I/O Efficiency in Recommendation Systems (SiDec)
+underrated-catalyst-critiquing	human	4	eval	11	human	eval → human	0.799	The Underrated Catalyst: Advancing Critiquing Towards Steerable and Next-Generation LLM Recommendations.
+sequenceo1	seq	6	prod	-1	None	шум по полному тексту	0.8	SequenceO1: End-to-End Ultra-Long (100K) Sequence Modeling in Recommendation with Low-Rank Caching
+space-constraint-aware-virtual-users	human	1	gen	2	human	gen → human	0.8	Give the Long-tail More SPACE: Promoting Provider Fairness in Next POI Recommendation
+hipa-net-intent-projection-cvr-calibration	ads	7	ads	1	eval	ads → eval	0.801	HIPA-Net: Heterogeneous Intent Projection Alignment for Feedback Calibration in CVR Prediction
+text-on-the-creative	ads	7	ads	16	prod	ads → prod	0.801	The Text on the Creative: An Under-Exploited Ranking Modality for Short-Form Video Ads
+whale-wukong-hstu	prod	9	seq	-1	None	шум по полному тексту	0.802	WHALE: A Scalable Unified Model for Recommendation with Wukong-HSTU Architecture
+hypothesis-driven-shelf-generation	llm	-1	None	11	human	не было кластера в разборе	0.803	Hypothesis-Driven Shelf Generation for Personalised Recommendation
+position-bias-listwise-llm-reranking	eval	10	human	-1	None	шум по полному тексту	0.803	Position Bias Undermines Preference Consistency in Listwise LLM-Based Reranking
+carousel-click-off-policy-evaluation	eval	11	eval	5	prod	eval → prod	0.804	From Click Modeling to Offline and Off-Policy Evaluation in Carousel Recommendation
+ordinal-attribute-calibration	human	10	human	1	eval	human → eval	0.804	Calibrating Recommendations on Ordinal Attributes
+vlm-relevance-web-scale	eval	4	eval	4	prod	eval → prod	0.804	Advancing Relevance Measurement with Vision–Language Models for Web-Scale Search
+dpgr	gen	1	gen	0	human	gen → human	0.805	DPGR: Dual-Domain Spatiotemporal Generative Retrieval for Intent-Aware Local Life Service Recommendation
+hierarchical-gtv	prod	1	gen	19	prod	gen → prod	0.805	Hierarchical GTV Estimation: Bridging the Gap between Container-Level Ranking and Item-Level Conversion
+mode-reciprocal-matching	domain	-1	None	2	human	не было кластера в разборе	0.805	MODE: Mutual Optimality in Direct Effects of Reciprocal Recommendations in Matching Markets
+probabilistic-residual-learning	prod	-1	None	-1	None	шум по полному тексту	0.805	Probabilistic Residual Learning for Online Recommendations
+heterogeneous-ranking-ha-moe-lens	prod	1	gen	15	prod	gen → prod	0.806	Heterogeneous Ranking in Industrial-Scale Recommender Systems: A Case Study
+residual-dominance	seq	3	prod	23	seq	prod → seq	0.806	Residual Dominance as a Structural Account of Last-Item Reliance in Causal Self-Attention Recommenders
+recommending-to-agentic-web	llm	15	llm	10	human	llm → human	0.807	Who Are We Recommending To? Recommender Systems in the Agentic Web
+recrec-latent-interests-recursive-reasoning	seq	9	seq	0	human	seq → human	0.807	RecRec: Latent Interests Recursive Reasoning for Sequential Recommendation
+smart-gated-hybrid-product-ads	ads	-1	None	4	prod	не было кластера в разборе	0.807	SMART: LLM-Augmented Hybrid Retrieval for Dynamic Product Ads
+control-function-position-bias-ltr	eval	7	ads	1	eval	ads → eval	0.808	A Control Function Framework for Mitigating Position Bias in Learning to Rank Systems
+eachmovie-archaeology	graph	16	graph	-1	None	шум по полному тексту	0.808	EachMovie: archaeology of a first latent recommender system
+maskpoison-intent-guided-diffusion	human	1	gen	0	human	gen → human	0.809	MaskPoison: Intent-Guided Poisoning Attacks on Sequential Recommendation via Masked Discrete Diffusion
+bookforyou-narrative-tropes	domain	-1	None	21	prod	не было кластера в разборе	0.81	BookForYou: Leveraging BART-Generated Narrative Tropes for Content-Based Book Recommendations
+soft-curriculum-fresh-generalized-recs	prod	1	gen	22	prod	gen → prod	0.811	Soft Curriculum Learning for Optimizing Fresh and Generalized Recommendations
+token-factory	prod	1	gen	-1	None	шум по полному тексту	0.812	Token Factory: Efficiently Integrating Diverse Signals into Large Recommendation Models
+conga-long-history-sequential-recommendation	seq	6	prod	24	seq	prod → seq	0.813	CONGA: Continual Neural Gated Architecture for Long-History Sequential Recommendation
+repeat-utility-timing-metrics	eval	3	prod	6	eval	prod → eval	0.813	Repetition Is Not Enough: Evaluating Repeat Recommendations Through Utility and Timing
+sae-semantic-domain-adapters	graph	12	graph	20	prod	graph → prod	0.813	Sparse Autoencoders as Semantic Domain Adapters for Recommender Systems
+blue-steer	human	16	graph	7	llm	graph → llm	0.815	Blended User Embeddings for Steerable Matrix Factorization
+cascade-reward-preranking	prod	7	ads	1	eval	ads → eval	0.815	Alignment + Accuracy: The Cascade Reward Representation for Preranking
+cluster-goobs-llm-hard-negatives	prod	-1	None	22	prod	не было кластера в разборе	0.815	Real-Time Hard Negative Sampling via LLM-based Clustering for Large-Scale Two-Tower Retrieval
+promise-process-reward-generative-rec	gen	1	gen	-1	None	шум по полному тексту	0.816	PROMISE: Process Reward Models Unlock Test-Time Scaling Laws in Generative Recommendations
+versioned-late-materialization	prod	6	prod	-1	None	шум по полному тексту	0.817	Versioned Late Materialization for Ultra-Long Sequence Training in Recommendation Systems at Scale
+egrec-latent-interest-discovery	human	9	seq	5	prod	seq → prod	0.818	There’s Something About You: Epistemic Recommendation for Latent Interest Discovery
+fashion-session-trajectories-soft-negatives	domain	3	prod	6	eval	prod → eval	0.818	Personalized Fashion Discovery via Session Trajectories and Soft Negatives
+wisefood	domain	14	llm	11	human	llm → human	0.818	WiseFood: A Multi-Task Conversational Recommender for Trustworthy, Integrated, and Personalized Dietary Guidance
+jth-temporal-job-recommendation	domain	-1	None	4	prod	не было кластера в разборе	0.819	JTH: A Dataset for Evaluating Cold-Start and Temporal Dynamics in Job Recommendation
+timing-aware-repurchase-survival	domain	3	prod	1	eval	prod → eval	0.819	Timing-Aware Repurchase Prediction for Web-Scale E-Commerce: Survival Models for Multi-Surface Grocery Recommendation
+deezer-discovery-quality-familiarity	domain	0	human	6	eval	human → eval	0.82	Music Discovery Quality and the Value of Familiarity
+interest-sequence	prod	-1	None	-1	None	шум по полному тексту	0.82	Interest Sequence for User Modeling in Industrial Short-Form Video Recommendation
+ccn-full-candidate-route	domain	8	graph	-1	None	шум по полному тексту	0.821	Towards Full Candidate Interaction: A Comprehensive Comparison Network for Better Route Recommendation
+contrastive-explanations-when-needed	human	-1	None	8	eval	не было кластера в разборе	0.822	When Do Contrastive Explanations Really Matter in Recommender Systems?
+egr-embedding-native-generative-retrieval	llm	1	gen	22	prod	gen → prod	0.822	EGR: Embedding-Native Generative Retrieval with a Shared LLM
+gateboxgcn	graph	8	graph	-1	None	шум по полному тексту	0.822	GateBoxGCN: Hard-Soft Gated Box Embeddings with Graph Convolution for Recommendation
+hyperbrec-hyperbolic-dct-attention	graph	13	prod	24	seq	prod → seq	0.823	Towards Efficient Hyperbolic Representation Learning for Recommender Systems
+compresso-sparse-representation-library-demo	graph	12	graph	20	prod	graph → prod	0.824	COMPRESSO: Espresso-Style Sparse Representation Learning for Interpretable Recommender Systems
+simulating-diverse-user-behavioral-stereotypes	eval	15	llm	12	human	llm → human	0.824	Simulating Diverse User Behavioral Stereotypes for Evaluating Agentic Conversational Recommenders
+twiner-explainable-course-sequential-graph	graph	5	graph	9	llm	graph → llm	0.824	Enriching Graph-Based Modeling with Sequential Signals for Explainable Course Recommendation
+said-calibrating-reproduced-claims	eval	4	eval	-1	None	шум по полному тексту	0.825	Calibrating Reproduced Claims in Recommender Systems
+steps-self-triggered-push	prod	3	prod	10	human	prod → human	0.825	A Self-Triggered Agentic Push Recommendation System
+tubifm-unified-streaming-ranking	prod	-1	None	21	prod	не было кластера в разборе	0.825	TubiFM: Unified Item, Carousel, and Search Ranking for Streaming Discovery
+dpgflow-flow-matching-cross-domain-seqrec	gen	17	prod	17	gen	prod → gen	0.826	DPGFlow: Decoupled Preference Guided Flow Matching for Cross Domain Sequential Recommendation
+mamgr-adaptive-multiobjective-reranking	gen	1	gen	19	prod	gen → prod	0.826	A Unified Generative Re-ranking Framework with Adaptive Multi-objective Fusion
+gpbm-ranking-ope	eval	7	ads	1	eval	ads → eval	0.827	Generalized Position-Based Model: Rethinking Position Weights in Ranking Off-Policy Evaluation
+sentiment-semantics-kg-explainable-recommendation	graph	5	graph	9	llm	graph → llm	0.827	Assessing Sentiment Semantics in KG-Based Explainable Recommender Systems
+ehr-drug-reproducibility-external-validity	eval	4	eval	-1	None	шум по полному тексту	0.828	Personalised Drug Recommender Systems based on Electronic Health Records: Reproducibility and External Validity
+reasoning-trace-design	seq	9	seq	0	human	seq → human	0.828	What Reasoning Should a Recommender Have? Designing Reasoning for Inference-Time Scaling in Recommendation
+uncertainty-gated-context-poi	domain	1	gen	-1	None	шум по полному тексту	0.828	Uncertainty-Aware Gated Context Fusion for Next POI Recommendation
+user-item-edges-exposure-allocation	eval	-1	None	2	human	не было кластера в разборе	0.828	From User–Item Edges to Exposure Allocation: Matching Evidence to Platform-Level Recommender Claims
+salm-selective-augmentation	ads	-1	None	22	prod	не было кластера в разборе	0.83	Do We Really Need LLMs to Augment All? A Selective Augmentation Framework with Lightweight Language Models for Multimodal CTR Prediction
+pcp-decoding-popularity-calibration-genret	human	1	gen	-1	None	шум по полному тексту	0.831	PCP-Decoding: Training-Free Personalized Category-Relative Popularity Calibration for Generative Retrieval
+tsmoo-constrained-thompson-experimentation	eval	10	human	19	prod	human → prod	0.833	TSMOO: Solving Multi-Objective Experimentation with Constrained Thompson Sampling
+workrb-work-domain-benchmark	eval	4	eval	4	prod	eval → prod	0.833	WorkRB: A Community-Driven Evaluation Framework for AI in the Work Domain
+coreatt-core-task-attention	prod	6	prod	-1	None	шум по полному тексту	0.834	Attending to the Core: Core-Task Attention for Recommendation
+flvm-latent-preference-measurement	prod	16	graph	-1	None	шум по полному тексту	0.834	Mend the Measurement Gap: Latent User Preference Modeling for Short-Form Video Recommendation
+gradsup	llm	1	gen	-1	None	шум по полному тексту	0.834	GradSup: Gradient Superposition for Personalised and Scalable LLM Recommendation
+llm-real-estate-reranking	llm	4	eval	4	prod	eval → prod	0.834	LLM-Based Re-Ranking for Real Estate Search
+pinterest-onsite-offsite-transra	ads	-1	None	16	prod	не было кластера в разборе	0.834	Entity Representation Learning Through Onsite-Offsite Graph for Pinterest Ads
+ssprec-stability-plasticity	graph	16	graph	19	prod	graph → prod	0.834	Stabilizing Stability and Plasticity in Graph-based Continual Recommender System
+deltagate-gap-driven-dimensional-gating	seq	6	prod	-1	None	шум по полному тексту	0.835	Zero-Observation User Reactivation with Gap-Driven Dimensional Gating (DeltaGate)
+grip-profile-completion	llm	16	graph	7	llm	graph → llm	0.835	GRIP: Generation and Reasoning for User Profile Completion
+tagrec-tailness-gate	seq	1	gen	23	seq	gen → seq	0.836	TAGRec: Tailness-Aware Gate for Sequential Recommendation under Long-Tailed Distributions
+unishare-video-receiver	domain	8	graph	-1	None	шум по полному тексту	0.836	UniShare: A Unified Framework for Joint Video and Receiver Recommendation in Social Sharing
+cross-spectrum-candidate-sets	eval	10	human	6	eval	human → eval	0.837	Cross-Spectrum Candidate Set Analysis for Popularity-Aware Recommendation
+nextgen-taobao	gen	1	gen	19	prod	gen → prod	0.838	NextGen: A Multi-Objective Generative Re-ranking Framework for Taobao Recommendation
+pairwise-ranking-offline-explanation	human	-1	None	1	eval	не было кластера в разборе	0.838	Pairwise Ranking Outperforms Single-Action RL for Offline Explanation Selection: A Practical Lesson
+user-governed-preference-memory	human	-1	None	11	human	не было кластера в разборе	0.838	Beyond Passive Preference Inference: User-Governed Preference Memory and Calibrated Initiative in Recommender Systems
+agentrec	llm	-1	None	9	llm	не было кластера в разборе	0.839	Which LLM to Fine-Tune? Agent-Driven Model Selection at Scale
+time-and-order-rope	seq	6	prod	24	seq	prod → seq	0.84	Beyond Index-Only RoPE: Integrating Time and Order for Generative Recommendation
+user-controlled-intent-layers	human	14	llm	11	human	llm → human	0.84	User-Controlled Intent Layers for LLM-Mediated Personalization: A Research Agenda for Recommender Systems
+ct-mta-dual-debiasing	ads	7	ads	-1	None	шум по полному тексту	0.841	A Causal Transformer Multi-Touch Attribution with Dual Debiasing and Explainable Visualization for Advertising Recommendation
+gtp-group-aware-token-pruning-popularity	human	1	gen	-1	None	шум по полному тексту	0.841	GTP: Mitigating Popularity Bias in PLM-based Sequential Recommendation via Group-Aware Token Pruning
+dcdr-target-guided-calibration	domain	17	prod	17	gen	prod → gen	0.842	Calibrating User Preferences for Cross-Domain Recommendation via Target-Guided Representation Mapping
+syf-shape-your-feed	human	14	llm	13	human	llm → human	0.844	Shape Your Feed: An LLM-based Agentic System for Conversational Recommendation
+drsd-complementary-news	llm	0	human	9	llm	human → llm	0.847	Towards Dynamic Relationship Schema Discovery for Complementary News Recommendation
+genrxr	domain	4	eval	-1	None	шум по полному тексту	0.847	Improving Rare Medication Recommendation with Counterfactual Data Augmentation and Large Language Models
+tasteprint-cross-platform-memory	llm	15	llm	10	human	llm → human	0.847	Tasteprint: Cross-Platform Recommendation Agent
+udsig-sparse-image-generation	domain	-1	None	0	human	не было кластера в разборе	0.847	Generating Personalized Images for Sparse-Interaction Users with Uncertainty-Aware Retrieval and Dense Knowledge Guidance
+dcd-xrec	gen	17	prod	17	gen	prod → gen	0.852	Dual Conditional Diffusion for Generative Cross-Domain Recommendation via Disentangled Knowledge Transfer
+lumi-safety-aware-poi	domain	-1	None	0	human	не было кластера в разборе	0.86	Lumi: An LLM-Grounded System for Safety-Aware POI Recommendations
+ensrec-id-text-complementarity	seq	9	seq	21	prod	seq → prod	0.862	Exploiting ID-Text Complementarity via Ensembling for Sequential Recommendation
+uprec-llm-user-profile-session-social-rec	llm	16	graph	7	llm	graph → llm	0.865	Probing the LLMs for Generating User Profile of Session-based Social Recommendation
+watchlens-video-experiment-platform	eval	-1	None	7	llm	не было кластера в разборе	0.867	WatchLens: A Configurable Platform for Online Video Recommendation Experiments
+rating-review-scale-gaps	eval	10	human	3	eval	human → eval	0.868	Why Do CF and Review Models Disagree? User-Specific Rating–Review Scale Gaps
+grouprec	domain	-1	None	3	eval	не было кластера в разборе	0.873	GroupRec: A Unified Toolkit for Reproducible and Inspectable Group Recommendation Research
+hoploy	prod	5	graph	9	llm	graph → llm	0.873	hoploy: a Plugin-Based Inference Layer for Path-Based Explainable Recommendation over Knowledge Graphs
+covns-noise-robust-optimization	prod	1	gen	-1	None	шум по полному тексту	0.878	Covariance-Aware Newton-Schulz Orthogonalization for Noise-Robust Sequential Recommendation
+streamlitrecommenders-inspectability	eval	-1	None	9	llm	не было кластера в разборе	0.878	StreamlitRecommenders: Towards Recommendation Inspectability as a New Reproducibility Standard
+scikit-rank	prod	12	graph	16	prod	graph → prod	0.888	Scikit-Rank: Scikit-learn-Compatible Neural Ranking Models for Tabular Recommender Systems
