@@ -255,7 +255,11 @@ const mapTip = ref(null);
 // координаты всегда из текстовой проекции: сообщества по литературе показываем
 // на той же карте, чтобы видеть, где они лежат в смысловом пространстве
 const communityOf = Object.fromEntries((communitiesData.points || []).map((p) => [p.slug, p.community]));
-const mapPoints = computed(() => mapData.points.map((p) => ({ ...p, community: communityOf[p.slug] ?? -1 })));
+const mapPoints = computed(() =>
+  mapMode.value === "refs"
+    ? communitiesData.points
+    : mapData.points.map((p) => ({ ...p, community: communityOf[p.slug] ?? -1 })),
+);
 const mapGroups = computed(() => {
   if (mapMode.value === "refs") {
     return communitiesData.communities
@@ -834,9 +838,10 @@ const pad = (n) => String(n).padStart(3, "0");
                 <span class="rs-sec-no">04</span>
                 <h2>Близость: одна точка — один разбор.</h2>
                 <p>
-                  Координаты — проекция UMAP эмбеддингов текста разборов (Qwen3-Embedding-0.6B): заголовок, суть, результат и ограничение.
-                  Темы и теги в текст не попадали, поэтому облако не знает о нашей разметке. Группы можно назвать тремя способами: кластеры
-                  эмбеддингов, редакторские темы и сообщества, найденные по общим ссылкам в литературе. Выберите группу — остальные точки уйдут в фон.
+                  Два пространства. «Текст разбора» — проекция UMAP эмбеддингов (Qwen3-Embedding-0.6B: заголовок, суть, результат,
+                  ограничение; темы и теги в текст не попадали). «Литература» — граф: ребро между работами, у которых есть общий источник,
+                  вес ребра — число общих ссылок, раскладка графовая, сообщества — Leiden. Общие группы в тексте: кластеры эмбеддингов
+                  и редакторские темы. Выберите группу — остальные точки уйдут в фон.
                 </p>
               </header>
               <div class="rs-map-layout">
@@ -908,10 +913,11 @@ const pad = (n) => String(n).padStart(3, "0");
                     <p v-if="mapSelectedPapers.length > 6" class="rs-caption">и ещё {{ mapSelectedPapers.length - 6 }}</p>
                   </div>
                   <p v-else-if="mapMode === 'refs'" class="rs-caption">
-                    Граф: две работы связаны, если ссылаются на одни и те же источники. Сообщества — Leiden; стабильность разбиения
-                    {{ communitiesData.meta.stabilityAri }} (ARI по сидам), modularity {{ communitiesData.meta.modularity }}.
+                    Граф: ребро между двумя работами — общий источник в литературе, вес ребра — число общих источников (от двух).
+                    Сообщества — Leiden на этом графе, раскладка графовая (не UMAP): {{ communitiesData.meta.edges }} связей,
+                    modularity {{ communitiesData.meta.modularity }}, стабильность {{ communitiesData.meta.stabilityAri }} по сидам.
                     Совпадение с темами NMI {{ communitiesData.meta.nmiThemes }}, с текстовыми кластерами ARI
-                    {{ communitiesData.meta.ariTextClusters }} — это другой разрез: не «о чём работа», а «на какую школу она опирается».
+                    {{ communitiesData.meta.ariTextClusters }} — разрез про школу цитирования, а не про тему работы.
                   </p>
                   <p v-else class="rs-caption">
                     Совпадение кластеров с редакторскими темами слабое: NMI {{ mapData.meta.nmiHdbscan }}, ARI
