@@ -21,7 +21,7 @@ const malformed =
 if (malformed) throw createError({ statusCode: 404, statusMessage: "Материал не найден" });
 
 const { data: bundle } = await useAsyncData(
-  () => "rs-guide-" + viewKey.value,
+  "rs-guide-" + viewKey.value,
   () => $fetch("/api/guide", { query: { mode: mode.value, id: id.value }, ignoreResponseError: true }),
   { watch: [viewKey] },
 );
