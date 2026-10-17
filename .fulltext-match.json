@@ -309,6 +309,971 @@
 "via": "doi",
 "score": 1.0
 },
+"adaptive-retraining-rl": {
+"file": "recsys26/adaptive-retraining-rl.pdf",
+"via": "doi",
+"score": 1.0
+},
+"affect-balanced-news-reframing": {
+"file": "recsys26/affect-balanced-news-reframing.pdf",
+"via": "doi",
+"score": 1.0
+},
+"agentcf-connectivity-security": {
+"file": "recsys26/agentcf-connectivity-security.pdf",
+"via": "doi",
+"score": 1.0
+},
+"agentrec": {
+"file": "recsys26/agentrec.pdf",
+"via": "doi",
+"score": 1.0
+},
+"apple-music-elise": {
+"file": "recsys26/apple-music-elise.pdf",
+"via": "doi",
+"score": 1.0
+},
+"autonomous-agents": {
+"file": "recsys26/autonomous-agents.pdf",
+"via": "doi",
+"score": 1.0
+},
+"autoreclab-experiment-code": {
+"file": "recsys26/autoreclab-experiment-code.pdf",
+"via": "doi",
+"score": 1.0
+},
+"axiology-journalistic-values": {
+"file": "recsys26/axiology-journalistic-values.pdf",
+"via": "doi",
+"score": 1.0
+},
+"backward-inward-personalization-safety": {
+"file": "recsys26/backward-inward-personalization-safety.pdf",
+"via": "doi",
+"score": 1.0
+},
+"bilpr-teacher-student-learning-path": {
+"file": "recsys26/bilpr-teacher-student-learning-path.pdf",
+"via": "doi",
+"score": 1.0
+},
+"binge-watch-m3l": {
+"file": "recsys26/binge-watch-m3l.pdf",
+"via": "doi",
+"score": 1.0
+},
+"bipcl-bilateral-intent-perturbation": {
+"file": "recsys26/bipcl-bilateral-intent-perturbation.pdf",
+"via": "doi",
+"score": 1.0
+},
+"blue-steer": {
+"file": "recsys26/blue-steer.pdf",
+"via": "doi",
+"score": 1.0
+},
+"bluesky-identical-text-exposure": {
+"file": "recsys26/bluesky-identical-text-exposure.pdf",
+"via": "doi",
+"score": 1.0
+},
+"bluesky-prospective-custom-feed-routing": {
+"file": "recsys26/bluesky-prospective-custom-feed-routing.pdf",
+"via": "doi",
+"score": 1.0
+},
+"bookforyou-narrative-tropes": {
+"file": "recsys26/bookforyou-narrative-tropes.pdf",
+"via": "doi",
+"score": 1.0
+},
+"bounded-attention-explanation-structure": {
+"file": "recsys26/bounded-attention-explanation-structure.pdf",
+"via": "doi",
+"score": 1.0
+},
+"capacity-probes-pairwise-envelope": {
+"file": "recsys26/capacity-probes-pairwise-envelope.pdf",
+"via": "doi",
+"score": 1.0
+},
+"carousel-click-off-policy-evaluation": {
+"file": "recsys26/carousel-click-off-policy-evaluation.pdf",
+"via": "doi",
+"score": 1.0
+},
+"cascade-reward-preranking": {
+"file": "recsys26/cascade-reward-preranking.pdf",
+"via": "doi",
+"score": 1.0
+},
+"ccn-full-candidate-route": {
+"file": "recsys26/ccn-full-candidate-route.pdf",
+"via": "doi",
+"score": 1.0
+},
+"children-recsys-twenty-years": {
+"file": "recsys26/children-recsys-twenty-years.pdf",
+"via": "doi",
+"score": 1.0
+},
+"comparability-stakeholder-welfare": {
+"file": "recsys26/comparability-stakeholder-welfare.pdf",
+"via": "doi",
+"score": 1.0
+},
+"conga-long-history-sequential-recommendation": {
+"file": "recsys26/conga-long-history-sequential-recommendation.pdf",
+"via": "doi",
+"score": 1.0
+},
+"consensus-vs-dissent-group-llm": {
+"file": "recsys26/consensus-vs-dissent-group-llm.pdf",
+"via": "doi",
+"score": 1.0
+},
+"constraint-to-control-expected-fairness": {
+"file": "recsys26/constraint-to-control-expected-fairness.pdf",
+"via": "doi",
+"score": 1.0
+},
+"contrastive-explanations-when-needed": {
+"file": "recsys26/contrastive-explanations-when-needed.pdf",
+"via": "doi",
+"score": 1.0
+},
+"coreatt-core-task-attention": {
+"file": "recsys26/coreatt-core-task-attention.pdf",
+"via": "doi",
+"score": 1.0
+},
+"corgi-communal-feed-governance": {
+"file": "recsys26/corgi-communal-feed-governance.pdf",
+"via": "doi",
+"score": 1.0
+},
+"cross-interaction-leakage-egr": {
+"file": "recsys26/cross-interaction-leakage-egr.pdf",
+"via": "doi",
+"score": 1.0
+},
+"ct-mta-dual-debiasing": {
+"file": "recsys26/ct-mta-dual-debiasing.pdf",
+"via": "doi",
+"score": 1.0
+},
+"dart-adaptive-tweedie-objective": {
+"file": "recsys26/dart-adaptive-tweedie-objective.pdf",
+"via": "doi",
+"score": 1.0
+},
+"dart-drift-aware-ranking": {
+"file": "recsys26/dart-drift-aware-ranking.pdf",
+"via": "doi",
+"score": 1.0
+},
+"dcd-xrec": {
+"file": "recsys26/dcd-xrec.pdf",
+"via": "doi",
+"score": 1.0
+},
+"dcdr-target-guided-calibration": {
+"file": "recsys26/dcdr-target-guided-calibration.pdf",
+"via": "doi",
+"score": 1.0
+},
+"deadweight-loss-recommendation": {
+"file": "recsys26/deadweight-loss-recommendation.pdf",
+"via": "doi",
+"score": 1.0
+},
+"decoupled-slate-privacy-stability": {
+"file": "recsys26/decoupled-slate-privacy-stability.pdf",
+"via": "doi",
+"score": 1.0
+},
+"design-space-agentic-conversational": {
+"file": "recsys26/design-space-agentic-conversational.pdf",
+"via": "doi",
+"score": 1.0
+},
+"discover-weakly-no-more": {
+"file": "recsys26/discover-weakly-no-more.pdf",
+"via": "doi",
+"score": 1.0
+},
+"dp-rec": {
+"file": "recsys26/dp-rec.pdf",
+"via": "doi",
+"score": 1.0
+},
+"dpgr": {
+"file": "recsys26/dpgr.pdf",
+"via": "doi",
+"score": 1.0
+},
+"dranker-disney-homepage": {
+"file": "recsys26/dranker-disney-homepage.pdf",
+"via": "doi",
+"score": 1.0
+},
+"drsd-complementary-news": {
+"file": "recsys26/drsd-complementary-news.pdf",
+"via": "doi",
+"score": 1.0
+},
+"eachmovie-archaeology": {
+"file": "recsys26/eachmovie-archaeology.pdf",
+"via": "doi",
+"score": 1.0
+},
+"egrec-latent-interest-discovery": {
+"file": "recsys26/egrec-latent-interest-discovery.pdf",
+"via": "doi",
+"score": 1.0
+},
+"ehr-drug-reproducibility-external-validity": {
+"file": "recsys26/ehr-drug-reproducibility-external-validity.pdf",
+"via": "doi",
+"score": 1.0
+},
+"ensrec-id-text-complementarity": {
+"file": "recsys26/ensrec-id-text-complementarity.pdf",
+"via": "doi",
+"score": 1.0
+},
+"fairsae-provider-retrieval": {
+"file": "recsys26/fairsae-provider-retrieval.pdf",
+"via": "doi",
+"score": 1.0
+},
+"faithful-reasoning": {
+"file": "recsys26/faithful-reasoning.pdf",
+"via": "doi",
+"score": 1.0
+},
+"fasc-aspect-sentiment-evaluation": {
+"file": "recsys26/fasc-aspect-sentiment-evaluation.pdf",
+"via": "doi",
+"score": 1.0
+},
+"ficorec-fine-grained-dual-aggregation": {
+"file": "recsys26/ficorec-fine-grained-dual-aggregation.pdf",
+"via": "doi",
+"score": 1.0
+},
+"finally-dataset-recommender": {
+"file": "recsys26/finally-dataset-recommender.pdf",
+"via": "doi",
+"score": 1.0
+},
+"fixed-candidate-model-selection": {
+"file": "recsys26/fixed-candidate-model-selection.pdf",
+"via": "doi",
+"score": 1.0
+},
+"fluid-lucid-id-free-livestream": {
+"file": "recsys26/fluid-lucid-id-free-livestream.pdf",
+"via": "doi",
+"score": 1.0
+},
+"flvm-latent-preference-measurement": {
+"file": "recsys26/flvm-latent-preference-measurement.pdf",
+"via": "doi",
+"score": 1.0
+},
+"forward-outward-conversational-understanding": {
+"file": "recsys26/forward-outward-conversational-understanding.pdf",
+"via": "doi",
+"score": 1.0
+},
+"fusion-autoencoder-structured-products": {
+"file": "recsys26/fusion-autoencoder-structured-products.pdf",
+"via": "doi",
+"score": 1.0
+},
+"gateboxgcn": {
+"file": "recsys26/gateboxgcn.pdf",
+"via": "doi",
+"score": 1.0
+},
+"gencdsr-hybrid-tokenization": {
+"file": "recsys26/gencdsr-hybrid-tokenization.pdf",
+"via": "doi",
+"score": 1.0
+},
+"genpage-netflix": {
+"file": "recsys26/genpage-netflix.pdf",
+"via": "doi",
+"score": 1.0
+},
+"genrxr": {
+"file": "recsys26/genrxr.pdf",
+"via": "doi",
+"score": 1.0
+},
+"gpbm-ranking-ope": {
+"file": "recsys26/gpbm-ranking-ope.pdf",
+"via": "doi",
+"score": 1.0
+},
+"gplan-spatiotemporal-intent-sequences": {
+"file": "recsys26/gplan-spatiotemporal-intent-sequences.pdf",
+"via": "doi",
+"score": 1.0
+},
+"gradsup": {
+"file": "recsys26/gradsup.pdf",
+"via": "doi",
+"score": 1.0
+},
+"grip-profile-completion": {
+"file": "recsys26/grip-profile-completion.pdf",
+"via": "doi",
+"score": 1.0
+},
+"grouprec": {
+"file": "recsys26/grouprec.pdf",
+"via": "doi",
+"score": 1.0
+},
+"gsprec": {
+"file": "recsys26/gsprec.pdf",
+"via": "doi",
+"score": 1.0
+},
+"gwhere-amap-generative-next-poi": {
+"file": "recsys26/gwhere-amap-generative-next-poi.pdf",
+"via": "doi",
+"score": 1.0
+},
+"heterogeneous-ranking-ha-moe-lens": {
+"file": "recsys26/heterogeneous-ranking-ha-moe-lens.pdf",
+"via": "doi",
+"score": 1.0
+},
+"hierarchical-gtv": {
+"file": "recsys26/hierarchical-gtv.pdf",
+"via": "doi",
+"score": 1.0
+},
+"hoploy": {
+"file": "recsys26/hoploy.pdf",
+"via": "doi",
+"score": 1.0
+},
+"hsr-hamiltonian-spectral-sequential-rec": {
+"file": "recsys26/hsr-hamiltonian-spectral-sequential-rec.pdf",
+"via": "doi",
+"score": 1.0
+},
+"human-aligned-cognitive-user-modeling": {
+"file": "recsys26/human-aligned-cognitive-user-modeling.pdf",
+"via": "doi",
+"score": 1.0
+},
+"human-centered-recommender-providers": {
+"file": "recsys26/human-centered-recommender-providers.pdf",
+"via": "doi",
+"score": 1.0
+},
+"human-value-recommendation-evaluation": {
+"file": "recsys26/human-value-recommendation-evaluation.pdf",
+"via": "doi",
+"score": 1.0
+},
+"hypothesis-driven-shelf-generation": {
+"file": "recsys26/hypothesis-driven-shelf-generation.pdf",
+"via": "doi",
+"score": 1.0
+},
+"icl-recommendation-membership-inference": {
+"file": "recsys26/icl-recommendation-membership-inference.pdf",
+"via": "doi",
+"score": 1.0
+},
+"idproxy-mllm-cold-start-ctr": {
+"file": "recsys26/idproxy-mllm-cold-start-ctr.pdf",
+"via": "doi",
+"score": 1.0
+},
+"illusion-control-3c-rank-zca": {
+"file": "recsys26/illusion-control-3c-rank-zca.pdf",
+"via": "doi",
+"score": 1.0
+},
+"impression-share-prediction-ranking": {
+"file": "recsys26/impression-share-prediction-ranking.pdf",
+"via": "doi",
+"score": 1.0
+},
+"intent-description-anchoring-judge": {
+"file": "recsys26/intent-description-anchoring-judge.pdf",
+"via": "doi",
+"score": 1.0
+},
+"interaction-modality-trust": {
+"file": "recsys26/interaction-modality-trust.pdf",
+"via": "doi",
+"score": 1.0
+},
+"interest-sequence": {
+"file": "recsys26/interest-sequence.pdf",
+"via": "doi",
+"score": 1.0
+},
+"inverse-theory-of-mind": {
+"file": "recsys26/inverse-theory-of-mind.pdf",
+"via": "doi",
+"score": 1.0
+},
+"jth-temporal-job-recommendation": {
+"file": "recsys26/jth-temporal-job-recommendation.pdf",
+"via": "doi",
+"score": 1.0
+},
+"knowledge-integration-two-decades": {
+"file": "recsys26/knowledge-integration-two-decades.pdf",
+"via": "doi",
+"score": 1.0
+},
+"learned-cross-task-relationships-youtube": {
+"file": "recsys26/learned-cross-task-relationships-youtube.pdf",
+"via": "doi",
+"score": 1.0
+},
+"live-catalogue-self-refreshing-retrieval": {
+"file": "recsys26/live-catalogue-self-refreshing-retrieval.pdf",
+"via": "doi",
+"score": 1.0
+},
+"llm-explanation-evaluation-utility": {
+"file": "recsys26/llm-explanation-evaluation-utility.pdf",
+"via": "doi",
+"score": 1.0
+},
+"llm-judge-conversational-music": {
+"file": "recsys26/llm-judge-conversational-music.pdf",
+"via": "doi",
+"score": 1.0
+},
+"llm-judge-tone-severity-operating-point": {
+"file": "recsys26/llm-judge-tone-severity-operating-point.pdf",
+"via": "doi",
+"score": 1.0
+},
+"llm-prit-profile-instance-transfer": {
+"file": "recsys26/llm-prit-profile-instance-transfer.pdf",
+"via": "doi",
+"score": 1.0
+},
+"llm-real-estate-reranking": {
+"file": "recsys26/llm-real-estate-reranking.pdf",
+"via": "doi",
+"score": 1.0
+},
+"llm-user-personas-scale": {
+"file": "recsys26/llm-user-personas-scale.pdf",
+"via": "doi",
+"score": 1.0
+},
+"lo-far-sparse-feature-ranking": {
+"file": "recsys26/lo-far-sparse-feature-ranking.pdf",
+"via": "doi",
+"score": 1.0
+},
+"loom": {
+"file": "recsys26/loom.pdf",
+"via": "doi",
+"score": 1.0
+},
+"lumi-safety-aware-poi": {
+"file": "recsys26/lumi-safety-aware-poi.pdf",
+"via": "doi",
+"score": 1.0
+},
+"m2r-taobao-implicit-scenario-routing": {
+"file": "recsys26/m2r-taobao-implicit-scenario-routing.pdf",
+"via": "doi",
+"score": 1.0
+},
+"mamgr-adaptive-multiobjective-reranking": {
+"file": "recsys26/mamgr-adaptive-multiobjective-reranking.pdf",
+"via": "doi",
+"score": 1.0
+},
+"maskpoison-intent-guided-diffusion": {
+"file": "recsys26/maskpoison-intent-guided-diffusion.pdf",
+"via": "doi",
+"score": 1.0
+},
+"melo-production-music-agent": {
+"file": "recsys26/melo-production-music-agent.pdf",
+"via": "doi",
+"score": 1.0
+},
+"mercari-hybrid-multimodal-reranking": {
+"file": "recsys26/mercari-hybrid-multimodal-reranking.pdf",
+"via": "doi",
+"score": 1.0
+},
+"mode-reciprocal-matching": {
+"file": "recsys26/mode-reciprocal-matching.pdf",
+"via": "doi",
+"score": 1.0
+},
+"monte-carlo-power-newsletter": {
+"file": "recsys26/monte-carlo-power-newsletter.pdf",
+"via": "doi",
+"score": 1.0
+},
+"mor-adaptive-retrieval-allocation": {
+"file": "recsys26/mor-adaptive-retrieval-allocation.pdf",
+"via": "doi",
+"score": 1.0
+},
+"multi-probe-zero-collision-hash": {
+"file": "recsys26/multi-probe-zero-collision-hash.pdf",
+"via": "doi",
+"score": 1.0
+},
+"news-engineers-personalization-explainability": {
+"file": "recsys26/news-engineers-personalization-explainability.pdf",
+"via": "doi",
+"score": 1.0
+},
+"nextgen-taobao": {
+"file": "recsys26/nextgen-taobao.pdf",
+"via": "doi",
+"score": 1.0
+},
+"pairwise-ranking-offline-explanation": {
+"file": "recsys26/pairwise-ranking-offline-explanation.pdf",
+"via": "doi",
+"score": 1.0
+},
+"pbook-self-recommending-living-book": {
+"file": "recsys26/pbook-self-recommending-living-book.pdf",
+"via": "doi",
+"score": 1.0
+},
+"perseus-heterogeneous-events": {
+"file": "recsys26/perseus-heterogeneous-events.pdf",
+"via": "doi",
+"score": 1.0
+},
+"pindco-whole-page-creative-optimization": {
+"file": "recsys26/pindco-whole-page-creative-optimization.pdf",
+"via": "doi",
+"score": 1.0
+},
+"pinterest-model-agnostic-downstream-rewards": {
+"file": "recsys26/pinterest-model-agnostic-downstream-rewards.pdf",
+"via": "doi",
+"score": 1.0
+},
+"pinterest-onsite-offsite-transra": {
+"file": "recsys26/pinterest-onsite-offsite-transra.pdf",
+"via": "doi",
+"score": 1.0
+},
+"plain-generative-search": {
+"file": "recsys26/plain-generative-search.pdf",
+"via": "doi",
+"score": 1.0
+},
+"pricorec-feature-constrained-cloud-device": {
+"file": "recsys26/pricorec-feature-constrained-cloud-device.pdf",
+"via": "doi",
+"score": 1.0
+},
+"probabilistic-residual-learning": {
+"file": "recsys26/probabilistic-residual-learning.pdf",
+"via": "doi",
+"score": 1.0
+},
+"promise-process-reward-generative-rec": {
+"file": "recsys26/promise-process-reward-generative-rec.pdf",
+"via": "doi",
+"score": 1.0
+},
+"prta-personalized-recommendation-tools": {
+"file": "recsys26/prta-personalized-recommendation-tools.pdf",
+"via": "doi",
+"score": 1.0
+},
+"query-aware-multimodal-routing-crs": {
+"file": "recsys26/query-aware-multimodal-routing-crs.pdf",
+"via": "doi",
+"score": 1.0
+},
+"rankgraph-2": {
+"file": "recsys26/rankgraph-2.pdf",
+"via": "doi",
+"score": 1.0
+},
+"rdsr-information-aware-compression": {
+"file": "recsys26/rdsr-information-aware-compression.pdf",
+"via": "doi",
+"score": 1.0
+},
+"reasoning-trace-design": {
+"file": "recsys26/reasoning-trace-design.pdf",
+"via": "doi",
+"score": 1.0
+},
+"rebait-choice-time": {
+"file": "recsys26/rebait-choice-time.pdf",
+"via": "doi",
+"score": 1.0
+},
+"recap-streaming-semantic-profiles": {
+"file": "recsys26/recap-streaming-semantic-profiles.pdf",
+"via": "doi",
+"score": 1.0
+},
+"recommending-to-agentic-web": {
+"file": "recsys26/recommending-to-agentic-web.pdf",
+"via": "doi",
+"score": 1.0
+},
+"recseed-training-seed-model-selection": {
+"file": "recsys26/recseed-training-seed-model-selection.pdf",
+"via": "doi",
+"score": 1.0
+},
+"reranking-space-adapted-queries": {
+"file": "recsys26/reranking-space-adapted-queries.pdf",
+"via": "doi",
+"score": 1.0
+},
+"residual-dominance": {
+"file": "recsys26/residual-dominance.pdf",
+"via": "doi",
+"score": 1.0
+},
+"retargetrec-dpoir-slot-allocation": {
+"file": "recsys26/retargetrec-dpoir-slot-allocation.pdf",
+"via": "doi",
+"score": 1.0
+},
+"revealed-behavior-stated-news-profiles": {
+"file": "recsys26/revealed-behavior-stated-news-profiles.pdf",
+"via": "doi",
+"score": 1.0
+},
+"safety-aware-next-poi-llm": {
+"file": "recsys26/safety-aware-next-poi-llm.pdf",
+"via": "doi",
+"score": 1.0
+},
+"scikit-rank": {
+"file": "recsys26/scikit-rank.pdf",
+"via": "doi",
+"score": 1.0
+},
+"scikit-rec-agent-unified-library": {
+"file": "recsys26/scikit-rec-agent-unified-library.pdf",
+"via": "doi",
+"score": 1.0
+},
+"self-evolving-youtube-agents": {
+"file": "recsys26/self-evolving-youtube-agents.pdf",
+"via": "doi",
+"score": 1.0
+},
+"sentiment-semantics-kg-explainable-recommendation": {
+"file": "recsys26/sentiment-semantics-kg-explainable-recommendation.pdf",
+"via": "doi",
+"score": 1.0
+},
+"sequenceo1": {
+"file": "recsys26/sequenceo1.pdf",
+"via": "doi",
+"score": 1.0
+},
+"sera-retail-agent-evaluation": {
+"file": "recsys26/sera-retail-agent-evaluation.pdf",
+"via": "doi",
+"score": 1.0
+},
+"sidec-dual-purpose-semantic-ids": {
+"file": "recsys26/sidec-dual-purpose-semantic-ids.pdf",
+"via": "doi",
+"score": 1.0
+},
+"simulating-diverse-user-behavioral-stereotypes": {
+"file": "recsys26/simulating-diverse-user-behavioral-stereotypes.pdf",
+"via": "doi",
+"score": 1.0
+},
+"smart-gated-hybrid-product-ads": {
+"file": "recsys26/smart-gated-hybrid-product-ads.pdf",
+"via": "doi",
+"score": 1.0
+},
+"social-ab-balanced-louvain": {
+"file": "recsys26/social-ab-balanced-louvain.pdf",
+"via": "doi",
+"score": 1.0
+},
+"space-constraint-aware-virtual-users": {
+"file": "recsys26/space-constraint-aware-virtual-users.pdf",
+"via": "doi",
+"score": 1.0
+},
+"space-efficient-item-embeddings": {
+"file": "recsys26/space-efficient-item-embeddings.pdf",
+"via": "doi",
+"score": 1.0
+},
+"spear-selection-aware-rewriting-retrieval": {
+"file": "recsys26/spear-selection-aware-rewriting-retrieval.pdf",
+"via": "doi",
+"score": 1.0
+},
+"spotify-bootstrapping-conversational-agents": {
+"file": "recsys26/spotify-bootstrapping-conversational-agents.pdf",
+"via": "doi",
+"score": 1.0
+},
+"ssprec-stability-plasticity": {
+"file": "recsys26/ssprec-stability-plasticity.pdf",
+"via": "doi",
+"score": 1.0
+},
+"star-continuous-time": {
+"file": "recsys26/star-continuous-time.pdf",
+"via": "doi",
+"score": 1.0
+},
+"steps-self-triggered-push": {
+"file": "recsys26/steps-self-triggered-push.pdf",
+"via": "doi",
+"score": 1.0
+},
+"stnb-page-module-interactions": {
+"file": "recsys26/stnb-page-module-interactions.pdf",
+"via": "doi",
+"score": 1.0
+},
+"streamlitrecommenders-inspectability": {
+"file": "recsys26/streamlitrecommenders-inspectability.pdf",
+"via": "doi",
+"score": 1.0
+},
+"subjective-reasoning-collapse-routing": {
+"file": "recsys26/subjective-reasoning-collapse-routing.pdf",
+"via": "doi",
+"score": 1.0
+},
+"support-gap": {
+"file": "recsys26/support-gap.pdf",
+"via": "doi",
+"score": 1.0
+},
+"surface-matching": {
+"file": "recsys26/surface-matching.pdf",
+"via": "doi",
+"score": 1.0
+},
+"syf-shape-your-feed": {
+"file": "recsys26/syf-shape-your-feed.pdf",
+"via": "doi",
+"score": 1.0
+},
+"tagrec-tailness-gate": {
+"file": "recsys26/tagrec-tailness-gate.pdf",
+"via": "doi",
+"score": 1.0
+},
+"tasteprint-cross-platform-memory": {
+"file": "recsys26/tasteprint-cross-platform-memory.pdf",
+"via": "doi",
+"score": 1.0
+},
+"tau-rec": {
+"file": "recsys26/tau-rec.pdf",
+"via": "doi",
+"score": 1.0
+},
+"teaching-recommenders-to-listen": {
+"file": "recsys26/teaching-recommenders-to-listen.pdf",
+"via": "doi",
+"score": 1.0
+},
+"text-on-the-creative": {
+"file": "recsys26/text-on-the-creative.pdf",
+"via": "doi",
+"score": 1.0
+},
+"tie-breaking-illusion": {
+"file": "recsys26/tie-breaking-illusion.pdf",
+"via": "doi",
+"score": 1.0
+},
+"time-and-order-rope": {
+"file": "recsys26/time-and-order-rope.pdf",
+"via": "doi",
+"score": 1.0
+},
+"token-factory": {
+"file": "recsys26/token-factory.pdf",
+"via": "doi",
+"score": 1.0
+},
+"trace-counterfactual-sequential": {
+"file": "recsys26/trace-counterfactual-sequential.pdf",
+"via": "doi",
+"score": 1.0
+},
+"transact-v2-lifelong-sequences-pinterest": {
+"file": "recsys26/transact-v2-lifelong-sequences-pinterest.pdf",
+"via": "doi",
+"score": 1.0
+},
+"transparency-control-provider-interfaces": {
+"file": "recsys26/transparency-control-provider-interfaces.pdf",
+"via": "doi",
+"score": 1.0
+},
+"tsmoo-constrained-thompson-experimentation": {
+"file": "recsys26/tsmoo-constrained-thompson-experimentation.pdf",
+"via": "doi",
+"score": 1.0
+},
+"tubifm-unified-streaming-ranking": {
+"file": "recsys26/tubifm-unified-streaming-ranking.pdf",
+"via": "doi",
+"score": 1.0
+},
+"twiner-explainable-course-sequential-graph": {
+"file": "recsys26/twiner-explainable-course-sequential-graph.pdf",
+"via": "doi",
+"score": 1.0
+},
+"twitch-fresh-delayed-segment-aware-ranking": {
+"file": "recsys26/twitch-fresh-delayed-segment-aware-ranking.pdf",
+"via": "doi",
+"score": 1.0
+},
+"udsig-sparse-image-generation": {
+"file": "recsys26/udsig-sparse-image-generation.pdf",
+"via": "doi",
+"score": 1.0
+},
+"unbiased-implicit-feedback-islam": {
+"file": "recsys26/unbiased-implicit-feedback-islam.pdf",
+"via": "doi",
+"score": 1.0
+},
+"uncertainty-aware-reward-modeling-youtube": {
+"file": "recsys26/uncertainty-aware-reward-modeling-youtube.pdf",
+"via": "doi",
+"score": 1.0
+},
+"uncertainty-gated-context-poi": {
+"file": "recsys26/uncertainty-gated-context-poi.pdf",
+"via": "doi",
+"score": 1.0
+},
+"underrated-catalyst-critiquing": {
+"file": "recsys26/underrated-catalyst-critiquing.pdf",
+"via": "doi",
+"score": 1.0
+},
+"unique-flat-quantization-unified-retrieval-ranking": {
+"file": "recsys26/unique-flat-quantization-unified-retrieval-ranking.pdf",
+"via": "doi",
+"score": 1.0
+},
+"unishare-video-receiver": {
+"file": "recsys26/unishare-video-receiver.pdf",
+"via": "doi",
+"score": 1.0
+},
+"unitraj-cross-domain-long-sequences": {
+"file": "recsys26/unitraj-cross-domain-long-sequences.pdf",
+"via": "doi",
+"score": 1.0
+},
+"user-controlled-intent-layers": {
+"file": "recsys26/user-controlled-intent-layers.pdf",
+"via": "doi",
+"score": 1.0
+},
+"user-governed-preference-memory": {
+"file": "recsys26/user-governed-preference-memory.pdf",
+"via": "doi",
+"score": 1.0
+},
+"user-item-edges-exposure-allocation": {
+"file": "recsys26/user-item-edges-exposure-allocation.pdf",
+"via": "doi",
+"score": 1.0
+},
+"value-aligned-modeling-robust-experimentation": {
+"file": "recsys26/value-aligned-modeling-robust-experimentation.pdf",
+"via": "doi",
+"score": 1.0
+},
+"valuevet-constitutional-recommender-audit": {
+"file": "recsys26/valuevet-constitutional-recommender-audit.pdf",
+"via": "doi",
+"score": 1.0
+},
+"versioned-late-materialization": {
+"file": "recsys26/versioned-late-materialization.pdf",
+"via": "doi",
+"score": 1.0
+},
+"vlm-relevance-web-scale": {
+"file": "recsys26/vlm-relevance-web-scale.pdf",
+"via": "doi",
+"score": 1.0
+},
+"watchlens-video-experiment-platform": {
+"file": "recsys26/watchlens-video-experiment-platform.pdf",
+"via": "doi",
+"score": 1.0
+},
+"webtoon-progressive-foundation-model-alignment": {
+"file": "recsys26/webtoon-progressive-foundation-model-alignment.pdf",
+"via": "doi",
+"score": 1.0
+},
+"welfare-oriented-activity-travel": {
+"file": "recsys26/welfare-oriented-activity-travel.pdf",
+"via": "doi",
+"score": 1.0
+},
+"whale-wukong-hstu": {
+"file": "recsys26/whale-wukong-hstu.pdf",
+"via": "doi",
+"score": 1.0
+},
+"what-price-fairness": {
+"file": "recsys26/what-price-fairness.pdf",
+"via": "doi",
+"score": 1.0
+},
+"when-recommender-systems-not-act": {
+"file": "recsys26/when-recommender-systems-not-act.pdf",
+"via": "doi",
+"score": 1.0
+},
+"wisefood": {
+"file": "recsys26/wisefood.pdf",
+"via": "doi",
+"score": 1.0
+},
+"workrb-work-domain-benchmark": {
+"file": "recsys26/workrb-work-domain-benchmark.pdf",
+"via": "doi",
+"score": 1.0
+},
 "apple-tv-incremental-search-hybrid-text-id": {
 "file": "2607.13493.pdf",
 "via": "arxiv:2607.13493",
@@ -347,6 +1312,36 @@
 "unipinrec-full-stack-unification": {
 "file": "unipinrec_2606.00422.pdf",
 "via": "arxiv:2606.00422",
+"score": 1.0
+},
+"keeping-the-index-open-dual-encoder-cost": {
+"file": "recsys26/keeping-the-index-open-dual-encoder-cost.pdf",
+"via": "title",
+"score": 1.0
+},
+"cluster-goobs-llm-hard-negatives": {
+"file": "recsys26/cluster-goobs-llm-hard-negatives.pdf",
+"via": "title",
+"score": 1.0
+},
+"multimodal-semantic-expansion-constrained-llm-rerank": {
+"file": "recsys26/multimodal-semantic-expansion-constrained-llm-rerank.pdf",
+"via": "title",
+"score": 1.0
+},
+"talk-cobis-recsys2026-materials": {
+"file": "recsys26/talk-cobis-recsys2026-materials.pdf",
+"via": "title",
+"score": 0.857
+},
+"lightweight-ranking-heads-stop-gradient": {
+"file": "recsys26/lightweight-ranking-heads-stop-gradient.pdf",
+"via": "title",
+"score": 1.0
+},
+"timing-aware-repurchase-survival": {
+"file": "recsys26/timing-aware-repurchase-survival.pdf",
+"via": "title",
 "score": 1.0
 }
 }

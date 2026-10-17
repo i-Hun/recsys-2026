@@ -105,21 +105,46 @@ def main():
                            "via": f"arxiv:{aid}", "score": 1.0}
 
     # --- правило 3: нечёткий заголовок по первой странице
+    # Авторские/arXiv-копии часто без DOI и с иным написанием заголовка: берём
+    # максимум из посимвольной близости и доли общих слов, порог 0.80 / 0.70+0.75.
+    def words(s):
+        return {w for w in norm(s).split() if len(w) > 2}
+
+    def best_window_ratio(nt: str, body: str) -> float:
+        """Максимум посимвольной близости по окнам: заголовок на слайде/титуле
+        часто стоит после шапки, и сравнение «с начала страницы» промахивается."""
+        n = len(nt)
+        if len(body) <= n + 20:
+            return SequenceMatcher(None, nt, body).ratio()
+        best = 0.0
+        for i in range(0, len(body) - n - 20 + 1, max(1, n // 4)):
+            r = SequenceMatcher(None, nt, body[i:i + n + 20]).ratio()
+            if r > best:
+                best = r
+                if best > 0.95:
+                    break
+        return best
+
     for p in papers:
         if p["slug"] in match:
             continue
         nt = norm(p["title"])
-        best, best_f = 0.0, None
+        tw = words(p["title"])
+        best, best_f, best_j = 0.0, None, 0.0
         for f in pdfs:
             body = norm(pages[str(f)])[:1500]
             if not body:
                 continue
-            r = SequenceMatcher(None, nt, body[:len(nt) + 60]).ratio()
+            r = best_window_ratio(nt, body)
+            bw = words(body)
+            j = len(tw & bw) / max(1, len(tw))
             if r > best:
-                best, best_f = r, f
-        if best >= 0.80:
+                best, best_f, best_j = r, f, j
+            if j > best_j and r >= 0.6:
+                best_j, best_f = j, f
+        if best >= 0.80 or (best >= 0.70 and best_j >= 0.75):
             match[p["slug"]] = {"file": str(best_f.relative_to(PAPERS_DIR)),
-                                "via": "title", "score": round(best, 3)}
+                                "via": "title", "score": round(max(best, best_j), 3)}
 
     (ROOT / ".fulltext-match.json").write_text(
         json.dumps(match, ensure_ascii=False, indent=0), encoding="utf-8")

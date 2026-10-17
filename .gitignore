@@ -7,3 +7,8 @@ node_modules/
 dist/
 *.log
 .DS_Store
+
+# Полные тексты статей (копирайт издателя), их корпус и эмбеддинги — не в репозиторий
+data/fulltext-corpus.jsonl
+data/fulltext/review-corpus.jsonl
+data/fulltext/*.npy
