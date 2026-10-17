@@ -7,3 +7,8 @@ node_modules/
 dist/
 *.log
 .DS_Store
+
+# кэши Crossref и python-байткод
+data/.crossref-cache.json
+data/.crossref-refcache.json
+scripts/__pycache__/
