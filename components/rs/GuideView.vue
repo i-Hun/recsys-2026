@@ -17,7 +17,10 @@ const parts = computed(() => {
 const mode = computed(() => parts.value[0] || "home");
 const id = computed(() => parts.value[1]);
 const viewKey = computed(() => mode.value + "/" + (id.value || ""));
-const { papers, themes, stats, organizations, tags: tagIndex, zotero: zot } = props.bundle;
+const { papers, themes, stats, organizations, tags: tagIndex, zotero: zot, map: mapBundle } = props.bundle;
+// Карта близости приходит только в проекции главной; на других маршрутах — пустая заглушка,
+// чтобы setup не падал (секция #map рендерится лишь на главной).
+const mapData = mapBundle || { points: [], clusters: [], meta: {} };
 const data = { version: props.bundle.version };
 const byOrg = Object.fromEntries(organizations.map((o) => [o.id, o]));
 const orgTypes = { company: "Компания", university: "Университет", research: "Исследовательская организация", other: "Другая организация" };
@@ -242,6 +245,62 @@ function tmapKey(e) {
   if (next) e.preventDefault(), next.focus();
 }
 
+/* ---------- карта близости: UMAP по эмбеддингам разборов ---------- */
+const MAP = { w: 1000, h: 1000 };
+const mapPoints = mapData.points;
+const mapClusters = mapData.clusters;
+const mapClusterById = Object.fromEntries(mapClusters.map((c) => [c.id, c]));
+const mapMode = ref("clusters"); // clusters | themes
+const mapSel = ref(""); // ключ группы: "c1" или "tgen"
+const mapTip = ref(null);
+const mapGroups = computed(() =>
+  mapMode.value === "clusters"
+    ? mapClusters.map((c, i) => ({ key: "c" + c.id, id: c.id, no: i + 1, label: c.name, n: c.size, theme: c.topTheme }))
+    : themes.map((t, i) => ({ key: "t" + t.id, id: t.id, no: i + 1, label: short(t.id), n: count(t.id, true), theme: t.id })),
+);
+const mapKeyOf = (p) => (mapMode.value === "clusters" ? (p.cluster < 0 ? "noise" : "c" + p.cluster) : "t" + p.theme);
+const mapFill = (p) => {
+  if (!mapSel.value) return p.cluster < 0 && mapMode.value === "clusters" ? "var(--rule)" : "var(--accent)";
+  return mapKeyOf(p) === mapSel.value ? "var(--accent)" : "var(--rule)";
+};
+const mapOpacity = (p) =>
+  !mapSel.value ? (p.cluster < 0 && mapMode.value === "clusters" ? 0.4 : 0.8) : mapKeyOf(p) === mapSel.value ? 1 : 0.16;
+const mapSelected = computed(() => mapGroups.value.find((g) => g.key === mapSel.value) || null);
+const mapSelectedPapers = computed(() =>
+  !mapSel.value
+    ? []
+    : mapPoints.filter((p) => mapKeyOf(p) === mapSel.value).map((p) => bySlug[p.slug]).filter(Boolean),
+);
+// Номера групп на карте: подпись у центроида, без оболочек — кластеры в 10-мерной
+// проекции не обязаны быть компактными на плоскости, и полигон врал бы о границах.
+const mapCenters = computed(() => {
+  const groups = new Map();
+  for (const p of mapPoints) {
+    const k = mapKeyOf(p);
+    if (k === "noise") continue;
+    if (!groups.has(k)) groups.set(k, []);
+    groups.get(k).push(p);
+  }
+  const out = [];
+  for (const [key, pts] of groups) {
+    out.push({
+      key,
+      n: pts.length,
+      cx: pts.reduce((sum, p) => sum + p.x, 0) / pts.length,
+      cy: pts.reduce((sum, p) => sum + p.y, 0) / pts.length,
+      no: mapGroups.value.find((g) => g.key === key)?.no,
+    });
+  }
+  return mapSel.value ? out.filter((s) => s.key === mapSel.value) : out.filter((s) => s.n >= 10);
+});
+function mapPick(e) {
+  const a = e.target.closest?.(".rs-mdot");
+  mapTip.value = a ? bySlug[a.dataset.slug] : null;
+}
+function mapToggle(key) {
+  mapSel.value = mapSel.value === key ? "" : key;
+}
+watch(mapMode, () => (mapSel.value = ""));
 /* ---------- scrollytelling: one dot per work, three arrangements, driven by native scroll ---------- */
 const kindOrder = Object.entries(
   reviewed.reduce((m, p) => ((m[p.kind] = (m[p.kind] || 0) + 1), m), {}),
@@ -771,8 +830,96 @@ const pad = (n) => String(n).padStart(3, "0");
               </div>
             </section>
 
+            <section id="map" class="rs-wrap rs-section rs-reveal">
+              <header class="rs-section-head">
+                <span class="rs-sec-no">05</span>
+                <h2>Близость: одна точка — один разбор.</h2>
+                <p>
+                  Координаты — проекция UMAP эмбеддингов текста разборов (Qwen3-Embedding-0.6B): заголовок, суть, результат и ограничение.
+                  Темы и теги в текст не попадали, поэтому облако не знает о нашей разметке. Переключатель показывает два способа назвать
+                  группы: кластеры, найденные в самих эмбеддингах, и редакторские темы. Выберите группу — остальные точки уйдут в фон.
+                </p>
+              </header>
+              <div class="rs-map-layout">
+                <figure class="rs-map-fig" aria-labelledby="rs-map-cap">
+                  <figcaption id="rs-map-cap" class="rs-caption">
+                    <b>{{ mapMode === "clusters" ? mapData.meta.clusters + " кластеров" : themes.length + " редакторских тем" }}</b>
+                    · {{ mapData.meta.n }} разборов · HDBSCAN в 10-мерной проекции UMAP, точки вне кластеров —
+                    {{ mapData.meta.noise }}. Нажмите на точку, чтобы открыть разбор.
+                  </figcaption>
+                  <fieldset class="rs-segment">
+                    <legend>Группировка</legend>
+                    <label><input v-model="mapMode" type="radio" value="clusters" name="mapmode" /> Кластеры эмбеддингов</label>
+                    <label><input v-model="mapMode" type="radio" value="themes" name="mapmode" /> Редакторские темы</label>
+                  </fieldset>
+                  <svg :viewBox="'0 0 ' + MAP.w + ' ' + MAP.h" class="rs-map-svg" @mouseover="mapPick" @mouseleave="mapTip = null">
+                    <circle
+                      v-for="p in mapPoints"
+                      :key="p.slug"
+                      :cx="p.x"
+                      :cy="p.y"
+                      r="5.4"
+                      class="rs-mdot"
+                      :data-slug="p.slug"
+                      :style="{ fill: mapFill(p), opacity: mapOpacity(p) }"
+                      @click="router.push(base + '/papers/' + p.slug)"
+                    >
+                      <title>{{ bySlug[p.slug]?.title }}</title>
+                    </circle>
+                    <text
+                      v-for="s in mapCenters"
+                      :key="'l' + s.key"
+                      :x="s.cx"
+                      :y="s.cy"
+                      class="rs-mlabel"
+                      :class="{ on: mapSel === s.key }"
+                      aria-hidden="true"
+                    >
+                      {{ s.no }}
+                    </text>
+                  </svg>
+                  <p class="rs-map-tip" aria-live="polite">
+                    <template v-if="mapTip">
+                      <b>{{ short(mapTip.primaryTheme) }}</b> {{ mapTip.title }}
+                    </template>
+                    <span v-else>Наведите на точку — появится название работы.</span>
+                  </p>
+                </figure>
+                <aside class="rs-map-side">
+                  <ol class="rs-map-groups" :aria-label="mapMode === 'clusters' ? 'Кластеры' : 'Редакторские темы'">
+                    <li v-for="g in mapGroups" :key="g.key">
+                      <button
+                        type="button"
+                        :aria-pressed="mapSel === g.key"
+                        :class="{ on: mapSel === g.key }"
+                        @click="mapToggle(g.key)"
+                      >
+                        <span class="rs-map-no">{{ String(g.no).padStart(2, "0") }}</span>
+                        <span class="rs-map-name">{{ g.label }}</span>
+                        <b>{{ g.n }}</b>
+                      </button>
+                    </li>
+                  </ol>
+                  <div v-if="mapSelected" class="rs-map-list" aria-live="polite">
+                    <b>{{ mapSelected.label }}</b>
+                    <ul>
+                      <li v-for="p in mapSelectedPapers.slice(0, 6)" :key="p.slug">
+                        <NuxtLink :to="base + '/papers/' + p.slug">{{ p.title }}</NuxtLink>
+                      </li>
+                    </ul>
+                    <p v-if="mapSelectedPapers.length > 6" class="rs-caption">и ещё {{ mapSelectedPapers.length - 6 }}</p>
+                  </div>
+                  <p v-else class="rs-caption">
+                    Совпадение кластеров с редакторскими темами слабое: NMI {{ mapData.meta.nmiHdbscan }}, ARI
+                    {{ mapData.meta.ariHdbscan }}. Темы отвечают на вопрос «о чём работа спорит», а кластеры собираются по постановке задачи —
+                    поэтому одна тема распадается на несколько облаков, а соседние облака могут быть про разное.
+                  </p>
+                </aside>
+              </div>
+            </section>
+
             <section id="method" class="rs-wrap rs-section rs-method rs-reveal">
-              <header class="rs-section-head"><span class="rs-sec-no">05</span><h2>Как читать эту карту</h2></header>
+              <header class="rs-section-head"><span class="rs-sec-no">06</span><h2>Как читать эту карту</h2></header>
               <div class="rs-method-grid">
                 <details open>
                   <summary>Покрытие без двойного счёта</summary>

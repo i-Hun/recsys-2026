@@ -10,6 +10,7 @@
 // поэтому SSR-разметка и гидрация видят один и тот же объект — расхождений нет.
 import data from "../../data/recsys-2026.json";
 import tagsData from "../../data/recsys-2026-tags.json";
+import mapData from "../../data/recsys-2026-map.json";
 import zoteroData from "../../data/recsys-2026-zotero.json";
 
 type Paper = (typeof data.papers)[number];
@@ -59,6 +60,8 @@ export function guideBundle(mode: string, id?: string) {
       organizations: mode === "organizations" ? data.organizations : orgsLite(),
       tags: mode === "catalog" ? { tags: tagsLite(), byPaper: tagsData.byPaper } : { tags: tagsLite(), byPaper: {} },
       zotero: { items: mode === "catalog" ? zotItems() : [] },
+      // Карта близости (UMAP/HDBSCAN, 32 КБ) — только главной: другим маршрутам она не нужна.
+      map: mode === "home" ? mapData : undefined,
     };
   }
 

@@ -754,3 +754,34 @@ a.rs-ws-title:hover { color: var(--color-accent) !important; }
   .rs-ws-item { padding: 14px 14px; }
   .rs-ws-papers > ol > li { padding-left: 28px; }
 }
+
+/* ---------- карта близости (UMAP по эмбеддингам) ---------- */
+.rs-map-layout { display: grid; grid-template-columns: minmax(0, 1.85fr) minmax(0, 1fr); gap: 24px; align-items: start; }
+.rs-map-fig { margin: 0; background: var(--color-surface); border-radius: var(--radius-card); box-shadow: var(--shadow-1); padding: 16px; }
+.rs-map-fig .rs-segment { margin: 10px 0 4px; }
+.rs-map-svg { display: block; width: 100%; height: auto; aspect-ratio: 1 / 1; margin: 4px 0 0; border-radius: var(--radius-sm); background: color-mix(in srgb, var(--color-tint) 45%, var(--color-surface)); }
+.rs-map-svg .rs-mlabel { font-size: 21px; font-weight: 700; fill: var(--color-muted); text-anchor: middle; dominant-baseline: middle; paint-order: stroke; stroke: var(--color-surface); stroke-width: 4.5; cursor: default; pointer-events: none; }
+.rs-map-svg .rs-mlabel.on { fill: var(--color-accent); }
+.rs-map-svg .rs-mdot { cursor: pointer; stroke: var(--color-surface); stroke-width: 0.7; transition: opacity 0.18s var(--ease), fill 0.18s var(--ease); }
+.rs-map-svg .rs-mdot:hover { stroke: var(--color-ink); stroke-width: 2.4; }
+.rs-map-tip { min-height: 2.7em; margin-top: 8px; font-size: var(--text-meta); line-height: 1.45; color: var(--color-muted); }
+.rs-map-tip b { color: var(--color-ink); font-weight: 650; }
+.rs-map-side { display: grid; gap: 16px; align-content: start; }
+.rs-map-groups { display: grid; gap: 2px; list-style: none; }
+.rs-map-groups button { display: grid; grid-template-columns: 20px minmax(0, 1fr) auto; gap: 10px; align-items: center; width: 100%; padding: 7px 8px; border: 0; border-radius: 10px; background: transparent; text-align: left; font-size: 0.86rem; line-height: 1.3; }
+.rs-map-groups button:hover { background: var(--color-tint); }
+.rs-map-groups button.on { background: var(--color-tint); font-weight: 650; }
+.rs-map-groups button b { font-variant-numeric: tabular-nums; font-weight: 600; color: var(--color-muted); }
+.rs-map-groups button.on b { color: var(--color-accent); }
+.rs-map-no { font-variant-numeric: tabular-nums; font-size: var(--text-label); font-weight: 700; letter-spacing: 0.04em; color: var(--color-muted); }
+.rs-map-groups button.on .rs-map-no { color: var(--color-accent); }
+.rs-map-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rs-map-list { padding: 12px 14px; border-radius: var(--radius-sm); background: var(--color-tint); font-size: var(--text-meta); }
+.rs-map-list ul { display: grid; gap: 6px; margin-top: 8px; padding-left: 18px; }
+.rs-map-list li { line-height: 1.35; }
+.rs-map-list a:hover { color: var(--color-accent); }
+@media (max-width: 900px) {
+  .rs-map-layout { grid-template-columns: minmax(0, 1fr); }
+  .rs-map-groups { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .rs-map-name { white-space: normal; }
+}
