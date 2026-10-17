@@ -785,3 +785,6 @@ a.rs-ws-title:hover { color: var(--color-accent) !important; }
 .rs-refs a { color: var(--color-accent); text-underline-offset: 2px; }
 .rs-refs a:hover { text-decoration: underline; }
 .rs-refs li::marker { color: var(--color-muted); font-size: var(--text-meta); }
+
+/* рёбра графа общих ссылок: толщина ∝ числу общих источников */
+.rs-medges line { stroke: var(--color-accent); stroke-linecap: round; }
