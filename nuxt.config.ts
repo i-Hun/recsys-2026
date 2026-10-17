@@ -2,7 +2,7 @@
 // The site (a private repo) mounts this repository as a git submodule and `extends` it;
 // on its own the layer also runs as a standalone app (`npm run dev`) for contributors.
 export default defineNuxtConfig({
-  compatibilityDate: '2025-01-03',
+  compatibilityDate: '2026-10-17',
   routeRules: {
     // Dynamic SSR only: filters live in the query (?theme=, ?org=, ?tag=, ?zotero=, ?type=),
     // and a prerendered index.html would ignore them and serve the unfiltered list.
