@@ -107,6 +107,20 @@ function setFilter(key, value, push = false) {
   router[push ? "push" : "replace"]({ path: base + "/catalog", query: catalogQuery({ [key]: value }) });
 }
 const tagTo = (t) => ({ path: base + "/catalog", query: catalogQuery({ theme: theme.value === t && mode.value === "catalog" ? "" : t }) });
+// Ссылки внутри строк каталога — обычные <a href>. Видимый результат тот же, но при
+// гидратации 269 строк каталога не создаётся ~800 компонентов NuxtLink (у каждого свой setup
+// и route-вычисления): замер показал, что именно они держали TBT каталога. SPA-переход
+// возвращает один делегированный обработчик на <ol> (listClick ниже).
+const hrefCache = new Map();
+function linkHref(to) {
+  const key = to.path + "?" + JSON.stringify(to.query || {});
+  let v = hrefCache.get(key);
+  if (v === undefined) {
+    v = router.resolve(to).href;
+    hrefCache.set(key, v);
+  }
+  return v;
+}
 // review tag link: from the catalog it toggles the tag on top of the current filters; elsewhere it opens a clean filter
 const reviewTagTo = (t) => ({ path: base + "/catalog", query: catalogQuery({ tag: tag.value === t && mode.value === "catalog" ? "" : t }) });
 const filtered = computed(() =>
@@ -408,8 +422,23 @@ function toggleRow(slug) {
       if (found) rowDetail.value = { ...rowDetail.value, [slug]: { insight: found.insight, limitation: found.limitation } };
     });
 }
-function rowClick(e, slug) {
-  if (e.target.closest("a, button, summary, input, select") || window.getSelection?.().toString()) return;
+// Один делегированный обработчик на весь список: раскрытие строки (клик по строке или по её
+// номеру) и SPA-переход по внутренним ссылкам (внешние, ctrl/middle-click — браузеру).
+function listClick(e) {
+  if (e.defaultPrevented || e.button > 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+  const row = e.target.closest?.(".rs-paper-card");
+  if (!row) return;
+  const a = e.target.closest("a");
+  if (a) {
+    const h = a.getAttribute("href") || "";
+    if (h.startsWith("/") && !a.target) {
+      e.preventDefault();
+      router.push(h);
+    }
+    return;
+  }
+  const slug = (row.querySelector("h2 a")?.getAttribute("href") || "").split("/").pop();
+  if (!slug || window.getSelection?.().toString()) return;
   toggleRow(slug);
 }
 // mini-histogram above the table: works per theme within the current result
@@ -901,20 +930,19 @@ const pad = (n) => String(n).padStart(3, "0");
             </div>
             <div v-if="!filtered.length" class="rs-empty">Ничего не найдено. Попробуйте убрать тему или изменить запрос.</div>
             <div class="rs-table-head" aria-hidden="true"><span>№</span><span>Работа</span><span>Организации</span><span>Темы</span><span>Ссылки</span></div>
-            <TransitionGroup tag="ol" name="rs-row" class="rs-list rs-list-dense">
-              <li v-for="p in filtered" :key="p.slug" class="rs-paper-card" :class="{ open: openRows.has(p.slug) }" @click="rowClick($event, p.slug)">
+            <TransitionGroup tag="ol" name="rs-row" class="rs-list rs-list-dense" @click="listClick">
+              <li v-for="p in filtered" :key="p.slug" class="rs-paper-card" :class="{ open: openRows.has(p.slug) }">
                 <button
                   type="button"
                   class="rs-idx rs-expand"
                   :aria-expanded="openRows.has(p.slug) ? 'true' : 'false'"
                   :aria-controls="'rs-more-' + p.slug"
                   :aria-label="(openRows.has(p.slug) ? 'Свернуть ' : 'Раскрыть ') + '№ ' + pad(indexOf[p.slug])"
-                  @click.stop="toggleRow(p.slug)"
                 >
                   {{ pad(indexOf[p.slug]) }}
                 </button>
                 <div class="rs-row-main">
-                  <h2 lang="en"><NuxtLink :to="base + '/papers/' + p.slug" v-bind="vtAttrs(p.slug)">{{ p.title }}</NuxtLink></h2>
+                  <h2 lang="en"><a :href="base + '/papers/' + p.slug" v-bind="vtAttrs(p.slug)">{{ p.title }}</a></h2>
                   <p class="rs-row-sum">{{ p.summary || "Разбор не создан: выводы по одному названию или аннотации не публикуются." }}</p>
                   <div v-if="openRows.has(p.slug)" :id="'rs-more-' + p.slug" class="rs-row-more">
                     <template v-if="rowDetail[p.slug]">
@@ -932,15 +960,15 @@ const pad = (n) => String(n).padStart(3, "0");
                   <small v-else>—</small>
                 </p>
                 <div class="rs-tags">
-                  <NuxtLink
+                  <a
                     v-for="t in p.tags"
                     :key="t"
-                    :to="tagTo(t)"
+                    :href="linkHref(tagTo(t))"
                     :aria-current="theme === t ? 'true' : undefined"
                     :class="{ primary: t === p.primaryTheme }"
                     :title="byTheme[t].title"
                     :style="{ '--c': 'var(--t' + themeIdx[t] + ')' }"
-                    >#{{ short(t) }}</NuxtLink
+                    >#{{ short(t) }}</a
                   >
                 </div>
                 <p class="rs-row-links">
