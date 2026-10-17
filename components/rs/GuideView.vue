@@ -17,10 +17,11 @@ const parts = computed(() => {
 const mode = computed(() => parts.value[0] || "home");
 const id = computed(() => parts.value[1]);
 const viewKey = computed(() => mode.value + "/" + (id.value || ""));
-const { papers, themes, stats, organizations, tags: tagIndex, zotero: zot, map: mapBundle } = props.bundle;
+const { papers, themes, stats, organizations, tags: tagIndex, zotero: zot, map: mapBundle, communities: commBundle } = props.bundle;
 // Карта близости приходит только в проекции главной; на других маршрутах — пустая заглушка,
 // чтобы setup не падал (секция #map рендерится лишь на главной).
 const mapData = mapBundle || { points: [], clusters: [], meta: {} };
+const communitiesData = commBundle || { points: [], communities: [], meta: {} };
 const data = { version: props.bundle.version };
 const byOrg = Object.fromEntries(organizations.map((o) => [o.id, o]));
 const orgTypes = { company: "Компания", university: "Университет", research: "Исследовательская организация", other: "Другая организация" };
@@ -245,37 +246,51 @@ function tmapKey(e) {
   if (next) e.preventDefault(), next.focus();
 }
 
-/* ---------- карта близости: UMAP по эмбеддингам разборов ---------- */
+/* ---------- карта близости: текст, темы, сообщества по литературе ---------- */
 const MAP = { w: 1000, h: 1000 };
-const mapPoints = mapData.points;
 const mapClusters = mapData.clusters;
-const mapClusterById = Object.fromEntries(mapClusters.map((c) => [c.id, c]));
-const mapMode = ref("clusters"); // clusters | themes
-const mapSel = ref(""); // ключ группы: "c1" или "tgen"
+const mapMode = ref("clusters"); // clusters | themes | refs
+const mapSel = ref("");
 const mapTip = ref(null);
-const mapGroups = computed(() =>
-  mapMode.value === "clusters"
+// координаты всегда из текстовой проекции: сообщества по литературе показываем
+// на той же карте, чтобы видеть, где они лежат в смысловом пространстве
+const communityOf = Object.fromEntries((communitiesData.points || []).map((p) => [p.slug, p.community]));
+const mapPoints = computed(() => mapData.points.map((p) => ({ ...p, community: communityOf[p.slug] ?? -1 })));
+const mapGroups = computed(() => {
+  if (mapMode.value === "refs") {
+    return communitiesData.communities
+      .filter((c) => c.size >= 5)
+      .map((c, i) => ({ key: "k" + c.id, id: c.id, no: i + 1, label: c.name, n: c.size, theme: c.theme }));
+  }
+  return mapMode.value === "clusters"
     ? mapClusters.map((c, i) => ({ key: "c" + c.id, id: c.id, no: i + 1, label: c.name, n: c.size, theme: c.topTheme }))
-    : themes.map((t, i) => ({ key: "t" + t.id, id: t.id, no: i + 1, label: short(t.id), n: count(t.id, true), theme: t.id })),
-);
-const mapKeyOf = (p) => (mapMode.value === "clusters" ? (p.cluster < 0 ? "noise" : "c" + p.cluster) : "t" + p.theme);
+    : themes.map((t, i) => ({ key: "t" + t.id, id: t.id, no: i + 1, label: short(t.id), n: count(t.id, true), theme: t.id }));
+});
+const mapKeyOf = (p) => {
+  if (mapMode.value === "refs") return p.community < 0 ? "noise" : "k" + p.community;
+  return mapMode.value === "clusters" ? (p.cluster < 0 ? "noise" : "c" + p.cluster) : "t" + p.theme;
+};
+const mapIsNoise = (p) => mapKeyOf(p) === "noise";
 const mapFill = (p) => {
-  if (!mapSel.value) return p.cluster < 0 && mapMode.value === "clusters" ? "var(--rule)" : "var(--accent)";
+  if (!mapSel.value) return mapIsNoise(p) ? "var(--rule)" : "var(--accent)";
   return mapKeyOf(p) === mapSel.value ? "var(--accent)" : "var(--rule)";
 };
-const mapOpacity = (p) =>
-  !mapSel.value ? (p.cluster < 0 && mapMode.value === "clusters" ? 0.4 : 0.8) : mapKeyOf(p) === mapSel.value ? 1 : 0.16;
+const mapOpacity = (p) => (!mapSel.value ? (mapIsNoise(p) ? 0.4 : 0.8) : mapKeyOf(p) === mapSel.value ? 1 : 0.16);
 const mapSelected = computed(() => mapGroups.value.find((g) => g.key === mapSel.value) || null);
 const mapSelectedPapers = computed(() =>
-  !mapSel.value
-    ? []
-    : mapPoints.filter((p) => mapKeyOf(p) === mapSel.value).map((p) => bySlug[p.slug]).filter(Boolean),
+  !mapSel.value ? [] : mapPoints.value.filter((p) => mapKeyOf(p) === mapSel.value).map((p) => bySlug[p.slug]).filter(Boolean),
 );
-// Номера групп на карте: подпись у центроида, без оболочек — кластеры в 10-мерной
-// проекции не обязаны быть компактными на плоскости, и полигон врал бы о границах.
+const mapCaption = computed(() => {
+  if (mapMode.value === "refs") {
+    const m = communitiesData.meta;
+    return `${m.communities} сообществ · ${m.papers} разборов · ${m.withRefs} со списком литературы · Leiden, modularity ${m.modularity} · ${m.edges} связей`;
+  }
+  return `${mapData.meta.clusters} кластеров · ${mapData.meta.n} разборов · HDBSCAN в 10-мерной проекции UMAP, вне кластеров — ${mapData.meta.noise}`;
+});
+// Номера групп на карте: подпись у центроида, без оболочек — полигон врал бы о границах.
 const mapCenters = computed(() => {
   const groups = new Map();
-  for (const p of mapPoints) {
+  for (const p of mapPoints.value) {
     const k = mapKeyOf(p);
     if (k === "noise") continue;
     if (!groups.has(k)) groups.set(k, []);
@@ -301,7 +316,7 @@ function mapToggle(key) {
   mapSel.value = mapSel.value === key ? "" : key;
 }
 watch(mapMode, () => (mapSel.value = ""));
-/* ---------- scrollytelling: one dot per work, three arrangements, driven by native scroll ---------- */
+
 const kindOrder = Object.entries(
   reviewed.reduce((m, p) => ((m[p.kind] = (m[p.kind] || 0) + 1), m), {}),
 ).sort((a, b) => b[1] - a[1]).map(([k]) => k);
@@ -434,6 +449,15 @@ const articleUrl = computed(() => (paper.value?.status === "reviewed" ? base + "
 // Тело разбора лежит отдельным JSON в public/. В SSR этот путь перехватывает эта
 // же страница и отвечает 500 (проверено и с useRequestFetch), поэтому тянем тело
 // с клиента: оттуда файл отдаёт CDN и разбор открывается по прямой ссылке.
+// Список литературы грузится отдельным файлом на работу (262 файла по ~5 КБ):
+// страница не тянет библиографию всего корпуса. Как и тело разбора — с клиента,
+// потому что в SSR тот же путь перехватывает страница-обёртка и отвечает 500.
+const refsUrl = computed(() => (paper.value ? base + "/refs/" + paper.value.slug + ".json" : null));
+const { data: refsData } = useAsyncData(
+  "recsys-refs-" + (id.value || "none"),
+  () => (refsUrl.value ? $fetch(refsUrl.value).catch(() => null) : Promise.resolve(null)),
+  { watch: [refsUrl], server: false },
+);
 const { data: article } = useAsyncData(
   "recsys-article-" + (id.value || "home"),
   () => (articleUrl.value ? $fetch(articleUrl.value) : Promise.resolve(null)),
@@ -811,21 +835,20 @@ const pad = (n) => String(n).padStart(3, "0");
                 <h2>Близость: одна точка — один разбор.</h2>
                 <p>
                   Координаты — проекция UMAP эмбеддингов текста разборов (Qwen3-Embedding-0.6B): заголовок, суть, результат и ограничение.
-                  Темы и теги в текст не попадали, поэтому облако не знает о нашей разметке. Переключатель показывает два способа назвать
-                  группы: кластеры, найденные в самих эмбеддингах, и редакторские темы. Выберите группу — остальные точки уйдут в фон.
+                  Темы и теги в текст не попадали, поэтому облако не знает о нашей разметке. Группы можно назвать тремя способами: кластеры
+                  эмбеддингов, редакторские темы и сообщества, найденные по общим ссылкам в литературе. Выберите группу — остальные точки уйдут в фон.
                 </p>
               </header>
               <div class="rs-map-layout">
                 <figure class="rs-map-fig" aria-labelledby="rs-map-cap">
                   <figcaption id="rs-map-cap" class="rs-caption">
-                    <b>{{ mapMode === "clusters" ? mapData.meta.clusters + " кластеров" : themes.length + " редакторских тем" }}</b>
-                    · {{ mapData.meta.n }} разборов · HDBSCAN в 10-мерной проекции UMAP, точки вне кластеров —
-                    {{ mapData.meta.noise }}. Нажмите на точку, чтобы открыть разбор.
+                    <b>{{ mapMode === "refs" ? "Сообщества по литературе" : "По тексту разбора" }}</b> · {{ mapCaption }}. Нажмите на точку, чтобы открыть разбор.
                   </figcaption>
                   <fieldset class="rs-segment">
                     <legend>Группировка</legend>
                     <label><input v-model="mapMode" type="radio" value="clusters" name="mapmode" /> Кластеры эмбеддингов</label>
                     <label><input v-model="mapMode" type="radio" value="themes" name="mapmode" /> Редакторские темы</label>
+                    <label><input v-model="mapMode" type="radio" value="refs" name="mapmode" /> Сообщества по литературе</label>
                   </fieldset>
                   <svg :viewBox="'0 0 ' + MAP.w + ' ' + MAP.h" class="rs-map-svg" @mouseover="mapPick" @mouseleave="mapTip = null">
                     <circle
@@ -884,6 +907,12 @@ const pad = (n) => String(n).padStart(3, "0");
                     </ul>
                     <p v-if="mapSelectedPapers.length > 6" class="rs-caption">и ещё {{ mapSelectedPapers.length - 6 }}</p>
                   </div>
+                  <p v-else-if="mapMode === 'refs'" class="rs-caption">
+                    Граф: две работы связаны, если ссылаются на одни и те же источники. Сообщества — Leiden; стабильность разбиения
+                    {{ communitiesData.meta.stabilityAri }} (ARI по сидам), modularity {{ communitiesData.meta.modularity }}.
+                    Совпадение с темами NMI {{ communitiesData.meta.nmiThemes }}, с текстовыми кластерами ARI
+                    {{ communitiesData.meta.ariTextClusters }} — это другой разрез: не «о чём работа», а «на какую школу она опирается».
+                  </p>
                   <p v-else class="rs-caption">
                     Совпадение кластеров с редакторскими темами слабое: NMI {{ mapData.meta.nmiHdbscan }}, ARI
                     {{ mapData.meta.ariHdbscan }}. Темы отвечают на вопрос «о чём работа спорит», а кластеры собираются по постановке задачи —
@@ -1226,6 +1255,21 @@ const pad = (n) => String(n).padStart(3, "0");
                 <section v-for="s in article.sections" :id="s.id" :key="s.id">
                   <h2>{{ s.title }}</h2>
                   <div v-html="render(s.markdown)"></div>
+                </section>
+                <section v-if="refsData?.items?.length" id="refs">
+                  <h2>Литература</h2>
+                  <p class="rs-caption">
+                    {{ refsData.items.length }} ссылок из Crossref для этой публикации. Где есть DOI, ссылка ведёт на него; нумерация — как в источнике.
+                  </p>
+                  <ol class="rs-refs">
+                    <li v-for="(r, ri) in refsData.items" :key="ri">
+                      <template v-if="r.authors?.length">{{ r.authors.join(", ") }}. </template>
+                      <a v-if="r.doi" :href="'https://doi.org/' + r.doi" target="_blank" rel="noopener noreferrer">{{ r.title || r.doi }}</a>
+                      <span v-else>{{ r.title }}</span>
+                      <template v-if="r.venue"> — {{ r.venue }}</template>
+                      <template v-if="r.year">, {{ r.year }}</template>.
+                    </li>
+                  </ol>
                 </section>
                 <section v-if="backlinks.length">
                   <h2>В тематических выводах</h2>

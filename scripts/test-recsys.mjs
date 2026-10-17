@@ -81,10 +81,33 @@ assert.equal(
   "map: шум и кластеры не покрывают корпус",
 );
 
+// Сообщества по литературе и списки литературы.
+const comm = JSON.parse(
+  fs.readFileSync(new URL("../data/recsys-2026-communities.json", import.meta.url)),
+);
+assert.equal(comm.points.length, reviewed.length, "communities: по точке на разбор");
+for (const c of comm.communities) {
+  assert.equal(
+    comm.points.filter((p) => p.community === c.id).length,
+    c.size,
+    "communities: размер сообщества " + c.id,
+  );
+  assert(c.name && c.name.length < 60, "communities: нет названия " + c.id);
+}
+const refsDir = new URL("../public/stories/recsys-2026/refs/", import.meta.url);
+const refFiles = fs.readdirSync(refsDir).filter((f) => f.endsWith(".json"));
+assert(refFiles.length >= 250, "refs: слишком мало файлов литературы " + refFiles.length);
+for (const f of refFiles.slice(0, 20)) {
+  const r = JSON.parse(fs.readFileSync(new URL(f, refsDir)));
+  assert(Array.isArray(r.items) && r.items.length > 0, "refs: пустой список " + f);
+  assert(slugSet.has(r.slug), "refs: неизвестный slug " + r.slug);
+}
+
 console.log(
   JSON.stringify({
     status: "PASS",
     renderedSections: sections,
+    refFiles: refFiles.length,
     mapPoints: map.points.length,
     xss: "raw HTML, javascript URLs and images blocked; safe formatting retained",
   }),
