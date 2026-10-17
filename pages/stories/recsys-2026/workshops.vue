@@ -3,11 +3,17 @@
 // Данные: data/recsys-2026-workshops-site.json — экспорт
 // из проверенного разреза data/recsys-2026-workshops.json. Ничего не досчитывается на странице.
 import cut from "../../../data/recsys-2026-workshops-site.json";
-import main from "../../../data/recsys-2026.json";
 import "../../../assets/styles/design-tokens.css";
 import "../../../assets/styles/recsys-2026.css";
 definePageMeta({ layout: false });
 const base = "/stories/recsys-2026";
+// Из основного корпуса странице нужны только slug'и (для ссылки «есть разбор в каталоге»)
+// и число разборов в шапке. Корпус целиком здесь не импортируется: раньше он уезжал
+// в клиентский чанк (~600 КБ данных) ради этих двух чисел.
+const { data: mainIdx } = await useAsyncData("rs-guide-workshops", () =>
+  $fetch("/api/guide", { query: { mode: "workshops" }, ignoreResponseError: true }),
+);
+const main = mainIdx.value && !mainIdx.value.error ? mainIdx.value : { papers: [], stats: { reviewed: 0 } };
 const { positions, counts, crossref, organizations: orgName, tutorialsInMainCorpus } = cut;
 const mainStats = cut.mainCorpus;
 
