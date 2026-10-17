@@ -12,6 +12,103 @@
   src: url(/stories/recsys-2026/fonts/golos-text-latin-wght-normal.woff2) format("woff2-variations");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 
+/* --- Base of the guide ---------------------------------------------------------------
+   The guide is one page of nagornyy.me (layered) and a standalone app at the same time.
+   Until 17.10.2026 it drew its base from the host's global CSS: the root font size, the
+   minireset, body line-height, list rhythm, <small>, <summary>/<details> and table defaults.
+   The layer itself declared none of this, so the published page and the standalone layer
+   rendered differently. The values below are the ones the published page rendered with
+   (taken from the pre-change snapshot and measured against it), so the guide looks the same
+   now that the host's CSS is not loaded on its routes — see the site repo:
+   server/plugins/guide-css.ts. Order matters: this block sits before the guide's own rules,
+   exactly where the host's stylesheet used to sit in the cascade. */
+/* Host's <html>: the root font size plus the legibility switches that also decide how text
+   wraps (`overflow-wrap: break-word` — measured: without it two labels lost a line). */
+html {
+  font-size: 17px;
+  min-width: 300px;
+  overflow: hidden scroll;
+  text-rendering: optimizelegibility;
+  text-size-adjust: 100%;
+  overflow-wrap: break-word;
+}
+
+/* Host's minireset. Only <body> and <legend> of it were visible here; the guide resets
+   margins of its own h1…h6/p/ul/ol/dl/dd/figure but not of <li>, <legend> or <body>. */
+blockquote,
+body,
+dd,
+dl,
+dt,
+fieldset,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+html,
+iframe,
+legend,
+li,
+ol,
+p,
+pre,
+textarea,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body { font-weight: 400; line-height: 1.5; }
+
+/* Host's <small>: 0.875em, not the browser default 0.83em. */
+small { font-size: 0.875em; }
+
+/* List rhythm: the host applied 0.5rem under every <li>. */
+li { margin-bottom: 0.5rem; }
+
+/* <summary> and <details> as the host styled them. */
+summary { margin: -0.5em -0.5em 0; padding: 0.5em; }
+
+details[open] { border: 1px solid #aaa; border-radius: 4px; padding: 0.5em 0.5em 0; }
+
+/* Tables (host's tables.scss): the matrix and the acronym tables were rendered with these. */
+table {
+  display: table;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  border-collapse: separate;
+  border-spacing: 2px;
+}
+
+thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+table td,
+table th {
+  padding: 0.25rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+th { text-align: inherit; }
+
+/* Form controls: the host's minireset dropped the UA padding of buttons/inputs. */
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  padding: 0;
+}
+/* --- end of base ------------------------------------------------------------------- */
+
 html:has(.rs) { background: var(--color-bg-2); }
 .rs {
   /* aliases used by inline styles/SVG fills in the page component */
