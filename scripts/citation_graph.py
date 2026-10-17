@@ -152,7 +152,7 @@ def main():
         out["communities"].append({"id": int(c), "size": int(sizes[c]), "theme": theme,
                                    "topRefs": [k.split(":", 1)[1] for k, _ in cnt.most_common(6)]})
     names = {0: "Диалоговые и LLM", 1: "Промышленное ранжирование", 2: "Бенчмарки и критика оценки",
-             3: "Генеративный поиск", 4: "CTR и многозадачность", 5: "Последовательные модели"}
+             3: "Генеративный retrieval", 4: "CTR и многозадачность", 5: "Последовательные модели"}
     titles = {
         0: ["A Survey on Conversational Recommender Systems", "Recommendation as Language Processing (RLP): P5"],
         1: ["Deep Neural Networks for YouTube Recommendations", "Unbiased Learning-to-Rank with Biased Feedback"],

@@ -249,7 +249,7 @@ function tmapKey(e) {
 /* ---------- карта близости: текст, темы, сообщества по литературе ---------- */
 const MAP = { w: 1000, h: 1000 };
 const mapClusters = mapData.clusters;
-const mapMode = ref("clusters"); // clusters | themes | refs
+const mapMode = ref("refs"); // refs | clusters | themes
 const mapSel = ref("");
 const mapTip = ref(null);
 // координаты всегда из текстовой проекции: сообщества по литературе показываем
@@ -868,9 +868,9 @@ const pad = (n) => String(n).padStart(3, "0");
                   </figcaption>
                   <fieldset class="rs-segment">
                     <legend>Группировка</legend>
+                    <label><input v-model="mapMode" type="radio" value="refs" name="mapmode" /> Сообщества по литературе</label>
                     <label><input v-model="mapMode" type="radio" value="clusters" name="mapmode" /> Кластеры эмбеддингов</label>
                     <label><input v-model="mapMode" type="radio" value="themes" name="mapmode" /> Редакторские темы</label>
-                    <label><input v-model="mapMode" type="radio" value="refs" name="mapmode" /> Сообщества по литературе</label>
                   </fieldset>
                   <svg :viewBox="'0 0 ' + MAP.w + ' ' + MAP.h" class="rs-map-svg" @mouseover="mapPick" @mouseleave="mapTip = null">
                     <circle
@@ -917,6 +917,7 @@ const pad = (n) => String(n).padStart(3, "0");
                   </p>
                 </figure>
                 <aside class="rs-map-side">
+                  <button v-if="mapSel" type="button" class="rs-map-reset" @click="mapSel = ''">Показать все группы</button>
                   <ol class="rs-map-groups" :aria-label="mapMode === 'clusters' ? 'Кластеры' : 'Редакторские темы'">
                     <li v-for="g in mapGroups" :key="g.key">
                       <button
@@ -959,8 +960,8 @@ const pad = (n) => String(n).padStart(3, "0");
             <section id="method" class="rs-wrap rs-section rs-method rs-reveal">
               <header class="rs-section-head"><span class="rs-sec-no">05</span><h2>Как читать эту карту</h2></header>
               <div class="rs-method-grid">
-                <details open>
-                  <summary>Покрытие без двойного счёта</summary>
+                <div class="rs-method-block">
+                  <h3>Покрытие без двойного счёта</h3>
                   <p>
                     В опубликованном списке принятых работ конференции {{ stats.atlasRecords }} записей. После объединения дублей и вариантов названий остаётся
                     {{ stats.atlasUnique }} уникальных; ещё {{ stats.additional }} материалов нашлись за его пределами — среди воркшоп-докладов, tutorial и отдельных
@@ -971,9 +972,9 @@ const pad = (n) => String(n).padStart(3, "0");
                     может быть короткая аннотация — тип материала указан на странице работы. Аннотация tutorial и его proceedings-версия — один материал, а не
                     два независимых доказательства.
                   </p>
-                </details>
-                <details>
-                  <summary>Идентичность и темы</summary>
+                </div>
+                <div class="rs-method-block">
+                  <h3>Идентичность и темы</h3>
                   <p>
                     Работа опознаётся по DOI, затем по arXiv и подтверждённым вариантам названия; у каждой записи один адрес. Если разбор ссылается на
                     внешнюю статью, это не значит, что она попала в каталог конференции.
@@ -983,9 +984,9 @@ const pad = (n) => String(n).padStart(3, "0");
                     один процент улучшения: онлайн-эффект действует в условиях своей статьи. Это обзор того, что мы прочитали, а не обещание покрыть все
                     proceedings.
                   </p>
-                </details>
-                <details open class="rs-zotero-status">
-                  <summary>Zotero: {{ zotLinked }} из {{ stats.records }}</summary>
+                </div>
+                <div class="rs-method-block rs-zotero-status">
+                  <h3>Zotero: {{ zotLinked }} из {{ stats.records }}</h3>
                   <p>
                     Ссылки ведут на конкретные записи библиотеки Zotero; запись считается привязанной, только если совпали DOI и название.
                     <template v-if="zotLinked < stats.records"
@@ -993,7 +994,7 @@ const pad = (n) => String(n).padStart(3, "0");
                     >
                   </p>
                   <NuxtLink :to="{ path: base + '/catalog', query: { zotero: '1' } }">Материалы с записью в Zotero →</NuxtLink>
-                </details>
+                </div>
               </div>
             </section>
           </template>
@@ -1327,7 +1328,6 @@ const pad = (n) => String(n).padStart(3, "0");
     <footer class="rs-footer rs-wrap">
       <NuxtLink :to="base">RecSys<b>2026</b></NuxtLink>
       <p>Разборы работ RecSys 2026 · обновлено {{ data.version }}.</p>
-      <NuxtLink :to="base + '#method'">Методика и ограничения ↑</NuxtLink>
     </footer>
   </div>
 </template>

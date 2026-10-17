@@ -788,3 +788,9 @@ a.rs-ws-title:hover { color: var(--color-accent) !important; }
 
 /* рёбра графа общих ссылок: толщина ∝ числу общих источников */
 .rs-medges line { stroke: var(--color-accent); stroke-linecap: round; }
+
+/* блоки методики без сворачивания + сброс выбора группы на карте */
+.rs-method-block { padding: 16px 18px; background: var(--color-surface); border-radius: var(--radius-card); box-shadow: var(--shadow-1); }
+.rs-method-block h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 8px; }
+.rs-map-reset { display: inline-flex; align-items: center; min-height: 30px; padding: 0 12px; margin-bottom: 6px; border: 0; border-radius: var(--radius-pill); background: var(--color-tint); color: var(--color-accent); font-size: var(--text-button); font-weight: 600; }
+.rs-map-reset:hover { background: color-mix(in srgb, var(--color-accent) 16%, var(--color-tint)); }
