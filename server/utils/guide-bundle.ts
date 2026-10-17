@@ -12,6 +12,7 @@ import data from "../../data/recsys-2026.json";
 import tagsData from "../../data/recsys-2026-tags.json";
 import mapData from "../../data/recsys-2026-map.json";
 import communitiesData from "../../data/recsys-2026-communities.json";
+import fulltextMap from "../../data/recsys-2026-fulltext-map.json";
 import zoteroData from "../../data/recsys-2026-zotero.json";
 
 type Paper = (typeof data.papers)[number];
@@ -65,6 +66,7 @@ export function guideBundle(mode: string, id?: string) {
       map: mode === "home" ? mapData : undefined,
       // Сообщества по общим ссылкам (Leiden, 32 КБ) — тоже только главной.
       communities: mode === "home" ? communitiesData : undefined,
+      fulltext: mode === "home" ? fulltextMap : undefined,
     };
   }
 

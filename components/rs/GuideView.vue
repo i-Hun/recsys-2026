@@ -17,11 +17,12 @@ const parts = computed(() => {
 const mode = computed(() => parts.value[0] || "home");
 const id = computed(() => parts.value[1]);
 const viewKey = computed(() => mode.value + "/" + (id.value || ""));
-const { papers, themes, stats, organizations, tags: tagIndex, zotero: zot, map: mapBundle, communities: commBundle } = props.bundle;
+const { papers, themes, stats, organizations, tags: tagIndex, zotero: zot, map: mapBundle, communities: commBundle, fulltext: ftBundle } = props.bundle;
 // Карта близости приходит только в проекции главной; на других маршрутах — пустая заглушка,
 // чтобы setup не падал (секция #map рендерится лишь на главной).
 const mapData = mapBundle || { points: [], clusters: [], meta: {} };
 const communitiesData = commBundle || { points: [], communities: [], meta: {} };
+const fulltextData = ftBundle || { points: [], clusters: [], meta: {} };
 const data = { version: props.bundle.version };
 const byOrg = Object.fromEntries(organizations.map((o) => [o.id, o]));
 const orgTypes = { company: "Компания", university: "Университет", research: "Исследовательская организация", other: "Другая организация" };
@@ -249,22 +250,25 @@ function tmapKey(e) {
 /* ---------- карта близости: текст, темы, сообщества по литературе ---------- */
 const MAP = { w: 1000, h: 1000 };
 const mapClusters = mapData.clusters;
-const mapMode = ref("refs"); // refs | clusters | themes
+const mapMode = ref("refs"); // refs | fulltext | clusters | themes
 const mapSel = ref("");
 const mapTip = ref(null);
 // координаты всегда из текстовой проекции: сообщества по литературе показываем
 // на той же карте, чтобы видеть, где они лежат в смысловом пространстве
 const communityOf = Object.fromEntries((communitiesData.points || []).map((p) => [p.slug, p.community]));
-const mapPoints = computed(() =>
-  mapMode.value === "refs"
-    ? communitiesData.points
-    : mapData.points.map((p) => ({ ...p, community: communityOf[p.slug] ?? -1 })),
-);
+const mapPoints = computed(() => {
+  if (mapMode.value === "refs") return communitiesData.points;
+  if (mapMode.value === "fulltext") return fulltextData.points;
+  return mapData.points.map((p) => ({ ...p, community: communityOf[p.slug] ?? -1 }));
+});
 const mapGroups = computed(() => {
   if (mapMode.value === "refs") {
     return communitiesData.communities
       .filter((c) => c.size >= 5)
       .map((c, i) => ({ key: "k" + c.id, id: c.id, no: i + 1, label: c.name, n: c.size, theme: c.theme }));
+  }
+  if (mapMode.value === "fulltext") {
+    return fulltextData.clusters.map((c, i) => ({ key: "f" + c.id, id: c.id, no: i + 1, label: c.name || short(c.topTheme), n: c.size, theme: c.topTheme }));
   }
   return mapMode.value === "clusters"
     ? mapClusters.map((c, i) => ({ key: "c" + c.id, id: c.id, no: i + 1, label: c.name, n: c.size, theme: c.topTheme }))
@@ -272,6 +276,7 @@ const mapGroups = computed(() => {
 });
 const mapKeyOf = (p) => {
   if (mapMode.value === "refs") return p.community < 0 ? "noise" : "k" + p.community;
+  if (mapMode.value === "fulltext") return p.cluster < 0 ? "noise" : "f" + p.cluster;
   return mapMode.value === "clusters" ? (p.cluster < 0 ? "noise" : "c" + p.cluster) : "t" + p.theme;
 };
 const mapIsNoise = (p) => mapKeyOf(p) === "noise";
@@ -302,6 +307,10 @@ const mapSelectedPapers = computed(() =>
   !mapSel.value ? [] : mapPoints.value.filter((p) => mapKeyOf(p) === mapSel.value).map((p) => bySlug[p.slug]).filter(Boolean),
 );
 const mapCaption = computed(() => {
+  if (mapMode.value === "fulltext") {
+    const m = fulltextData.meta;
+    return `${m.clusters} кластеров · ${m.n} разборов · эмбеддинги по полным текстам статей · HDBSCAN, вне кластеров — ${m.noise}`;
+  }
   if (mapMode.value === "refs") {
     const m = communitiesData.meta;
     return `${m.communities} сообществ · ${m.papers} разборов · ${m.withRefs} со списком литературы · Leiden, modularity ${m.modularity} · ${m.edges} связей`;
@@ -864,11 +873,12 @@ const pad = (n) => String(n).padStart(3, "0");
               <div class="rs-map-layout">
                 <figure class="rs-map-fig" aria-labelledby="rs-map-cap">
                   <figcaption id="rs-map-cap" class="rs-caption">
-                    <b>{{ mapMode === "refs" ? "Сообщества по литературе" : "По тексту разбора" }}</b> · {{ mapCaption }}. Нажмите на точку, чтобы открыть разбор.
+                    <b>{{ mapMode === "refs" ? "Сообщества по литературе" : mapMode === "fulltext" ? "Полные тексты статей" : "По тексту разбора" }}</b> · {{ mapCaption }}. Нажмите на точку, чтобы открыть разбор.
                   </figcaption>
                   <fieldset class="rs-segment">
                     <legend>Группировка</legend>
                     <label><input v-model="mapMode" type="radio" value="refs" name="mapmode" /> Сообщества по литературе</label>
+                    <label><input v-model="mapMode" type="radio" value="fulltext" name="mapmode" /> Кластеры по полным текстам</label>
                     <label><input v-model="mapMode" type="radio" value="clusters" name="mapmode" /> Кластеры эмбеддингов</label>
                     <label><input v-model="mapMode" type="radio" value="themes" name="mapmode" /> Редакторские темы</label>
                   </fieldset>
@@ -947,6 +957,12 @@ const pad = (n) => String(n).padStart(3, "0");
                     modularity {{ communitiesData.meta.modularity }}, стабильность {{ communitiesData.meta.stabilityAri }} по сидам.
                     Совпадение с темами NMI {{ communitiesData.meta.nmiThemes }}, с текстовыми кластерами ARI
                     {{ communitiesData.meta.ariTextClusters }} — разрез про школу цитирования, а не про тему работы.
+                  </p>
+                  <p v-else-if="mapMode === 'fulltext'" class="rs-caption">
+                    Кластеры по полным текстам статей (Qwen3-Embedding-0.6B, чанки усреднены по работе): силуэт в исходном
+                    пространстве {{ fulltextData.meta.silhouetteCosine }}, стабильность {{ fulltextData.meta.stabilityAri }} по сидам.
+                    Согласие с редакторскими темами ARI {{ fulltextData.meta.ariThemes }}, NMI {{ fulltextData.meta.nmiThemes }} —
+                    темы остаются рамкой каталога, а не естественными классами.
                   </p>
                   <p v-else class="rs-caption">
                     Совпадение кластеров с редакторскими темами слабое: NMI {{ mapData.meta.nmiHdbscan }}, ARI
