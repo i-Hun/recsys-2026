@@ -675,34 +675,9 @@ const pad = (n) => String(n).padStart(3, "0");
               </div>
             </section>
 
-            <section class="rs-wrap rs-section rs-reveal">
-              <header class="rs-section-head">
-                <span class="rs-sec-no">01</span>
-                <h2>Три вопроса о рекомендательных системах, на которые отвечает почти каждая работа.</h2>
-                <p>Конференция не сводится к одной новой архитектуре. Работы спорят о другом: что система генерирует, чем подтверждают результат и где кончается сама модель.</p>
-              </header>
-              <ol class="rs-three">
-                <li>
-                  <h3>Что генерирует модель?</h3>
-                  <p>Код товара, намерение пользователя или целую страницу выдачи? От выбранного объекта зависят и ограничения метода, и способ его проверки.</p>
-                  <NuxtLink :to="base + '/topics/gen'">Коды и генерация →</NuxtLink>
-                </li>
-                <li>
-                  <h3>Чем подтверждают результат?</h3>
-                  <p>Пул кандидатов, порядок фильтрации, случайность обучения и поведение оценщика меняют ответ на вопрос, кто победил.</p>
-                  <NuxtLink :to="base + '/topics/eval'">Методология оценки →</NuxtLink>
-                </li>
-                <li>
-                  <h3>Где кончается модель?</h3>
-                  <p>Модель отдаёт список — дальше идут хранение истории, сервинг и исполнение решения. От этого каскада зависят стоимость выдачи и полезность контроля.</p>
-                  <NuxtLink :to="base + '/topics/prod'">Промышленные системы →</NuxtLink>
-                </li>
-              </ol>
-            </section>
-
             <section id="themes" class="rs-wrap rs-section rs-reveal">
               <header class="rs-section-head">
-                <span class="rs-sec-no">02</span>
+                <span class="rs-sec-no">01</span>
                 <h2>От задачи — к работам.</h2>
                 <p>У каждой работы одна основная тема и до двух вторичных тегов. Основная тема задаёт место в списке, вторичные показывают, где направления пересекаются.</p>
               </header>
@@ -720,7 +695,7 @@ const pad = (n) => String(n).padStart(3, "0");
 
             <section id="cloud" class="rs-wrap rs-section rs-reveal">
               <header class="rs-section-head">
-                <span class="rs-sec-no">03</span>
+                <span class="rs-sec-no">02</span>
                 <h2>Облако: чем больше слово, тем больше работ.</h2>
               </header>
               <div class="rs-cloud-bar">
@@ -752,7 +727,7 @@ const pad = (n) => String(n).padStart(3, "0");
             <section id="analytics" class="rs-analytics rs-reveal">
               <div class="rs-wrap rs-section">
                 <header class="rs-section-head">
-                  <span class="rs-sec-no">04</span>
+                  <span class="rs-sec-no">03</span>
                   <h2>Темы редко живут поодиночке.</h2>
                   <p>Это карта нашей разметки, а не рейтинг научной значимости и не проекция эмбеддингов.</p>
                 </header>
@@ -832,7 +807,7 @@ const pad = (n) => String(n).padStart(3, "0");
 
             <section id="map" class="rs-wrap rs-section rs-reveal">
               <header class="rs-section-head">
-                <span class="rs-sec-no">05</span>
+                <span class="rs-sec-no">04</span>
                 <h2>Близость: одна точка — один разбор.</h2>
                 <p>
                   Координаты — проекция UMAP эмбеддингов текста разборов (Qwen3-Embedding-0.6B): заголовок, суть, результат и ограничение.
@@ -919,7 +894,7 @@ const pad = (n) => String(n).padStart(3, "0");
             </section>
 
             <section id="method" class="rs-wrap rs-section rs-method rs-reveal">
-              <header class="rs-section-head"><span class="rs-sec-no">06</span><h2>Как читать эту карту</h2></header>
+              <header class="rs-section-head"><span class="rs-sec-no">05</span><h2>Как читать эту карту</h2></header>
               <div class="rs-method-grid">
                 <details open>
                   <summary>Покрытие без двойного счёта</summary>
