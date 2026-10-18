@@ -794,3 +794,24 @@ a.rs-ws-title:hover { color: var(--color-accent) !important; }
 .rs-method-block h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 8px; }
 .rs-map-reset { display: inline-flex; align-items: center; min-height: 30px; padding: 0 12px; margin-bottom: 6px; border: 0; border-radius: var(--radius-pill); background: var(--color-tint); color: var(--color-accent); font-size: var(--text-button); font-weight: 600; }
 .rs-map-reset:hover { background: color-mix(in srgb, var(--color-accent) 16%, var(--color-tint)); }
+
+/* ---------- обсуждение vpvd под страницей (встраивание) ----------
+   Чужой кадр требует от нас ровно двух вещей: контейнер с адресом страницы и «наряд». Наряд —
+   переменные --vpvd-* , которые загрузчик vpvd читает с самого контейнера; список имён у них
+   закрытый и проверяется на их стороне. Значения берём из своих токенов, чтобы кадр надел наш
+   шрифт, кегль и акцент, а не приезжал белым прямоугольником в тёмной теме. Высоту кадр меняет
+   сам — сообщением о высоте, без скролла внутри и без зарезервированной пустоты. */
+.rs-embed { padding-top: clamp(40px, 5vw, 64px); }
+.rs-embed > h2 { margin-bottom: 8px; }
+.rs-embed > .rs-caption { margin-bottom: var(--space-lg); max-width: var(--measure); }
+.rs-embed-box {
+  --vpvd-font: var(--font-sans);
+  --vpvd-font-size: var(--text-body);
+  --vpvd-line-height: var(--leading-body);
+  --vpvd-accent: var(--color-accent);
+  --vpvd-radius: var(--radius-card);
+}
+/* Запасная ссылка внутри контейнера: остаётся, если загрузчик не поднялся (строгая CSP, выключенный
+   JS) — читатель попадает на ту же ветку, а не в пустоту. */
+.rs-embed-box > a { color: var(--color-accent); font-weight: 600; text-underline-offset: 3px; }
+.rs-embed-box > a:hover, .rs-embed-box > a:focus-visible { text-decoration: underline; }

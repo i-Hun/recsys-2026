@@ -94,6 +94,51 @@ function cycleTheme() {
   } catch (e) {}
 }
 
+/* ---------- обсуждение vpvd: ветка под страницей раздела (встраивание, контракт vpvd) ----------
+   Кадр заводит ветку по адресу страницы, а не по домену хозяина: значит адрес канонический и без
+   query. Фильтры каталога (?q=, ?theme=, ?org=, ?zotero=, ?type=) — тот же материал, и ветка у
+   него должна быть одна; origin берём из домена сайта (он же в canonical и og:image), а путь — из
+   маршрута: маршрут реактивен, и при переходе между разборами загрузчик переставляет кадр на
+   ветку новой страницы (он следит за data-url контейнера). */
+const SITE_ORIGIN = "https://nagornyy.me";
+const embedUrl = computed(() => SITE_ORIGIN + route.path);
+/* Загрузчик ставим сами, а не разметкой сниппета: Vue убирает <script> из DOM при гидратации
+   (проверено на собранной странице: в отданном HTML тег есть, в живом DOM его уже нет), поэтому
+   разметка сработала бы только на первом заходе, а клиентский переход внутри раздела — а их
+   большинство, раздел листают из каталога — остался бы без виджета. Адрес загрузчика постоянный,
+   поэтому повторная постановка дешева (кэш), а его собственный сторож не даёт подняться дважды. */
+function ensureVpvdLoader() {
+  if (typeof window === "undefined" || window.vpvd) return;
+  if (document.querySelector("script[data-vpvd-loader]")) return;
+  const tag = document.createElement("script");
+  tag.src = "https://vpvd.io/embed.js";
+  tag.async = true;
+  tag.referrerPolicy = "no-referrer";
+  tag.setAttribute("data-vpvd-loader", "1");
+  document.head.appendChild(tag);
+}
+/* Дальше — сам загрузчик: он следит за добавленными узлами, но при клиентском переходе контейнер
+   появляется уже после его старта, поэтому просим пересобрать кадры (документированный ключ vpvd
+   для динамики). Именно refresh, а не mount(): mount принимает конкретный контейнер, а после
+   перехода адрес у того же узла уже другой — нужен обход всех. Чужого кода это не поднимает:
+   window.vpvd появляется только от vpvd. */
+function mountVpvd() {
+  const loader = window.vpvd;
+  if (!loader) return;
+  if (typeof loader.refresh === "function") loader.refresh();
+  else if (typeof loader.mount === "function") loader.mount(document.querySelector("[data-vpvd-thread]"));
+}
+onMounted(() => {
+  ensureVpvdLoader();
+  mountVpvd();
+});
+watch(embedUrl, () =>
+  nextTick(() => {
+    ensureVpvdLoader();
+    mountVpvd();
+  }),
+);
+
 /* ---------- catalog filters: every state lives in the URL ---------- */
 const query = computed(() => String(route.query.q || ""));
 const theme = computed(() => String(route.query.theme || ""));
@@ -1341,6 +1386,21 @@ const pad = (n) => String(n).padStart(3, "0");
         </div>
       </Transition>
     </main>
+    <!-- Обсуждение страницы (vpvd). Разметка — по контракту встраивания: data-url — адрес именно
+         этой страницы (ветку заводит кадр по нему), data-theme нарочно не задаём: загрузчик берёт
+         тему с <html data-theme>, поэтому переключатель выше меняет и кадр, без перезагрузки.
+         data-lang=ru — язык раздела (страница объявлена как lang="ru"). Токены --vpvd-* — «наряд
+         хозяина»: кадр надевает наш шрифт, кегль, акцент и радиус (список у vpvd закрытый и
+         проверяемый). Внутри контейнера — запасная ссылка: она остаётся, если загрузчик не поднялся
+         (выключенный JS, наша недоступность) и ведёт на ту же ветку. Сам загрузчик ставит
+         компонент при монтировании (см. ensureVpvdLoader выше), а не разметка сниппета. -->
+    <section class="rs-embed rs-wrap" id="discussion">
+      <h2>Обсуждение</h2>
+      <p class="rs-caption">Ветка живёт на vpvd и привязана к адресу этой страницы: читать можно без входа, писать — после входа.</p>
+      <div data-vpvd-thread :data-url="embedUrl" data-lang="ru" data-theme="auto" class="rs-embed-box">
+        <a :href="'https://vpvd.io/embed/ru?url=' + encodeURIComponent(embedUrl)" target="_blank" rel="noopener noreferrer">Обсуждение на vpvd</a>
+      </div>
+    </section>
     <footer class="rs-footer rs-wrap">
       <NuxtLink :to="base">RecSys<b>2026</b></NuxtLink>
       <p>Разборы работ RecSys 2026 · обновлено {{ data.version }}.</p>
